@@ -1,0 +1,7 @@
+Referencing the provided DiceNotation class in DiceNotationTDD project, create unit tests for testing the validity of "4d10" and "4dx". Next, create a test that rolls "4d10" fifty times and confirms that the result is between the proper minimum and maximum values.
+
+Starting with the provided Palindrome app, create Espresso tests that check "aba" and "abc" and validate the proper status of the "Is a Palindrome"/"Is NOT a Palindrome" TextView and green/red images.
+
+The android projects are in the course's OneDrive Week 12 folder.
+
+Provide only your test classes in this dropbox. No zip or project page will be required.

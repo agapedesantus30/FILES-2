@@ -1,0 +1,15 @@
+Build the BounceSurfaceView example described in Chapter 8, section 8.8.
+
+Modify the app such that:
+
+    A radius is selected randomly at construction time, between 50 and 150
+
+    A color is picked randomly, where r,g,b are each picked randomly from 0 .. 200
+
+    A velocity is picked randomly, between -10 and 10
+
+    A random spawn location is picked somewhere on the screen
+
+The ball is 'killed', if tapped
+
+A new ball is spawned, if the current ball is killed
