@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="generator" content="AlterVista - Editor HTML"/>
+  	<title>Agapitus's Page</title>
+  	<link href = "IndexCSS.css" rel = "stylesheet">
+    <link href = "../Images/MoveBall.gif" rel = "icon" type = "image/x-icon">
+</head>
+<body>
+<div id = "wrapper">
+<header>
+	<h1> Welcome to my ITEC 2130 Website! </h1>
+</header>
+
+<nav>
+    <a href = "../Projects/Index.html">Home</a> &nbsp; &nbsp;
+    <a href = "../Projects/ClassActivities.html">ClassActivities</a> &nbsp; &nbsp;
+    <a href = "../Projects/Labs.html">Labs</a> &nbsp; &nbsp;
+	<a href = "../Projects/Projects.html">Projects</a>
+</nav>
+	<br>
+<main>
+<h3>ITEC CLASSES TAKEN</h3>
+<ol>
+	<li>ITEC 1001 (Intro to Computing)</li>
+    <li>ITEC 2110 (Digital Media)</li>
+    <li>ITEC 2140 (Programming Fundamentals)</li>
+    <li>ITEC 2201 (Intro to Systems)</li>
+    <li>ITEC 2150 (Intermediate Programming)</li>
+    <li>ITEC 3100 (Introduction to Networks)</li>
+    <li>ITEC 3150 (Advanced Programming)</li>
+</ol>
+<h3>ITEC SKILLS</h3>
+<ul>
+	<li>Java</li>
+    <li>T-SQL</li>
+    <li>My SQL</li>
+	<li>JAVA</li>
+	<li>JavaScript</li>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>VM Ware</li>
+	<li>Photoshop</li>
+	<li>Cisco Packet Tracer</li>
+	<li>Android Studio</li>
+	<li>Android</li>
+	<li>XML</li>
+	<li>GitHub</li>
+	<li>SourceTree</li>
+	<li>Illustrator</li>
+
+</ul>
+<dl>
+	<dt>MY PROJECTS</dt> <br>
+    	<dd>Created a wiki page to house my <a href = "http://wiki.ggc.usg.edu/wiki/
+        ITEC4550_Iboro_Agapitus"target = "_blank">Android Projects</a></dd>
+    	<dd>Created a web page using HTML and CSS</dd>
+        <dd>Edited pictures using Photoshop</dd>
+        <dd>Created objects using Illustrator</dd>
+        <dd>Edited videos using Adobe Premiere Pro</dd>
+</dl>
+<br><br><br><br><br><br>
+<div class = "modDIV">
+	1000 university center ln, <br>
+    Lawrenceville, GA 30043 <br>
+    678-407-5000
+</div>
+</main>
+<footer>
+	Copyright &copy; 2019 GGC Web Technologies <br>
+    <a href = "mailto:aiboro@ggc.edu">aiboro@ggc.edu</a> <br>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <link href = "Resume.css" rel = "stylesheet">
+  <title>Online Resume</title>
+
+</head>
+<body>
+<div id = "wrapper">
+<nav>
+	<ul>
+    	<li><a href = "../Projects/Index.html">Home</a></li>
+        <li><a href = "#SandT">Skills and Techniques</a></li>
+        <li><a href = "#projects">Projects</a></li>
+        <li><a href = "#courses">Major Courses Taken</a></li>
+        <li><a href = "#awards">Awards</a></li>
+    </ul>
+</nav>
+<aside>
+<h3>Image</h3>
+	<picture>
+	<source media = "(min-width: 1024px)" srcset = "../Images/me.jpeg">
+    <source media = "(min-width: 768px)" srcset = "../Images/meMedium.png">
+    <img src = "../Images/meSmall.png">
+</picture>
+<h3>Contact</h3>
+    <a href = "tel:888-555-5555">888-555-5555</a><br>
+    <i><a href = "mailto:aiboro@ggc.edu">aiboro@ggc.edu</a></i><br>
+    Lawrenceville Ga
+<h3>Educational Background</h3>
+    Word of Faith Group of Schools <br>
+    Georgia Gwinnett College
+</aside>
+<main>
+<h1 id = "top">Agapitus Iboro Online Resume</h1>
+
+<h3>Work Experience</h3>
+Teaching Assistant (Part Time) <br>
+NSTAR Technologies (SQL Server Training Continuing Education )<br>
+132 Stanley Ct Lawrenceville Ga 30046
+<ul>   
+	<li>Assisted students in Installing, configuring, patching, migrating and maintenance of  2008,
+    2008R2, 2014, 2016 SQL Servers instances</li>
+	<li>Guided students in using system tools like setting counters on performance monitor, looking
+    through windows logs on event viewer and monitoring CPU and Io changes with task manager
+    in a general effort to check the performance of the server</li>
+	<li>Experienced using DMVs to check system health and performance</li>
+	<li>Ran traces on queries with profiler</li>
+	<li>Analyzed Query statements using Estimated Execution plan and Database engine Tuning 
+    Advisor</li>
+	<li>Highly proficient in the use of T-SQL for developing complex queries, creating Database, 
+    Tables, Indexes, Views, Triggers, Stored Procedure, relational database models, data integrity,
+    and SQL joins</li>
+	<li>Assisted students in the granting of the right level of authentication</li>
+	<li>Collaborated with students to set up all five HA solutions, Replication, Log Shipping, 
+    Mirroring, Always on Availability and Failover Cluster.</li>
+	<li>Configured Windows cluster on VM</li>
+	<li>Assisted Students in the configuration of VM ware and installation of virtual machine</li>
+	<li>Created different back up strategies</li>
+	<li>Demonstrated 1st and 2nd form of normalization on tables</li>
+	<li>Experienced using waterfall methodology</li>
+	<li>Was available after hours to answer student questions</li>
+</ul>
+
+<h3 id = "SandT">Skills and Techniques</h3>
+<ul>
+	<li>SQL Server Management Studio</li>
+    <li>T-SQL</li>
+    <li>My SQL</li>
+    <li>My SQL Workbench</li>
+	<li>JAVA</li>
+	<li>JavaScript</li>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>VM Ware</li>
+	<li>Photoshop</li>
+	<li>Cisco Packet Tracer</li>
+	<li>Android Studio</li>
+	<li>Android</li>
+	<li>XML</li>
+	<li>GitHub</li>
+	<li>SourceTree</li>
+	<li>Illustrator</li>
+</ul>
+
+<h3 id = "projects">Projects</h3>
+<ul>
+	<li>Created a wiki page to house my <a href = "http://wiki.ggc.usg.edu/wiki/
+        ITEC4550_Iboro_Agapitus"target = "_blank">Android Projects</a></li>
+    <li>Created a web page using HTML and CSS</li>
+    <li>Edited pictures using Photoshop</li>
+    <li>Created objects using Illustrator</li>
+    <li>Edited videos using Adobe Premiere Pro</li>
+</ul>
+
+<h3 id = "courses">Major Courses Taken</h3>
+<ul>
+	<li>ITEC 1001 (Intro to Computing)</li>
+    <li>ITEC 2110 (Digital Media)</li>
+    <li>ITEC 2140 (Programming Fundamentals)</li>
+    <li>ITEC 2201 (Intro to Systems)</li>
+    <li>ITEC 2150 (Intermediate Programming)</li>
+    <li>ITEC 3100 (Introduction to Networks)</li>
+    <li>ITEC 3150 (Advanced Programming)</li>
+</ul>
+<h3 id = "awards">Awards</h3>
+<ul>
+	<li>Dean's List</li>
+</ul>
+
+<a href = "#top">Back to top</a>
+<footer>
+Copyright &copy; Georgia Gwinnett College 2019<br>
+</footer>
+</main>
+</div>
+</body>
+</html>
+
+CSS
+
+body
+	{background: url(../Images/p2flower.jpg) repeat;}
+#wrapper
+	{width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+     box-shadow: 5px 5px 5px #1e1e1e;
+     background-color: #ffffcc;}
+img 
+    {width: 180px;
+	height: 220px;}
+nav 
+	{float: left;
+    width: 140px;
+    padding: 0;
+    background-color: #ffffcc;}    
+main
+	{margin-left: 140px;
+    margin-right: 230px;
+    padding: 10px;
+    background-color: #ffffff;}
+h1,h3
+	{text-align: center ;}
+aside h3
+	{text-align: left ;}
+nav ul
+	{list-style-type: none;}
+    nav ul {margin: 0;
+    padding: 0;}
+
+aside 
+	{float: right;
+    width: 200px;}
+aside h3
+	{border-bottom: 1px solid #000000;
+    padding-bottom: 2px;
+    margin-right: 10px;}
+nav a
+	{text-decoration: none;
+    padding: 20px;
+    display: block;
+    }
+nav a:link
+    {color: #000000;}
+nav a:visited
+    {color: #ff0000;}
+nav a:hover
+    {color: #0000ff;
+    background-color: #eaeaea;
+    background-position: right -100px;}
+footer
+	{text-align: center;
+    font-size: 0.8em;
+    font-style: italic;}
+                                   
+  @media only screen and (max-width: 1024px){
+	main
+    	{margin-left: 0;}
+    nav
+    	{float: none;
+    	width: auto;
+    	text-align: center;
+    	position: static;}
+    body
+    	{margin: 0;}
+    #wrapper
+    	{width: auto;}
+    h1, h3
+    	{font-size: 120%;}
+    p
+    	{font-size: 80%;}
+    }
+    
+    @media only screen and (max-width: 768px){
+		main
+        	{margin-right: 0;}
+        aside
+        	{float: none;
+            width: auto;
+            text-align: center;
+            position: static;}
+    }
