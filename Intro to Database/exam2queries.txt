@@ -1,0 +1,78 @@
+DDL (Data definition language)
+
+CREATE TABLE STUDENT(
+STUDENTID INT NOT NULL,
+STUDENTNAME VARCHAR(20) NOTNULL,
+TeacherName int not null,
+CONSTRAINT SI primary key (STUDENTID),
+CONSTRAINT TN foreign key (TeacherName)
+REFERENCES TEACHER (Teacher_Name) on update cascade
+);
+
+(primary key, null, not null, unique
+auto_increment, default 'human resource', On update No action, On delete No action)
+
+DROP table STUDENT
+
+(Add, modify, drop, change)
+ALTER TABLE STUDENT
+add gender char(6);
+
+ALTER TABLE STUDENT
+modify gender varchar(6);
+
+ALTER TABLE STUDENT
+change gender Gen varchar(6);
+
+ALTER TABLE STUDENT
+drop column gender;
+
+Insert into values
+(1, agap);
+
+insert into (studentName) values
+(agap);
+
+DML (data manipulation language)
+select *
+from
+
+distinct (don't repeat values in coulmns)
+Group by (groups reapeated columns into one)
+Having (use having with GROUP BY so you can use built in functions)
+(count, max, min, avg, sum)
+order by asc
+order by desc
+=
+and
+as
+or
+in
+not in
+like 
+not like
+null
+not null
+between
+% (many)
+_ (single)
+
+
+	SUBQUERY
+select
+from
+where cuID in 
+(select cuID from where)
+
+select
+from data as d inner join fanta as f
+on d.d = f.d
+
+update tablename
+set columnName = value, 
+columnName = value
+where condition
+
+delete (watch out for cascade)
+from
+where

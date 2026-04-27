@@ -1,0 +1,17 @@
+foreign key
+one to many
+
+primary and foreign 
+identifying
+
+relation asking for both
+
+1NF A RELATION
+
+DEPENDENT ON A SECOND PK NOT IN
+2NF
+
+DEPENDENT ON A NON KEY ATTRIBUTE
+NOT IN 3NF
+
+(pk becoemes FK in new table)
