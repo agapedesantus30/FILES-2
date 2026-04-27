@@ -1,0 +1,182 @@
+Scripts for the Tutorial
+Script to create TotalSale Table with Data for Practice
+Introduction
+Introduction to SSDT and  Create First Solution with default Project
+How to Create Solution with Multiple Projects or Add Existing Projects
+Understand Shared Data Sources
+Understand Embedded Data Sources in SSRS 
+Intro to Embedded Data Sets and Shared Data Sets
+Overview of Reports Tab in SSRS Project
+Report Wizard
+Create Tabular Report by using Report Wizard
+Create Tabular Report by using Page and Details in Group option by using Report Wizard
+Create Stepped Report by using Report Wizard
+Create Stepped Drill-down Report with Sub Total by using Report Wizard
+Create Block Report with Sub Totals by using Report Wizard
+Understand Page,Group and Detail in Report Wizard
+Create Matrix Report by using Report Wizard
+Use Query Builder Features in Report Wizard to create SQL Query for Report
+
+Create Different Types of Reports from Basics
+Create Tabular/Detail Report from Basics in SSRS
+Create Stepped Grouped Report with Subtotal and Grand Total from Basics
+Create Block Group Report with Sub Totals and Grand Total from Basics
+Create Drill-down Group Report with Group Total and Grand Total from Basics
+Create Multi Group Drill-down report with Group Totals and Grand Total
+Create Report with Group on Page without Wizard in SSRS
+Create List Reports in SQL Server Reporting Services
+Display Report Name and Header Row on Each Page in SSRS Report
+How to Display all the rows on Single Page in SSRS Report
+How to Add Running Total To Tabular Report in SSRS
+Add Running Total by Group and DataSet Level in SSRS Report
+Add Row Number to rows in SSRS Report ( DataSet Scope and Group Scope)
+Create Drill through Report
+Create Sub Reports and Call them in Master( Main) Report
+Create Report with Tabs
+How to create report that get Image from Database Table in SSRS
+
+Make Use of Report Items
+How to create Matrix Report in SSRS
+How to use Sub Report Report Item
+How to Create Column Chart in SSRS Report
+Highlight Columns in Chart for Max and Min Values in SSRS Report
+How to Create Stacked Chart Report in SSRS
+How to Display Total on top of Stacked Chart in SSRS Report 
+How to Combine Column Chart with Line Chart in SSRS Report  
+How to Plot multiple lines on Same Graph from Same Dataset in SSRS Report
+How to Custom Color Columns in Column Chart in SSRS Report
+How to Create Pie Chart in SSRS Report 
+How to Display Percentage in Pie Chart in SSRS Report 
+How to Change Data Labels Positions in SSRS Report
+How to Show Data Labels in Tooltip on hover in SSRS Report 
+How to Change the Width of Columns/Bars in SSRS Report 
+How to Create Bar Chart in SSRS Report
+How to Create Bar Stacked Chart in SSRS Report
+How to Create Area Chart in SSRS Report 
+How to Create Scatter Chart in SSRS Report  
+How to Create 100% Stacked Column / Bar Chart in SSRS Report
+How to Create Line Chart in SSRS Report
+How to use Gauge in SSRS
+How to use Data Bar in SSRS Report
+How to use Spark-line in SSRS Report
+How to make use of Indicator in SSRS Report
+Dynamic Reports
+How to create SSRS Report with Dynamic Columns ( When Definition of Source Table/View Change very often)
+How to create SSRS Report Dynamically with Dynamic Schema, Dynamic Table Name and Dynamic Columns
+SSRS Maps
+How to Create Map Reports in SSRS ( Map Gallery - Basic Map)
+How to create Map Report in SSRS ( Map Gallery - Color Analytical Map)
+How to Create Map Reports in SSRS ( Map Gallery - Bubble Map)
+How to create Map Reports in SSRS ( ESRI Shapefile)
+How to create Map Reports in SSRS (SQL Server Spatial Query)
+How to create Map Reports in SSRS (ESRI Shapefile and Bing Map Layer)
+
+
+
+Parameters
+How to Create Static Values Parameter with Default Value in SSRS Report
+How to Create Single Value Parameter with Values from Query in SSRS Report
+How to Create Multi Value Parameter in SSRS Report
+How to create Date Parameters with Calendar in SSRS Report
+How to Create Radio Button Parameters in SSRS reports
+How to Create Cascade Parameters in SSRS Report
+Allow Null Value Parameter Option to Pass Null value From Parameter In SSRS Report
+How to make SSRS Report Parameter Optional ( Ignore the Parameter)
+How to pass value to Parameter from Main Report ( drill through scenario)
+How to use Stored Procedure with Single Value Parameter in SSRS Report
+How to use Stored Procedure with Multi value Parameter in SSRS Report
+Wildcard Search SSRS Report Parameter  LIKE '%' + @Param+ '%'
+Show Null value for Multi Value Parameter in SSRS report
+Default Multi Value Parameters are Not Selected in SSRS Report
+Add/Delete/Rename Parameters in SSRS Report
+How to show Report Parameter values while displaying Rows in SSRS Report 
+Create Master Report with Report Selection Parameter To Display Selected Report 
+CasCading Parameters with Dynamic SQL in Stored Procedures in SSRS Report 
+How to use Filters in SSRS Report
+How to use Top N Rows in SSRS Report Parameter for Default Values 
+How to create Expand Collapse Parameter in SSRS Report
+
+Introduction to Built-in-Fields / Properties / Expressions
+What Are Expressions in SSRS Report
+How to Create Report Variable ( Global Variable) in SSRS Report
+How to create Group Variable in SSRS Report
+Show Different Images depending Upon Value of Cell in SSRS Report
+How to add Page X or TotalPages in Report Footer or Report Header by using expressions
+What is page break in SSRS and how to use it?
+How to use Bookmark in SSRS report to navigate between Report Items
+How to Limit Rows per Page in SSRS Report
+Limit Rows per Page in SSRS Report with Group
+Limit Number of Rows per Page by Parameter in SSRS Report
+Hide/UnHide Columns and Shrink the Remaining Columns By Using Parameter in SSRS Report
+Pass Parameter Value from Image Click in SSRS Report
+How to Toggle Report Contents by Image Clicking ( Bookmark in SSRS Report)
+How to use External Image in SSRS Report 
+How to Rotate Text in SSRS Report 
+How to Display Checkbox for Active and Inactive values in SSRS Report 
+How to Auto Refresh SSRS Report Data on Interval
+How to Change Color of Text and Header Row after Interval in SSRS Report
+Conditional Formatting- Functions
+How to use IIF and Switch Functions in SSRS to perform conditional formating
+Change Null Values in cell in SSRS Report
+How to hide Empty Rows in SSRS Report
+How to change color of Rows per group in SSRS Report
+How to change Color of Alternative Row in SSRS Report
+How to Format Text Differently in the Same Text Box in SSRS Report ( Rich Text Box)
+How to Join Two DataSets in SSRS Report by using Lookup Function
+
+Sorting
+How to Implement Interactive Sorting on Detail Columns and Group Columns in SSRS Report
+How to Sort the Results by using Parameters in SSRS Report
+How to Implement Interactive Sorting on Matrix Row Groups and Column Groups in SSRS Report 
+Reporting Manager / Deployment
+How to create Folders for different Departments, Data Source, Data Sets
+How to Create Data Source in Report Manager Web Interface in SSRS
+How to deploy Report and Data Source from Report Manager in SSRS Report
+How to move report between folders by using Reporting Manager in SSRS
+How to download report from Report Server to Local Folder
+How to Deploy Data Source to Report Server from SSRS Project( BIDS/SSDT)
+How to deploy Single/Multiple/All Reports to a Folder from BIDS/SSDT to Reporting Server
+How to create Report with Shared DataSet and Deploy to Reporting Server
+
+Report Builder
+How to Install Report Builder for SQL Server
+Get familiar with Getting Start Window and Diff Menus in Report Builder 
+How to create Detail Report in Report Builder By Wizard
+How to Create Blocked Report with Sub Totals in Report Builder
+How to create Stepped Report with SubTotal in Report Builder By Wizard
+How to Create Matrix Report by using Wizard in Report Builder
+How to create Report with Parameters in Report Builder By Wizard 
+How to Create Chart Report by using Chart Wizard in Report Builder
+How to Create Table Report from Scratch in Report Builder 
+How to Create Matrix Report from Scratch in Report Builder 
+How to Modify Existing Report and Republish to Report Server by Report Builder  
+How to create Report with Parameters by Report Builder from Scratch
+How to Create Report with Shared Data Set and Deploy to Report Server
+How to use Shared DataSet in Report Builder to Create Report
+How to Create Chart Report(Column,Bar,Stacked,Pie) by Report Builder
+
+Security
+Built in Roles
+Provide Browse Permission to user on Single/Multiple Reports
+Provide Permission to user on Folder level
+Provide Report Deploy permission to user in SSRS 
+Scheduling/Subscription
+ How to Setup a Windows File Share Subscription in SSRS
+Create SSRS Report with DateTime By Using Standard Subscription In SQL Server Reporting Services
+Setup Windows file share subscription in ssrs with Default Parameter Value
+How to use Subscription to email report with default Parameter values
+Write Report to different Folders according to the parameter value ( Data Driven Subscription)
+Send Report in Email to different users according to the region they belong to ( Data Driven Subscription)
+Report Database
+Reporting Services Databases ( ReportServer and ReportServerTempDB)
+
+SSRS Error Logs
+How to check Report Server Errors from ReportServerService Log file
+
+Exporting SSRS Reports
+How to Export detail and Drilldown SSRS Reports to Excel
+Export SSRS Report To Excel and Name Sheets to Group Values Automatically
+How to Export SSRS Report to CSV ,Tab or Pipe Delimited File
+How to export SSRS Detail and SSRS Drill Down Report to PDF
+Export SSRS Report to PDF with Expanded Drilldown
+Export Report Items ( Tablix,Matrix,Chart) to Different Sheets in Excel with Names

@@ -1,0 +1,340 @@
+General
+What is ETL?  (Video Answer)
+What is Business Intelligence ( BI) ?
+Which version of SSIS have you worked with? 
+What additional features are available in SSIS 2012 that were not in SSIS 2008? 
+What is the difference between Control  Flow and Data Flow in SSIS?  (Video Answer)
+What is parallel execution in SSIS, and how many Data Flow Tasks can a package run in parallel?  (Video Answer)
+What is the MaxConcurrentExecutables property on a Package level? (Video Answer)
+What is the Engine Thread property of Data Flow Task?
+What are the Precedence Constraints in SSIS, and where and why have you used them?  (Video Answer)
+What is the difference between the Success and the Completion value of Precedence Constraint?  (Video Answer)
+What is the DelayValidation property of Data Flow Task? Why does one use this property?  (Video Answer)
+What is RetainSameConnection Property on Connection Manager in SSIS Package? Why is it used?    (Video Answer)
+If we create a temp table in SSIS Package and want to use it in other tasks, which properties do we need to use?   (Video Answer)
+What is data Viewer in SSIS? Is data viewer available in ControlFlow or Data Flow?  (Video Answer)
+I am running my package for debugging and I do not want to load datainto any destination. Which transformation can I use to ensure that the data goes nowhere else?  (Video Answer)
+What is the difference between Checkpoint and Breakpoint in SSIS?
+Will my package run successfully by using SQL Server Agent if I have data viewers and Breakpoint enabled?
+What are different ways to execute your SSIS Package? Can I run a SSIS Package by using a Stored Procedure? (Video Answer)
+What types of deployment are available for a SSIS Package? Explain all. 
+What is the difference between Package Deployment and Project Deployment? 
+Which version of SSIS can track versions of a SSIS Package deployed to the Server?  (Video Answer)
+To run your SSIS Package, the Integration Services Server and SQL Server should be installed on the same server. Is this a correct statement?
+What are the different ways to run your SSIS package on a schedule?
+Let’s say you have configured Event Handler to send an email to report an error for Data Flow Task inside For Each Loop. If error occurred in a data flow task, you will get multiple emails. Why is that? Howwe can prevent those series of emails coming for one error?
+How do you debug/troubleshoot your SSIS package? 
+Explain the important steps for performance tuning of your SSIS Package.
+If your package is scheduled to run every night at 10 P.M., and the package fails in production, where will you begin your search for the error details?    (Video Answer)    
+You have created a variable in SSIS, and you have used that variable in Data Flow Task in Row Count Transformation. If you want to display or see that value of variable after Data Flow execution, how will you do that?    (Video Answer)
+You are looking at Control Flow Item, and you cannot find Execute SQL task.  How will you bring it back to Control Flow Items?      (Video Answer)
+Your company is using some third party transformations and tasks, and you need to add them to Control Flow Item and Data Flow Items.  How will you dothat?
+What are Attunity Drivers and why do we use them with SSIS?
+If you do not want to use Slowly Changing Transformation, WhichT-SQL statement can help you to load  an SCD type table in one statement? 
+What is Annotation?  Is it only available in Control Flow Pane oravailable in other Panes as well?  (Video Answer)  
+Let’s say we have two Execute SQL Tasks in a Sequence container.  If any of them fail, we want to roll back the transaction. How can we achieve this? 
+What is a TransactionOption Property at the Package level?  Is this property only available at the package level, or it is also available at the Container Level or Task level?
+Can you create  an SSIS Package without using BIDS or SSDT?   (Video Answer)   
+You have an excel file and you want to clear the first cell of sheet 1, which task will you? (Answer : To perform this you have to use Script Task)
+A third-party software is available that you need to execute by using SSIS.  Which task can be used to run EXE file?  (Video Answer)
+You need to load 500 million records in a table; this table has cluster and non-cluster indexes already created. What will be your approach to load the data?
+What are Asynchronous and Synchronous data flow components?
+What are Non-blocking, Semi-blocking and Fully-blocking components in SSIS?
+What is Balanced Data Distributor( BDD)?
+What is Error Output? Can you redirect rows from Sources,Transformations and Destinations in SSIS?   (Video Answer)
+If you need to check that a file exists in a folder, which task(s) will you use?  (Video Answer)
+Let’s say you have created an Excel File by using Excel Destination. If you have to make the Header row bold, how will you do that in SSIS?  (Video Answer)
+If you need to send an HTML email, can you use the built-in Send MailTask? What other options do you have?  (Video Answer)
+If you need to watch a directory for a specific file to be added, which Task will you use?  
+What is For-each Item Enumerator in For-each Loop Container?  Why would you use it? 
+If you need to move a file and rename it at the same time, how will you do that?   (Video Answer)
+We have received Excel Source File with multiple sheets but with the same meta data.  How will you design your package to load all of the sheets to same table?
+You have redirected records due to Truncation or data conversion errors from some transformation.  How will you find which column created the error?  How do you detect the name of the column?    (Video Answer)
+You have created different types of SSIS Packages.  How do you determine all the variable names, connection managers, logging information or expression used in those Packages?  
+You have received a big Excel or flat file, but you only want to load the first 100 records in a table.  How will you  do that?    (Video Answer)
+You have received an Excel Source file, but the first 10 rows have only company information; actual data starts from Row 11.  How will you skip the first 10 rows and start reading from row 11?    (Video Answer)
+If you need to read only one cell value from an Excel file in SSIS, which task will you use?  (Video Answer)
+You are extracting data from a view.  The definition of View can change anytime. We want to load this data to an Excel file by using this view.  How do you create a dynamic package so that you don't have to re-do the mapping?    (Video Answer)
+You are running different SSIS Packages on your server. How do you determine how much time each package took for execution?     (Video Answer)
+Is it possible to run the SSIS Package from Excel by using Excel Macros?    (Video Answer)
+If you need to purge old files, which tasks will you use in your SSIS Package ?
+After developing your SSIS Package, you want to write a technical document.  What are important contents would you like to cover in that document?  (Video Answer)
+There are so many files in our folders, we want to save the file name, file created date and size of each file in an Audit table.  Which tasks will you use to do that?    (Video Answer) 
+We have .sql files sitting in a folder, and we want to execute all of them.  How can you run them by using SSIS Package?   (Video Answer)
+We have a table which contains different types of files that we want to export to folder.  Which transformation do we need to use?     (Video Answer)
+There are 100 files in a directory. All have the same structure. You need to load the most recent file to table. How will you do that?    (Video Answer)
+Is backwards compatibility possible for an SSIS Package? In other words, if  you have created your SSIS Package in SSIS 2008, can you downgrade to SSIS 2005?    (Video Answer)
+What is the difference between Package Level Connection Manager and Project Level Connection Manager? (Video Answer)
+How would you get the oldest file from a Folder?   (Video Answer)
+How would you find which SSIS Packages are used by SQL Server Agent Jobs?  (Video Answer)
+How would you find out if a Stored Procedure is used in SSIS Package?   (Video Answer)
+How would you find and replace object name in SSIS Package or SSIS Packages in Solution?  (Video Answer)
+How would you create Load Summary Email logic in SSIS Package?  (Video Answer)
+You have different folders sitting in Parent Folder. You want to delete old folder which are older than 7 days. How would you do that in SSIS Package?
+How would you make your SSIS Package dynamic?  (Video Answer)
+Sometime when you execute your SSIS Package, You get an error " File is used by another process". Why did you get this error? and How can you avoid this error? 
+How would you implement data validation in your SSIS Package?
+What are the best practices to test SSIS Package? 
+We can load data from one database tables to another database tables by using TSQL, Why do we use SSIS instead ?
+How would you change the value of variable in SSIS Package during debugging to test different scenarios?      (Video Answer) 
+Is it possible to save Stored Procedure Output Parameter value to SSIS variable ?
+What is the purpose of naming convention in SSIS ?   (Video Answer)
+Which Control Flow Task you will use if you need to convert excel file to csv file? (Video Answer)
+You need to delete Top N Rows from Flat File, How would you do that?   (Video Answer)
+You have different SSIS Packages in one of the folder, How would you find the version of each SSIS Package?  (Video Answer)
+Your SSIS Package consist of multiple Data Flow Tasks. You need to execute only first 2 Data Flow Task, How would you do that?     (Video Answer)
+Explain an example where you had to build your Query dynamically in SSIS Package and how did you do that? 
+If you have to perform Case Statement on one of the column data, Which Transformation would you use and how will the expressions look like?   (Video Answer)
+If you need to copy all the tables from a SQL server Database to flat files, how would you do that?   (Video Answer)
+How would you convert Month Name into Month Number in SSIS Package?  (Video Answer)
+How would you convert Month Number into Month Full Name and Month Short Name in SSIS Package?  (Video Answer)
+You receive different text files to load in a database. After Loading into database you want to move them to different folders depending upon the date part in the file name, How would you do that? 
+How would you create monthly archive folders in SSIS Package to archive your loaded files?  
+(Video Answer)
+How would you save file names from different folders in a SQL Server Table?  (Video Answer)
+When you are working as SSIS developer , why it is important to know C# or Visual basis language? 
+Do you think every task should be done by using components of ETL Tool or better to use combination of SQL Objects ( such as Stored Procedure, Queries etc.) with components available in ETL Tool?  
+You just joined a company as ETL Developer, You hear this term "Staging Database" from your ETL colleagues. What does this term mean to you?  
+What is ODS Database? What it has to do with you as ETL Developer? 
+What is the difference between Full Load and Incremental Load? What is your approach to load data into Staging Database? 
+What techniques do you use to perform incremental Load in SSIS or as ETL developer? 
+How would you generate multiple flat files from SQL Server partition table? The SSIS Package should generate a file per partition?
+You have received 500 pipe delimited files, each one has different meta data. How would you load all of them to SQL Server Database. Each file should be loaded to its own table?
+How would you load multiple excel files with same structure to SQL Server Table and Archive them after adding datetime to them? (Video Answer)    
+How to Create Excel file with Date-time on Each Package Execution in SSIS Package?
+How to Load Multiple Sheets to a SQL Server Table in SSIS Package?
+How to Load Data Excel File to SQL Server Table and Solve Data Conversion Issues?
+How to Load Multiple Sheets From Multiple Excel Files to Different Tables in SSIS Package?
+How to Load Data to Pre-Formatted Excel Sheet (Excel Report) in SSIS Package?
+Let's say you have given Full Address column in Excel Source file such as 'My Street Address,MyCity,MyState,MyZip'. How would you create Multiple Columns such as Street Address,City,State and Zip from FullAddress column in SSIS Package?
+How to return Output parameter value of Stored Procedure from OLE DB Command Transformation and save value to Output Column?
+How would you find our if a character occurs more than one time in column value and redirect that row in SSIS Package?
+What is the Max size of SQL Statement that you can use in Execute SQL Task Query Editor?
+If you have to save single value to a string variable from a SQL Server table, Which Task will you use it?
+If you need to insert some variable values from SSIS Package to a SQL Server Table, Which Task will you use it and how to Map the Variable to it?
+If once of your Stored Procedure is returning a value, How would you execute that Stored Procedure in SSIS Package and save the value to a variable?
+If you need to validate File name against definition table before loading , which Tasks will you use to perform that in SSIS Package?
+Explain a scenario in which you have used the Execute SQL Task with Full Result Set?
+Let's say you have saved update/Delete count from Execute SQL Task to variables, How can you write these variables into Flat File?
+How would you load only new files to SQL Server table and Reject already loaded files in SSIS Package?
+You are executing multiple stored procedures in Execute SQL Task in SSIS Package, Package is running from long time. If your Manager ask which stored procedure is currently running or how many time each one take to complete, How will you get that information?
+You have multiple IF Statements that you want to execute in Execute SQL Task. But in Condition should use a variable value. How can you replace the IF Statement condition by using variable from SSIS Package?
+In OLE DB Command Transformation , when we use parameters, it gives us Param_0, Param_1 etc. How can we get proper name for these parameters?
+Can we use Sub Query with parameters in OLE DB Command Transformation, How does the mapping come up for Sub Query Parameters?
+Can we use Common Table Expressions with input parameters in OLE DB Command Transformation in SSIS Package?
+Is it possible to call multiple statements such as insert/update/Delete with parameters in OLE DB Command Transformation in SSIS Package?
+Can you Map a input column to multiple Parameters of Stored Procedures in OLE DB Command Transformation in SSIS Package?
+Is it possible to make changes in SQLCommand of OLE DB Command Transformation dynamically by using Variable/s in SSIS Package?
+We need to load multiple text files to SQL Server table, but the list of columns can be different for each of the file. How to load all the files in this scenario?
+How to Load Data from Excel Files when Number of Columns can decrease or order is changed in Excel Sheet
+How to Load Only Matching Column Data to SQL Server Table from Multiple Excel Files (Single Sheet per file) Dynamically in SSIS Package
+How to Load Excel File Names with Sheet Names ,Row Count,Last Modified Date, File Size in SQL Server Table
+How to get File Count from a Folder in SSIS Package 
+Sources
+      Name a few of the Sources available in SSIS.
+If we need to read an XML Source file, which Source will we use in SSIS?
+What problems have you faced when you used Excel Source?
+Why do we add IMEX=1to extended properties of Excel Connection Manager?
+If one of the Excel columns has alphanumeric dataand another developer has changed the registry setting to TypeGuessRow=0, what does that mean to you?
+How will you handle a column (such as comments) that has more than 255 characters in Excel at row number 1000. 
+What is fast parse property in Flat File Source?What are the requirements and limitations to use this property? 
+Can I read a csv file with Raw File Source?  If not, what type of files can I read by using Raw File Source? 
+Can we use Stored Procedure in OLE DB Source?  Ifyes, how do you map the parameters?
+If you need to connect to TeraData, Which Data Source will you use? 
+How would you load fixed width flat file to SQL server table?  (Video Answer)
+
+
+Transformations
+What is a SSIS Transformation? 
+If you need to get the Username, Package Name and Package Start Time, which transformation will you use? 
+Which Transformation can perform operations such as Sum, Count and Group By? (Video Answer)
+ If you need to convert Data Type from String toInteger, which transformation will you use? 
+If you need to add a new column(s), which transformation will you use? (Video Answer)
+ You are reading data from a source by using a SSIS Package. If some records have Null values and you want to replace Null values to Unknow before inserting the data into a table, which Transformation will you use?   (Video Answer)
+What is syntax for writing IF ELSE in Derivedcolumn Transformation?  (Video Answer)
+What is Lookup Transformation, and why do we use this transformation when we load Fact Table?
+What are three modes of Lookup Transformation, and what criteria should be used to choose the correct mode?
+Can we insert record in Lookup Table by using Lookup Transformation?
+Should you use a drop down to choose our reference table in Lookup?  Is this a good practice or not? (Video Answer)
+What is multicast Transformation in SSIS? (Video Answer) 
+What is conditional Split Transformation in SSIS?  (Video Answer) 
+What is the major difference between ConditionalSplit and Multicast Transformation?  (Video Answer)  
+What is OLE DB Command Transformation?  Where would you use it and what are the disadvantages/advantages of using the OLE DB Command Transformation?  (Video Answer)
+What alternative methods would you like to use for OLE DB Command Transformation? (Video Answer)
+If you need to get the Count for the number of records loaded from Source to Destination, which transformation will you use?  (Video Answer) 
+ If you need to create a sequence number for input records, which transformation will you use?  (Video Answer)
+Which transformation can be used as Source,Destination or Transformation? 
+What is Slowly Changing Dimension, and which transformation can you use to load SCD tables?
+How will you load an SCD1 type table by using SSIS?
+ How will you load an SCD2 type Table by using SSIS?
+What are the best practices when you load hugeSCD type tables?
+Which Transformation requires us to use SORTTransformation with it?
+What are the alternatives of SORT Transformation if our source is SQL Server and we need to use Merge Join for multiple sources?
+What is IsSorted Property, and why do we use it? 
+ How will you remove duplicate records in SSIS?  Which transformation can help with this task?  (Video Answer)
+Let’s say we have some reference data in Excel, and we want to use that Excel data in Lookup Transformation.  How can we achieve that without loading that data into a staging table or temp table?
+What is Cache Transformation, and which transformation can use Cache Transformation-loaded data?  (Answer- Cache Transformation)
+Why do we need to use Cache Transformation?
+Which transformation can be used to change columndata to Lower Case or Upper Case?  (Video Answer)
+What is the difference between Copy ColumnTransformation and Derived Column Transformation? 
+Let’s say my table contains images, and I am reading data from a table in Data Flow task. Which transformation can help me to save those images to files?
+Which transformation can I use in SSIS to import image files to a Table? (Video Answer)
+I have a source file that contains 1000 records, and I want to insert 15% of those records in TableA and the remaining records in TableB.  Whichtransformation should I use? 
+What is the difference between Row Sampling andPercent Sampling Transformations? 
+Which transformation can be used to extract nouns only, noun phrases only, or both nouns and noun phases from a text-input column?
+How is Term Lookup different from Lookup Transformation?
+To Pivot or Unpivot input data, which transformations are available in SSIS?  (Pivot Answer) - Unpivot Answer
+There is no Union Transformation in SSIS.  How do you perform UNION operation using built-in Transformation?  (Video Answer)
+If we have source S1 and Source S2, and we need to merge them so that we get sorted output, which transformation would we use? (Video Answer)
+What is the difference between Merge and Union All Transformation? (Video Answer)
+In Merge Join Transformation, we can useInner Join, Left Join and Full Outer Join.  If I have to use Cross Join, which transformation would I use? 
+What is FindString function in Derived Column Transformation? (Video Answer)
+Do we have MonthName and DayName functions available in SSIS which can be used in expressions or in Derived Column Transformation?    (Video Answer) 
+How would you split single column data into multiple columns in SSIS Package?
+ (Video Answer)
+ How would you filter Null value rows in Data Flow Task? (Video Answer)
+Can we use ADO.Net Connection Manager in Lookup Transformation? If Not, What workaround       do you purpose?
+
+Destinations
+
+
+What is Raw File Destination, where and why do we use it?
+What is the difference between OLE DB Destinationand SQL Server Destination? 
+What is Recordset Destination and where do we need use?
+Can we redirect rows from OLE DB Destination? Ifyes, what are the important things need to remember while we configure that?
+What does “Keep Identity”,”Keep Nulls”,”Tablelock” and “Check Constraints” Check box means on OLE DB Destination?
+ What is "Rows Per batch" and "Maximum Insert Commit Size" mean to you in OLE DB Destination? How do we use them and why do we need to change values from default values?
+If there is trigger on a table and we are loading data in that table by using SSIS, Access Mode properties is set to “ Table or View-fast Load”  , Will trigger fire? If not, then which Mode (
+
+Table or View,
+Table or View-Fast Load,
+Table Name or view name variable,
+Table name or view name variable –fast load,
+SQL Command) can we  choose to load data and Trigger get fire as well? 
+
+How would you create Fixed Width column Text file by using SSIS?  (Video Answer)
+
+
+Variables and Expressions
+What is variable in SSIS, what are data types available for variable?
+What is Scope of Variable? How can we changeScope of variable in SSIS 2008 and SSIS 2012? (Video Answer) 
+What are expressions in SSIS? Where and Why do we need to use them? (Video Answer)
+Can we write expression on Variable? If yes, how and where can you write them? (Video Answer)
+Can we write expression on Connection Managers? If yes, where would you need to do that? (Video Answer)
+What are System Variables in SSIS? Name few of them those you have used. (Video Answer)
+Can we write expression on Precedence Constraint? if yes, how would you do it? (Video Answer)
+What is the maximum length of expressions in SSIS 2008 and SSIS 2012? (Video Answer)
+ What is new Expression Task in SSIS 2012?  (Video Answer)  
+What are Parameters in SSIS 2012? how are they different from Variables?
+Can you create two variables with same in name in SSIS Package? (Video Answer)
+
+
+    Logging
+ What is logging in SSIS? How many types oflogging available in SSIS? Which one have you used? (Video Answer)
+If you need to create a text type log file with timestamp,how would you do that?  (Video Answer)
+If you use SQL Server Logging, which table will be used to store log information? (Video Answer)
+What are the few column names that sysssislog have to store log information? (Video Answer)
+Do you log all the events or prefer to choose few of them? (Video Answer)
+ Name few of Events you like to use in logging? (Video Answer)
+What is custom Logging and how is it different from built in Logging? (Video Answer)
+ If you use timestamp in your text file logging,it creates multiple log files with each execution, how to avoid that and whysingle execution create more than one log file?  (Video Answer)
+  If we are using SQL Server Logging, how often the records get deleted from syssislog table? or do we  have to create some purge process? (Video Answer)
+Junior ETL developer stops to your desk and asked your suggest or best practice which Logging type  he/she should use? Explain which logging type in SSIS package you will suggest to him/her and why? (Video Answer)
+How to Enable Windows Event Log type logging in SSIS Package and What's your suggestion, should we use it not ? (Video Answer)
+ Is it possible to have two types of logging e.g. text file logging and SQL Server Logging in same SSIS  Package? (Video Answer)
+Explain different methods to make the log information created by SSIS Packages available to your developers? (Video Answer)
+ What type of logging create .trc file when you enable Logging in SSIS Package? (Video Answer)
+ Can we create xml log file with datetime on each SSIS Package execution, How would you do that?      (Video Answer) 
+ Quick demo how to provide permission to non admin account on Event Viewer in Windows 2008R2/2012. This can be used when we enable Windows Event Log in SSIS Package and need to provide read permissions to developers to read Event Viewer entries for SSIS events. ( Video Answer)
+Configuration
+What is Configuration in SQL Server Integration Services(SSIS)? 
+Why do we even need Configuration? 
+What are configuration types available for us touse? 
+What is the difference between Direct and IndirectConfiguration? 
+If we use SQL Server Configuration, what is table name created by configuration Wizard? 
+How many columns configuration table do have? which one are important for us?
+For Indirect Configuration, do you create User variable or System variable to hold connection string? 
+What is Parent Child Configuration and where do we need to use that? ( Video Answer)
+ Explain the best practices for Integration ServicesConfiguration. (Video Answers)
+Let’s say we have SQL Server Connection Name ‘MyConnection’,  For configuration whichproperties of  Connection manager will you choose (Description,Name, ServerName,Scope,ConnectionString etc.) ? 
+
+
+  Control Flow Task
+What is Data Flow Task?  (Video Answer)
+ If you need to run some SQL script( Stored Procedure, DML and DDL ). Which task will you use in Control Flow?   (Video Answer)
+ If you have created object type variable that you want to use in script task later, how will you load data into Object Type variable in Control flow? Which task will help?  (Video Answer)
+If your database in Full Recovery mode, can youuse Bulk Insert Task to load data? What are the requirements to use Bulk InsertTask? 
+If your company is using Ftp site to receive daily data files, which task will you use to download/upload/Delete files on FTP Site?
+What is the difference between Script task andScript component?
+What script languages are available for you todo scripting in Script task and script component? 
+What is the difference between ReadOnlyVariables andReadWriteVariable in Script task? 
+Can you do debugging in Script task or Script component in SSIS 2012?
+You have create 5 packages, you want to call all of them in one package, which task can you use to call them? (Video Answer)
+You have deployed your SSIS Package toIntegration Services Server, Can you still call them in Parent Package?
+ If you load set of big files, after each load you want to zip them and put them into archive folder. Which task would you need to use to Zip them? (Video Answer)
+Which task can you use to delete, rename, move files and folders? (Video Answer)
+Can you rename and move file by using one task? which is that task and how will you do that? (Video Answer)
+If your data flow task fails in Control Flow,which task will you use to send email on Error? (Video Answer)
+Before you create your SSIS Package and load data into destination, you want to analyze your data, which task will help you to achieve that?
+17.   What is WSDL and in which task you have to use it?
+You have loaded email addresses in Object typevariable, now you want to send email to each of the address you have in Objecttype variable, which task will you use to loop through and send email one byone? 
+There are 10 files in folder, we want to loadthem one by one, which tasks are required to perform this job?
+You have a lot of Tasks sitting in Control Flowtask , you want to group them, which container can help you to achieve that? 
+You got this assignment where you want toperform the same task 10 times, which loop will you use to do that? 
+Name few of the tasks those are available tocreate Maintenance plan or those can perform DBA tasks such as Create indexes,take backup etc. 
+In Execute SQL Task, what is Result Set ( SingleRow, Full Result Set,XML) ? 
+Which task would you use to execute dot batch files in SSIS? (Video Answer)
+What type of Containers are available in SSIS Package? Explain two of them in detail. 
+You need to create a directory with Date in SSIS Package, Which Task would you use that?  (Video Answer)
+Which Task will you use to build Dynamic SQL in SSIS Package?
+How would you loop through queries which are stored in Excel file and run in SSIS Package?
+You don't want to use Cursor in TSQL to loop through the Queries which you have saved in one         of the SQL Server Table. How you can create an SSIS Package to loop through those queries and       run one at at time in SSIS Package?
+Is it possible to call multiple stored procedures with Input Parameters in Execute SQL Task?
+You have set the ResultSet= Single Row in Execute SQL Task. What if no row will be returned by the query, Will you get an error or it will complete without error?
+How to Delete all the files from a folder expect the oldest file in SSIS Package?
+How to delete all files in a folder except Latest by using SSIS Package
+How to delete all files except current date files in SSIS Package
+
+
+      Event Handlers
+What are Event Handlers?
+What type of Tasks we can use in Event Handler pane?
+What is the relationship between Executable and Event Handler in Event Handler Pane? 
+If your SSIS Package failed on any task, You want to send an email, how would you use the event handler to do this?
+You have multiple Tasks in your SSIS Package such as Task1,Task2 and Task 3. If Task 1 or Task 2 fails, You want to send an email to users but if Task 3 fails then you want to truncate all the tables which are loaded by your SSIS Package, How would you do that?
+We can run any tasks in Control Flow Pane on Failure of a Task/s by using Precedence constraint. What are the advantages of using Event Handler over Precedence Constraints? 
+      Security
+What are the different ways to secure your SSIS Packages?
+Who should have the permission to access SSIS Packages in Production, While you were working as developer, Did you had permission to access packages in Production environment?
+What are different ways to store the Packages in different environments such as DEV,QA,UAT and Production?
+Your SSIS Package contains important information such as Server Name, Passwords etc. You want to set a password to protect this SSIS Package so every time it opens it ask for password. How would you do that?
+What are three integration services security roles available in SSIS 2008/R2?
+Which Package property will help you to encrypt package to restrict access to its contents?
+
+  Script Task Dynamic Excel Advance Level Questions and Answers
+How to Load Data from Excel Files when Number of Columns can decrease or order is changed in Excel Sheet
+How to Load Only Matching Column Data to SQL Server Table from Multiple Excel Files (Single Sheet per file) Dynamically in SSIS Package
+How to Load Excel File Names with Sheet Names ,Row Count,Last Modified Date, File Size in SQL Server Table
+How to Load Multiple Excel Files with Multiple Sheets to Single SQL Server Table by using SSIS Package
+How to Load Matching Sheets from Excel to Table and Log Not Matching Sheets Information in SQL Server Table
+How to create Table for each sheet in Excel Files and load data to it dynamically in SSIS Package
+How to Create Table per Excel File and Load all Sheets Data Dynamically in SSIS Package by using Script Task 
+How to create CSV file per Excel File and Load All Sheets from Excel File to it in SSIS Package
+How to Create CSV File for Each Excel Sheet from Excel Files in SSIS Package
+How to Load Excel File Name and Sheet Name with Data to SQL Server in SSIS Package
+How to Import data from Multiple Excel Sheets with a pattern of sheet names from Multiple Excel File in SSIS Package
+How to import Data from Excel Files for specific Sheet Name to SQL Server Table in SSIS Package
+Load Data To Tables according to Excel Sheet Names from Excel Files dynamically in SSIS Package
+How to Load Excel Files with Single/ Multiple Sheets to SQL Server Tables according to Excel File Name Dynamically
+How to Read Excel Sheet Data after Skipping Rows in SSIS Package by using Script Task 
+How to read data from Excel Sheet and Load to Multiple Tables by using Script Task in SSIS Package
+How to create Excel File Dynamically from SQL server Table/View by using Script Task in SSIS Package
+How to create Excel File Dynamically for Stored Procedure Results in SSIS Package by using Script Task
+How to Export SQL Server Tables from Database to Excel File Dynamically in SSIS Package by using Script Task
+How to Convert CSV/Text Files to Excel Files in SSIS Package by using Script Task
+How to Load All CSV Files to Excel Sheets ( Sheet Per CSV) in single Excel File in SSIS Package
+How to Load All CSV Files to Single Excel Sheet with File Names in an Excel File Dynamically in SSIS Package
+How to Create Sample Excel file with Sheet from each table with Top 1000 Rows per sheet in SSIS Package
+How to Export Data to Multiple Excel Sheets from Single SQL Server Table in SSIS Package
+How to split large table data into multiple Excel Sheets on Single Excel File by using SSIS Package
+How to Export All tables of a database to Excel Files with Date-time in SSIS Package

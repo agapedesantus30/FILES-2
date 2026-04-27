@@ -1,0 +1,294 @@
+Installation
+How to find installed Features in windows 8.1
+ How to install SQL Server 2014 step by step
+How to Install SQL Server 2016 Step by Step
+How to Install Data Quality Services (DQS) in SQL Server
+How to Install and configure Master Data Services in SQL Server
+How to Install Data Quality Services Client
+How to Install SSIS in SQL Server 2014
+How to Create Integration Services Catalog
+How to install and configure Reporting services in SQL Server 2014
+How to Install SQL Server Data Tools ( SSDT )
+SQL Server /Windows Cluster
+How to Install SQL Server 2014 in Cluster mode
+How to Add a Disk to Existing Cluster?
+Cluster Pre-requisites Checklist
+Setting Up Service Accounts for Cluster Nodes
+How to Install Clustering Services on the First Node
+How to Install Clustering Services on the second Node
+How to add a new Node to Cluster
+How to verify Cluster Installation
+Configure Distributed Transaction Coordinator(DTC) in SQL Server Cluster
+Active Active and Active Passive Cluster Configuration Overview
+How to Install SQL Server in Active Passive Cluster
+How to Configure Active Active Cluster
+Checklist before we start SQL Server Installation for Cluster
+How to Configure Static IP Address for SQL Server Instance/s in Cluster
+Fail over the Main Node Resource to Another Node
+How to Set Preferred Node Order for Failover
+Cluster Configuration Manager Demo: Manage SQL Server 2012 Failover Cluster
+How to Install Service Packs, Hot Fixed and Patches in Cluster
+Verify/Validate Cluster configuration
+How to Evict a Node from Cluster
+How to Remove SQL Server Cluster instance from a Node
+How to configure and use Windows Cluster Aware Updating Role - Part 1
+How to configure and use Windows Cluster Aware Updating Role - Part 2
+How to Rename Windows Cluster
+
+
+Databases
+SQL Server Create Database Best Practices
+How to Create Database in SQL Server
+How to Attach and Detach Databases 
+How to Shrink Database And Database Files
+How to Take Database Offline and Bring it Online
+How to create Database Snapshot
+How to Script out an Entire Database in SQL Server
+How to change Compatibility level of a database and why do we do that?
+How to get Database out of Single User Mode in SQL Server?
+How to shrink MDF File of Database in SQL Server?
+How to Rename a Database in SQL Server?
+How to change database collation from Case Insensitive to Case Sensitive?
+How to Retrieve the suspect database ? 
+How to find out Owner of Any Database in SQL Server?
+How do I change the ownership of a database?
+How to avoid using C drive for Database Create in SQL Server?
+How to disable Auto growth of Database in SQL Server?
+How we can reduce Temp DB size with out restart Server?
+How to release unused space of the Tempdb to Operating System(OS)?
+How to update stats on all the databases on SQL Server or on Single Database in SQL Server?
+
+Security
+What is Login, User, Role and Principals in SQL Server?
+How to create Windows Authenticated Login?
+How to create SQL Authenticated Login?
+How to create Windows Authenticated group login?
+How to check Login Status in SQL Server?
+How to disable/enable Login in sql server?
+How to create a Database user?
+How to map a user to an existing Login?
+How to create User define Schema in a database?
+How to create database role?
+How to create an application Role?
+How to provide explicit permission to specific tables to a user in a database?
+How to provide execute permissions to a specific store procedure?
+How to provide View definition permission of database objects to a user?
+How to create server Role in SQL Server?
+How to create Credentials in SQL Server?
+How to see the SQL Server user password in SSMS, Can we script out SQL Server user password?
+How to assign default Schema to AD Group in SQL Server?
+
+Contained Database
+What is Contained Database and how to Create Contained Database
+How to Migrate or Move Contained Database to Different SQL Server and connect to Contained Database
+How to Create Contained Database User in SQL Server
+Backup Database
+What is Database Backup and How Many Types of Backups available in SQL Server
+How to manually (Adhoc) take Full backup of database in SQLServer?
+How to manually take Differential Backup of a database in SQL Server?
+How to manually take Transactional Log Backup of a database in SQL Server?
+How to manually Take Tail Log Transactional Log Backup of a database in SQL Server?
+How to create backup Maintenance Plan in SQL Server?
+How to Schedule databases backup in SQL Server?
+How to cleanup Old Backups in SQL Server?
+Restore Database
+How to restore a database from Full Backup in SQL Server?
+How to restore a database from Differential Backup in SQL Server?
+How to restore a database to specific time (Point in Time) in SQL Server?
+Cannot open backup device 'F:\foldername'. Operating system error 5(Access is denied.)
+How to turn a database status from "in recovery" to "online"?
+How to Restore / Rebuild / Recover System Databases
+How to Restore MSDB Database in SQL Server
+How to Restore Master DataBase in SQL Server
+How to Rebuild MSDB in SQL Server
+How to Rebuild Master Database in SQL Server Method1
+How to Rebuild Master and Other System Databases in SQL Server 
+How to Move TempDB Data and Log Files in SQL Server
+Overview of Model Database in SQL Server
+Server Level Auditing
+How to Create Server Audit Specifications in SQL Server?
+How to create server level Audit in SQL Server?
+How to create server level Trigger in SQL Server?
+How to create Policies in SQL Server?
+How to create Policy Conditions in SQL Server?
+How to create and use Facets in SQL Server?
+Data Collection and Management Data Warehouse
+How to configure Data collection in SQL Server?
+How to configure Management Data Warehouse in SQL Server?
+Introduction to Extended Events 
+What is Extended Events in SQL Server?
+How to create an Extended event in SQL Server?
+How to Enable and Disable Extended Events in SQL Server?
+SQL Server Configuration Manager
+Detailed overview of SQL Server Configuration Manager
+Replication
+What is replication, Types of replication and when to use each type
+Why do we use Replication, Provide couple scenarios
+ How to Configure Distribution in SQL Server Replication
+How to Create Snapshot Replication?
+How to Create Transactional Replication?
+How to create Merge Replication?
+When do we use snapshot replication
+What is re initializing means in replication
+What is Orphan replication And how would you cleanup replication
+Under what circumstances will you re initialize replication
+How the schema changes are handled in SQL Server Replication
+How would you add new tables in existing replication
+How would drop replicated database
+How will you truncate the replicated table
+Replication Error, can't connect to actual server, @@servername returns Null
+How to find out if Replicaiton is failed or broken
+How to setup Peer-to-Peer Transactional Replication?
+How to add Article in Peer-to-Peer Transactional Replication?
+How to create Merge Replication with Multiple Subscribers and Perform Diff Scenarios
+How to Change Sync Time for 60 Seconds to 0 Seconds in Merge Replication
+
+Resource Governor
+What is Resouce Governor in SQL Server?
+How to Create Resource Pool in Resource Governor of SQL Server?
+How to Create WorkLoad  Group in Resource Governor of SQL Server?
+How to create Classifier Function in Resource Governor?
+How to Enable and Disable Resource Governor in SQL Server?
+Mirroring
+How to setup Database Mirroring in SQL Server? 
+How to Stop and Start Database Mirroring Endpoints in SQL Server?
+How to Remove Database Mirroring in SQL Server
+Database Log Shipping
+How to Configure database Log Shipping in SQL Server?
+How to Remove Database Log Shipping in SQL Server?
+ 
+Linked Server
+How to Create Linked server in SQL Server
+SQL Server Agent
+Overview of SQL Server Agent Configuration?
+How to create Job using SQL Server Agent?
+Job Categories Overview in SQL Server Agent?
+How to create an alert in sql server?
+How to create an Operator in SQL SERVER?
+How to run SQL Server Agent jobs in Batch file?
+How to Run SQL Server Agent Job from Local or Remote SQL Server Agent Job
+How to Enable/Disable SQL Server Agent Job, How to Enable Job after some days automatically?
+How To Delete ERROR LOGS IN SQL SERVER?
+How to get the detail for the cause of the SQL Server Agent job failure?
+How to send email to multiple email accounts from SQL Server Agent Job if fails?
+How to find out which SQL Server Agent Jobs are running at the moment on SQL Server?
+Sql Server Proxies
+What is Proxy in SQL Server (Overview)
+How to create Operating System (cmdExec) proxy in SQL Server
+How to create SSIS Package Execution in SQL Server?
+How to create ActiveX Script Proxy in SQL Server?
+Configure Database Mail
+How to Setup Database Mail in SQL Server?
+How to setup the Email notification if any job got failed?
+SQL Server Profiler
+How to start SQL Profiler automatically after a SQL Server Service Restart
+
+Maintenance Plan
+How do I temporarily disable my maintenance plan?
+How to create Maintenance plan for Backups and delete old backup files in SQL Server?
+Built-in Tools
+How to connect to SQL Server from another computer?
+How to find out what configuration changed on sql server last hour?
+How can I connect the database from SQLCMD Tool?
+How to find if Database is in use?
+What is Dedicated Administration Connection ( DAC ) and What is use of DAC?
+How to Change Port and IP Address for SQL Server?
+How to save query results to text file from SSMS in SQL Server?
+Blocking Locking
+How to find blocking and deadlock in SQL Server?
+How to send Alter when a process is blocked in SQL Server
+Server Level Settings
+How can I reset Maximum number of concurrent connections in Sql server 2014?
+How much memory is allocated to SQL Server instance?
+How to rename SQL Server Instance Name?
+How to check CPU % Usage by SQL Server?
+How to check Port SQL Server is using?
+Migration
+Migration strategy for SQL Server 2008 to SQL Server 2012/ SQL Server 2014
+What is Difference between In place and Parallel Migration in SQL Server?
+Explain all the Steps or documents Or a checklist for Migration in SQL Server?
+Demo: In Place Migration of SQL Server 2012 to SQL Server 2014
+           a) In-Place Upgrade of SQL Server 2012 to SQL Server 2014 Part 1 
+                    - Installation of Upgrade Advisor 2014 and Upgrade Advisor Overview
+           b) In-Place Upgrade of SQL Server 2012 to SQL Server 2014 Part 2 
+                   - Upgrading SQL Server 2012 Engine
+                   - Upgrading SQL Server 2012 Management components
+     5. Demo: Migration for SQL Server 2008 to SQL Server 2012 by using ( Backup/Restore) Method 
+          a)  Upgrade of SQL Server 2008 R2 to SQL Server 2012 Part 1 
+                   - Upgrade checklist overview
+          b)  Upgrade of SQL Server 2008 R2 to SQL Server 2012 Part 2 
+                   - Identifying database
+                   - Backing up all source databases
+                   - Scripting out login
+                   - Scripting out Server Roles
+                   - Scripting out Backup devices
+                   - Scripting out Server Level Triggers
+                   - Scripting out Data Collection
+                   - Script out Linked Servers
+          c)  Upgrade of SQL Server 2008 R2 to SQL Server 2012 Part 3
+                   - Mirroring Information from the database
+                   - Script out All SQL Server Agent Jobs
+                   - Viewing DBMail information on the source
+                   - Scripting out Proxy and credentials
+                   - Scripting out Operator and Alerts
+                   - Scripting out SQL Server Configuration
+          d)  Upgrade of SQL Server 2008 R2 to SQL Server 2012 Part 4
+                   - Overview of Destination Checklist
+                   - Restoring Databases on Destination
+                   - Changing compatibility to SQL Server 2014
+          e)  Upgrade of SQL Server 2008 R2 to SQL Server 2012 Part 5
+                   - Transferring Logins (Executing Scripted Logins on destination server
+                   - Transferring Replication (Executing Source Replication on destination)
+                   - Transferring Linked servers (Executing Scripted Linked server)
+                   - Transferring Server Level Triggers (Executing Scripted Triggers on destination server)
+                   - Scripting out Operator and Alerts
+                   - Server Audit and Audit Specification script execution
+          f)  Upgrade of SQL Server 2008 R2 to SQL Server 2012 Part 6
+                   - Creating databases backup Maintenance plan
+     6. How do Migrate Logins from SQL Server 2008 to SQL Server 2014?
+     7. How to Migrate SQL Server Agent Jobs from SQL Server 2008 to SQL Server 2014?
+
+
+SQL Server Database Deployment
+What does "Deployment" means for SQL Server DBA?
+What are the best practices for SQL Server Deployment?
+How to Perform a SQL Server Deployment Step by Step
+How to use Team Foundation Server (TFS) and DeploymentDocument for Database Deployment
+
+
+AlwaysOn Availability Groups
+How to Setup/Configure AlwaysOn Availability Group in SQL Server 2014 Step by Step
+How to Resolve Availability Group Listner Errors
+Setup AlwaysOn Availability group when SQL Server instances are installed in Cluster mode Part1 ( 2 Node Scenario)
+Setup AlwaysOn Availability group when SQL Server instances are installed in Cluster mode Part2 ( 2 Node Scenario)
+AlwaysOn Availability Group on SQL Server Failover Instances  Installed in Cluster Mode ( 4 Node Scenario)
+How to provide Permissions to User on AlwaysOn Availability Group in SQL Server?
+How to Plan Backups with Always On Availability Groups in SQL Server
+AlwaysOn Availability Group Dashboard Introduction
+Setup Alerts for AlwaysOn Availability Group Failover in SQL Server
+How to Restore A database which is part of AlwaysOn Availability Group
+Patching Or Updating AlwaysOn Availability group Replicas in SQL Server Best Practices
+Patching or Updating Availability Group with SQL Server Failover Cluster Instance - Part 1
+Patching or Updating Availability Group with SQL Server Failover Cluster Instance - Part 2
+Patching or Updating Availability Group with SQL Server Failover Cluster Instance - Part 3
+Patching Or Updating SQL Server with multiple AlwaysOn Availability Groups
+Patching or Updating Availability Group with one Secondary
+How to Apply Windows Updates to Failover Clusters Hosting SQL Server AlwaysOn Availability Groups
+How to setup Replication on AlwaysOn Availability Groups in SQL Server Part1 Part2 
+Miscellaneous
+What are Synonyms and How to Create Synonyms in a Database of SQL Server - DBA Tutorial
+How to compare these two databases and find what is the difference between these two databases?
+How to Scripts Users with permissions from SQL Server Database?
+How to find out who has deleted the Login in SQL Server?
+How to find out who has modified or created object in SQL Server?
+How to access SQL Server Instance from the network?
+How to know the reason why sql server restarted.
+How to find when and who dropped my database?
+How to find if a server in a cluster is running on Primary node?
+How to check the size of SQL Error Log in SQL Server?
+How to automate Back up and Restore
+How to migrate the integration services (SSIS)
+How to send Alter When Storage Drives are 80% filles from SQL Server
+How to Drop login with all users from multiple database in SQL Server?
+How to Find Users and their AD Groups in SQL Server?
+How to Find Port Number of SQL Server instance by using SQL Server Management Studio?

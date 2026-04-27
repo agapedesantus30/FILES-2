@@ -1,0 +1,30 @@
+ORACLE
+DB2 (IBM)
+MS SQL SERVER
+MS ACCESS
+INGRES
+POSTGRESQL
+MySQL
+
+
+Production
+UAT
+DEV/QA
+Test
+
+FRONTEND APP(UI) ---- Connection STring (com via char) ---- BACKEND (DB)
+
+operations and systems dbas  infrastructure
+
+
+		Databases are usually connected to
+A website that is capturing registered users
+A client-tracking application for social service organizations
+A medical record system for a health care facility
+Your personal address book in your email client
+A collection of word-processed documents
+A system that issues airline reservations
+
+
+		How i stay up to date
+pluralsight.com

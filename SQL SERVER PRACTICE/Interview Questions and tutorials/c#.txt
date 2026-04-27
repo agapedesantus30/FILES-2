@@ -1,0 +1,63 @@
+
+File Operation
+C# - Delete files from a folder those are older than some number of days by using C Sharp
+C# - How to get Oldest file from a folder by using C Sharp
+C# - How to get the latest file from a folder by using C Sharp
+C# - How to copy all files in a folder to another folder in C Sharp
+C# - How to copy files and overwriting existing files if exists in a folder by using C Sharp
+C# - How to Move files from a folder to Another Folder in C Sharp
+C# - File.MoveTo Does not work - Cannot create a file when that file already exists. - C Sharp
+C# - How to move and rename files to another folder by adding datetime to file name by C Sharp
+C# - How to Copy files from a folder to another folder and add date-time to file names in C Sharp
+Import Files( CSV or Text ) To Database
+C# - How to get file Properties and insert into SQL Server table by using C Sharp
+C# - How to Import or Load Text file to SQL Server Table by using C Sharp
+C# - How to Import multiple text files to SQL Server Table by using C Sharp
+C# - Importing Files to SQL Server Table with Dynamic Columns by using C Sharp
+C# - How to create SQL Server Table dynamically from Flat file and Load data to Table in C Sharp
+C# - How to Load data to SQL Server Tables from flat files according to file names by using C Sharp
+C# - How to Import Multiple CSV Files to SQL Server from a Folder in C Sharp
+Export from Database to Files ( CSV or Text)
+C# - How to Export Data from SQL Server Table or View to Text File in C Sharp
+C# - How to Export Stored Procedure Results to Text File in C Sharp
+C# - How to write multiple CSV files to Single CVS File in C Sharp
+C# - How to Export all the tables from a database to flat files by using C Sharp
+C# - How to Export All tables of a database to Excel Files with Date-time in C#
+C# - How to Export large table data to multiple Excel Sheets on Single Excel file in C#
+Excel  to Files (CSV or Text)
+C#- How to convert each excel sheet to CSV file from Excel Files in C#
+C# -  How to create CSV file per Excel File and Load All Sheets from Excel File to it in C#
+Files (CSV To Text) To Excel
+How to Convert CSV or Text files to Excel file in C#
+C# - How to create Excel Sheet From CSV File and Keep appending data in Excel Sheet  in C#
+C# - How to Import Multiple CSV files into Excel file to separate Excel Sheets in C#
+C# - How to Import data from multiple CSV or Text files to an Excel sheet in C#
+Import To SQL Server Database from Excel
+C# - How to Import Excel Sheet to SQL Server Table in C#
+C# - How to Create Table per Excel File and Import all Sheet's Data Dynamically in C#
+C# - How to Read Excel Sheet Data after Skipping Rows and Load to SQL Server Table in C#
+C# - Import Excel Files with Single or  Multiple Sheets to SQL Server Tables according to Excel File Name Dynamically in C#
+C# - Import Data To Tables according to Excel Sheet Names from Excel Files dynamically in C#
+C# - How to create table for each of Excel Sheet Dynamically and Import Data in C#
+C# - Import Multiple Excel Files with Multiple Sheets to Single SQL Server Table in C#
+C# - How to get Excel file's information and import to SQL Server Table in C#
+C# - Import Only Matching Column's Data to SQL Server Table from Excel Files Dynamically in C#
+C# - Import Excel Sheet Data with Excel File Name and Sheet Name in SQL Server Table in C#
+C#- How to Read Excel  Cell value in C#
+Export to Excel from Database
+C# - How to export database tables to Excel File dynamically in C#
+C# - How to Export Stored Procedure Result Set to Excel file dynamically in C#
+C# - How to export Table or View Records to Excel file dynamically in C#
+Console Application
+C# - Why console window disappear immediately without display my output in C Sharp?
+C# - What is the difference between Console.Write and Console.WriteLine Methods in C Sharp
+
+Read / Write to Database
+C# - How to save SQL Query Results to variable in C# ( Scalar value returned by query)
+C# - How to use Variables into SqlCommand Statement & Insert into database table in C#
+
+String Operations
+C# - How to remove last character from string in C#
+C# - How to remove Extension from File Name in C#
+C# - How to remove last X Characters from a string in C#
+C# - How to remove Character from String in C#

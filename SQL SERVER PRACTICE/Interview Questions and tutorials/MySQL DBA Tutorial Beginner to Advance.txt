@@ -1,0 +1,96 @@
+Installation
+How to Install MySQL 8.0.13 on Windows Machine in Real time
+How to download and Install WorkBench for MySQL on Windows Machine
+How to install different versions of MySQL server on same Windows Machine
+How to Change MySQL Data directory location in Windows
+How to Uninstall MySQL from Windows Machine Step by Step
+How to Uninstall or Remove Multiple MySQL Servers from Windows Machine
+How to Remove or Uninstall MySQL WorkBench from Windows Machine
+How to Stop MySQL or Start MySQL Server on Windows Machine
+How to connect from windows command prompt to MySQL command line
+How to find Data Directory Location in MySQL on Windows Machine
+How to find the location of my.ini file for MySQL Server on Windows Machine
+How to find on which port MySQL Server running on Windows Machine
+How to Install MySQL 8.0 on Linux CentOS
+How to Install MySQL 8.0 on Linux RHEL
+How to uninstall or remove MySQL from Linux CentOS or RHEL
+Where to find my.cnf file in linux for MySQL Server 
+
+
+Workbench
+How to Connect to a MySQL Server Remotely with MySQL Workbench
+How to create new database with MySQL Workbench
+Check default character set / Collation of MySQL Server by using Workbench
+How to Import CSV file in MySQL Table by using MySQL Workbench
+How to export MySQL table data to JSON file by using MySQL Workbench
+How to Import JSON file to MySQL Table by using Workbench
+How to Export data to CSV file by using MySQL Workbench
+How to Make a copy of a MySQL Table in MySQL Server by using MySQL Workbench
+How to search data in single or multiple tables in MySQL Databases by MySQL Workbench
+Search or Filter tables with MySQL Workbench
+View all columns in a database in MySQL Workbench (Schema Inspector)
+How to get Information about TableRows,Size,Indexes,FK,Pk etc. in MySQL Workbench
+Change the Limit of Row Retrieved in MySQL Workbench
+How to run Multiple SQL Queries in MySQL Workbench
+How to export Grid Results to CSV, JSON, Excel, HTML or other formats in MYSQL Workbench
+How to search for a specific column name in all the tables in MySQL Workbench 
+How to connect to Multiple MySQL Servers by using MySQL Workbench
+MySQL error code: 1175 during UPDATE in MySQL Workbench
+How to create user and provide permission by using MySQL Workbench
+How to generate the whole database script in MySQL Workbench
+How to generate database scripts with Data by using MySQL Workbench
+Export tables with MySQL Workbench with INSERT statements
+How to import .sql file to MySQL by using MySQL Workbench 
+Importing large sql files into MySQL without loading in MySQL Workbench
+How to Change Query Font, Grid Result Font etc. in MySQL Workbench
+How to create a table by using MySQL Workbench
+How to copy database from one MySQL Instance to another by using MySQL Workbench
+Move your data from One MySQL Server to Another (Schema Tranfer Wizard) 
+How to get a table creation script in MySQL Workbench
+How to Manage MySQL Connections into Group in MySQL Workbench
+How to use Performance Reports in MySQL Workbench
+How to check Server Status by using MySQL Workbench
+How to check Current Connections to MySQL Server by using Workbench
+How to Export each Database Table to separate SQL file with Data in MySQL Workbench
+How to check MySql workbench query history such as Alert, Select, Delete etc.
+How to Import Multiple SQL files to Database by using Data Import / Restore in MySQL Workbench
+Get the database model (Reverse Engineer) from a MySQL database in Workbench
+How to Compare two Databases using MySQL Workbench
+How to synchronize two databases by using MySQL Workbench
+Exporting query results in MySQL Workbench beyond 1000 records
+How to change MySQL Workbench Themes
+How do I quickly rename a MySQL database (change schema name)
+Logging
+MySQL Error log Configuration for MySQL on Windows & MySQL on Linux
+How to Enable Binary Logging for MySQL Server on Windows and Linux Machine
+How to Enable Genera Query Logging in MySQL Windows & Linux
+How to Enable Slow Query Logging for MySQL Server on Windows and Linux Machine
+How to use perror to get details about Error in MySQL
+
+Backup / Restore
+How to take a backup of a database by using mysqldump in MySQL Server
+Backup all MySQL Database by using mysqldump in separate files in TimeStamp directory
+How to backup of specific databases from MySQL Server by using mysqldump
+How to take backup of single table from a database on MySQL Server by using mysqldump
+Backup each table to separate file for MySQL Databases by using mysqldump
+How to backup all MySQL databases to single backup file by using mysqldump
+How to Restore Database from backup in MySQL Server
+How to restore single table from full database backup in MySQL Server
+How to restore database from zipped backups in MySQL Server by using mysqldump
+How to restore single database from completed MySQL database dump
+
+User Management
+How to create user in MySQL Server 
+How to Drop User in MySQL Server
+How to Grant all permissions to user in MySQL Server
+How to provide full permissions on a database to user in MySQL Server
+How to provide Select permission to limited tables in MySQL Database
+How to Grant Update, Insert and Delete Permissions on a Table in MySQL Database
+Grant permission to individual fields ( Columns) in MySQL
+How to give permission to User to Grant permissions to Other Users in MySQL Server
+How to Rename user in MySQL Server
+How to Revoke Permissions for user in MySQL server
+How to Change Password of a user in MySQL Server
+How to change Root password in MySQL Server installed on Windows and Linux
+
+Replication

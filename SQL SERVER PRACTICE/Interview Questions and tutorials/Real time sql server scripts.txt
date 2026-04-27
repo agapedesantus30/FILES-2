@@ -1,0 +1,131 @@
+Data Analysis / Data Validation / Data Cleansing Scripts
+How to Search in all Columns for all tables in a database for Date Value in SQL Server
+How to Find Percentage of Null Values in every Column of all the Tables in SQL Server Database 
+How to Find Percentage of Empty or Blank Values in every Column of all the Tables in SQL Server Database
+How to Get Row Count Of All The Tables In SQL Server Database
+How to search for a String in all Columns in all tables in SQL Server Database
+How to find and Replace Text in all the columns in all the tables in SQL server Database
+How to find values with Leading or Trailing Spaces in SQL Server Table 
+How to Trim Leading and Trailing spaces for all the values in all the Columns in all the Tables in a SQL Server Database
+How to Find Duplicate Records in All the Tables in SQL Server Database
+How to Find & Delete Duplicate Records on All Tables in SQL Server Database
+How to Generate Select all Columns with or Without Top X Rows From All Tables Query Dynamically in SQL Server
+Concatenate SQL Server Columns for each Table Query Dynamically in SQL Server 
+How to List all Missing Identity Values for all Tables in SQL Server Database
+How to Find Max and Min Values for all the columns for all the tables in SQL Server Database
+How to get Record Count for all the tables in SQL Server Instance in SQL Server - SQL Server Tutorial
+How to get Maximum and Minimum Length for each Column Values for all the tables in SQL Server Database
+How to check if table exists in all databases in SQL Server
+Server Level
+
+How to change SQL Server Authentication Mode by using TSQL Query 
+How to get Databases List from all the SQL Server Instances
+
+Databases
+Changes to the state or options of database '' cannot be made at this time. The database is in single-user mode, and a user is currently connected to it.-Resolved
+How to put All User Databases to Single User Mode in SQL Server
+How to Set databases from SINGLE USER mode to MULTI USER Mode in SQL Server
+Generate Script To Detach All User Databases on SQL Server
+Get List of All Databases from SQL Server Instance
+Generate Script To Bring All User Databases Online in SQL Server
+Generate Script To Bring All User Databases Offline in SQL Server
+Generate Full Backup Scripts for all User Database in SQL Server
+How to backup all the databases from SQL Server Instance
+How to drop database in Single User Mode in SQL Server
+How to rename all the databases in SQL Server Instance
+How to remove String from Database Name in SQL Server ( Rename Database) 
+How To Get The Size of All Databases on SQL Server
+How To Change Recovery Mode To Simple For All Databases on SQL Server
+How to save result set of RESTORE FILELISTONLY in temp table in SQL Server
+How To Change Recovery Mode To Simple For All Databases on SQL Server
+How to take Transaction Log Backups for All SQL Server Databases in SQL Server
+How to take Differential backup of all the Databases on SQL Server Instance
+How to Drop or delete all User Databases on SQL Server Instance
+How to get Information about your Backups and Save into SQL Server Table
+How to Restore Databases from full backup files from a folder to SQL Server Instance
+How to recover databases which are in Restore status on SQL Server Instance
+How to Create 100's of Sample Databases by Script in SQL Server
+How to Change Recovery Model of Databases to Bulk_Logged in SQL Server
+How to Change Recovery Model to Full for all User Databases in SQL Server
+Backup Multiple Databases from Local and Linked Server (Compression Enabled) and Send Email Notification with time taken for each backup
+
+
+SQL Server Agent Jobs
+How to get Job Names with Owner Names in SQL Server
+Change Job owner for all SQL Server Agent Jobs
+How to Disable/Enable All SQL Server Agent Jobs in SQL Server
+Get SQL Server Agent Jobs List with Schedule in SQL Server
+How To Find The SQL Server Agent Job Names and Steps Where SSIS Package Is Used
+How to Find out which SQL Server Agent Jobs are Running at the moment
+How to Search Text in Steps of SQL Server Agent Jobs
+SQL Script
+Generate Scripts for Stored Procedures for Slowly Changing Dimensions Type 1 (TSQL Merge Statement Load SCD1)
+How to Load Slowly Changing Dimension Type 2 ( SCD2) By Using TSQL Merge Statement
+ Remove Database Name Or Some Text From Stored Procedures [ Cursor Example ]
+Alter Table Add Multiple Columns SQL Server
+How To Check When Object ( Table, Stored Procedure, Trigger etc) was Modified Last Time
+How To Check If Column Exists for SQL Table/ View in Database
+How to Find duplicate records in a SQL Server Table
+How To Delete All Duplicate Records From a SQL Server Table
+How To Keep One Record From Duplicate Records and Remove All Of Others From a SQL Server Table
+How To Find The Size Of a SQL Server Table
+How to Execute Large SQL Script File In SQL Server
+What is @@RowCount in SQL Server
+How To Execute Stored Procedure In View in SQL Server
+How to Get Row Count Of All The Tables In SQL Server Database
+How To Find Version of SQL Server
+How To Loop Through Users From a SQL Server Table And Send Email
+How To Change Recovery Mode To Simple For All Databases on SQL Server
+How To Send Email From SQL Server In HTML Format
+Truncate all the tables in a Database in SQL Server
+How to Get List of All Databases from SQL Server
+How to Disable/Enable DDL and DML Triggers in SQL Server
+How to Refresh View Definition by using sp_refreshview in SQL Server
+How to Disable/Enable All SQL Server Agent Jobs in SQL Server
+How to find if Table/View is used in Stored Procedure in SQL Server
+Get SQL Server Agent Jobs List with Schedule in SQL Server
+How to Get all Triggers with Table Names in SQL Server
+How to Drop or Delete all Triggers from a Database in SQL Server
+How to Create Trigger on Temp Tables and System Tables in SQL Server
+How to get list of All Disabled/Enabled Triggers in SQL Server Database
+How to Disable All the Triggers in SQL Server Database
+How to Enable Multiple Triggers in SQL Server Database
+How to get Decimal/Float Output from Integers Division in SQL Server
+Get all Tables with Column Names and Data types from SQL Server Database
+How to find String in All Stored Procedures in SQL Server Database
+How to get Table Names with Record Count in SQL Server Database
+How to Search Text in Steps of SQL Server Agent Jobs
+What are the different ways to set value of a Variable in TSQL
+How to Delete huge data from a SQL Server Table in batches
+How to Change Database Name inside Stored Procedure in SQL Server
+How to Determine if value is Numeric by using ISNumeric and Try_Convert Function
+How to Concatenate String and Integer Values in SQL Server
+How to Import Image File from File System to SQL Server Table
+How to Read Uncommitted Rows from SQL Server Table by using WITH (NOLOCK) Hint
+How to Add a Column with Values to Existing SQL Server Table
+How to Find Object ( Table.View,Stored Procedure,Function etc.) in All the Database in SQL Server 
+Generate Full Backup Scripts for all User Database in SQL Server
+Generate Scripts for Transactional Log Backups for All the User Databases on SQL Server
+How to find if Table/View is used in Stored Procedure in SQL Server
+How To Check If Column Exists for SQL Table/ View in Database
+How To Find Objects ( Stored Procedures, Views etc) In SQL Server Which Are Using Cross Database or Cross Server Queries
+How to find SQL Server Port number using T-SQL
+The database principal owns a schema in the database, and cannot be dropped. (Microsoft SQL Server, Error: 15138)
+How to copy Some Tables or all Tables to Destination Database in SQL Server
+How to Compare two tables for Column Names in SQL Server
+How to Import or load Multiple XML files to SQL Server Table
+How to Import or load all the picture/image files from a folder to SQL Server Table by using TSQL
+How to Run Stored Procedure Against Multiple Databases in SQL Server
+
+Transparent Data Encryption (TDE)
+
+ How To Enable Transparent Data Encryption (TDE) On a SQL Server Database Step by Step
+Backup All TDE Certificates For All Databases ON Sql Server
+How To Disable Transparent Data Encryption (TDE) On SQL Server Database
+How To Disable TDE on a Database and Restore To Another Server
+
+
+
+
+
+

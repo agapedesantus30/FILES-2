@@ -1,0 +1,467 @@
+InComm, Inc. provides prepaid and payment solutions in the United States and internationally. 
+It offers Cashtie technology that allows consumers to pay bills or send money transfers 
+securely with cash; InComm Product Control, which enables retailers to track and authorize
+the sale and return of their products; and MyVanilla, a reloadable, prepaid debit card that 
+features text and email alerts, direct deposit, and money transfers. Its technology helps to 
+form a new brand of commerce that includes gift cards, prepaid wireless products, reloadable 
+debit cards, digital music downloads, and various payment solutions.
+
+Slalom Consulting. Slalom is a business and technology consulting firm he
+adquartered in Seattle, Washington. The company, which is a division of 
+Slalom, LLC, employs more than 6,500 people across 27 offices in North 
+America and London.
+
+I want to start by saying thankyou for taking out the time today to talk
+to me as you know i am a current employee of knight and associates part 
+of a group of DBAs in our various environments managing 90 servers with 
+database size ranging from 5gb to 1tb
+
+*When started at a company read documentation and loged into servers
+
+	< 50 servers/instances - small environment
+	51 - 150 - mid sized environment 
+	> 150 - large 
+
+*Database size range 5GB to 1TB 
+
+clustered index points to the exact records
+Non clustered index points to the range
+
+			WHAT I WAS INCHARGE OF
+Database design and Architecture
+Database implementation
+Database Support and Maintenance
+Database growth and Scaling
+Database Security
+Database Performance
+Database availability to end users
+
+			Day to Day Tasks
+*Verify That all schedules jobs have run succesfully
+- Maintenance jobs (backup jobs, various jobs, index maintenance 
+(rebuild & re-organize), 
+
+*Whats on my ticket queue (ServiceNOW, JIRA, ServiceDesk, Remedy)
+module change, 
+break fix (failed jobs, performance issues, 
+
+* Verify all sql server intances are up and databases are online
+validate storage of database data on hard disk using
+(DBCC) CHECKDB
+
+* Pro-actively monitor instances and database to ensure secure services 
+with minimum downtime. 
+
+* Inspect sql server error logs for unusual events
+Done by reviewing error logs sp_readerrorlog
+
+*Monitor disk space
+make sure disk has atleast 15% free space
+investigate disk space fluctuation (sometimes caused by abnormal growth 
+of log files)
+
+* Review database size and growth settings
+sys.master_files (status of all files for all
+databases, including those that are offline)
+Assigning a certain amount of data to your initial size & auto growth can
+help with your database performance
+(what are we storing, how is it going to grow, what will it do) 
+
+* making sure right users have the right level of authentication
+
+* Attend my Meetings (weekly team meetings, CAB meeting) Change Advisory
+Board
+
+*Support development team, analysis team, and reporting team
+
+
+				PROJECTS 
+*installation
+*upgrades
+*patching 
+*database migration
+
+				BACKUP
+What stategy do we use for backups
+*How much data loss can we accmodate
+*How much space do we have available
+*Retention
+
+Recovery model depends on your disaster recovery
+
+Backup Strategy
+	Budget
+	Do i need to backup database
+	How much data loss is acceptable
+	Database size
+	Available storage
+	How long to keep backups
+
+Backup Startegy
+In my team we performed full backupz and differential backups because
+that's what was needed for the requirements we had to reach
+make sure we abide by our agreed SLA
+
+Scenaro
+	REQUIREMENTS
+	(500gb - total db size
+	backup storage avail - 1.5tb
+	Acceptable data loss - 1hour)
+	Full backup daily- 12am
+	diff - hourly
+
+	backup retention - 1 day
+
+To see estimated time for previous backups
+	SELECT TOP 100 backup_size, backup_start_date, backup_finish_date
+	FROM msdb.dbo.backupset
+	WHERE type = 'D'
+	ORDER BY backup_set_id
+
+putting a database in emergency mode
+	ALTER DATABASE dbName SET Emergency
+
+if am not sure if a a database was backed up i run msdb.dbo.backupset to 
+see when databases were last backed up
+
+			THIRD PARTY TOOLS FOR MONITORING
+*Idera SQL Diagnostic Manager
+health, performance availiability problems
+real time monitoring
+data collected stored in repository
+options == qucik at a glance, sql dmtoday (active alerts), alert history
+you can see list of bad performing quries.(you define it)
+arrange servers in view gives quick overview of instances
+
+*Red-Gate SQL Monitor
+*SentryOne SQL Sentry
+
+			SYSTEM MONITORING and PERFORMANCE TUNING
+	SYSTEM MONITORING
+PERFORMANCE MONITOR (counter)
+TASK MANAGER
+
+	DATABASE MONITORING
+Sql server logs
+sp_who2 or Activity monitor
+PROFILER (trace)
+DMV
+DBCC
+
+	
+				SYSTEM TOOLS
+- SYSTEM RESOURCES (MEMORY(RAM), Processor(CPU), STORAGE, NETWORK) RDP INTO SERVER
+	How do i look at these resources
+  PERFORMANCE MONITOR (i look at my counters )
+•	% Processor time
+•	Pages/sec
+•	Buffer cache hit ratio
+•	Cache hit ratio
+•	Average disk queue length
+
+  TASK MANAGER (CPU Info, memory info, disk info, network info)
+  EVENT VIEWER (i look at my WINDOWS LOGS, errors and warnings)
+
+
+			TROUBLE SHOOTING SLOW RUNNING QUERIES
+DATABASE
+- connect to sql server: db engine 
+  sql server services are on?
+  
+- SP_WHO2 OR ACTIVITY MONITOR: WHATS RUNNING NOW 
+-  BLOCKING IDENTIFY TROUBLESOME PROCESSES CPU TIME, DISK IO, CHECK 
+   LAST_BATCH(if a process has been running for more than 2 days
+   you need to collaborate with the user running the query and see why 
+   its taking so long) YOU CAN USE CUSTOM REPORTS 
+   DBCC INPUTBUFFER (SPID#) to see the query
+
+- ANALYZE QUERY 
+  A1. AVOID AGGREGATE FUNCTIONS IN WHERE CLAUSE, WILCARDS ARE PROBLEMATIC 
+  A. CHECK EXECUTION PLAN  (ESTIMATED AND ACTUAL)
+     LOOK FOR BOTTLENECKS WITHIN THE SCRIPT 
+     MISSING INDEXES 
+     EXPENSIVE PORTIONS  OF CODE
+     INDEX SCAN VS INDEX SEEK (INCLUDE MISSING COLUMN) 
+	ESTIMATED IO, OPERATOR, SUBTREE AND CPU COST
+
+ B. ANALYZE QUERY USING DATABASE ENGINE TUNING ADVISOR to see if my query
+    requires an index to perform properly
+
+ C. TRACE EVENT USING PROFILER - RUN FROM REMOTE SERVER
+
+			TROUBLESOOTING SQL SERVER
+* SQL SERVER LOGS
+* DMV TO CHECK SYSTEM HEALTH AND PERFORMANCE
+sys.dm_exec_cached_plans - Cached query plans available to SQL Server
+sys.dm_exec_sessions - Sessions in SQL Server
+sys.dm_exec_connections - Connections to SQL Server
+sys.dm_db_index_usage_stats - Seeks, scans, lookups per index
+sys.dm_io_virtual_file_stats - IO statistics for databases and log files
+
+
+		DBCC
+They are use for maintenance of database, tables, filegroups, indexes
+Database console commands or DBCC are T-SQL Commands grouped in to four 
+categories, Maintenance, Miscellaneous, informational and validation.
+DBCC commands are used to see running processes on your server
+	DBCC CHECKCATALOG
+It is used to perform consistency check for a table/catalog for a 
+particular database.
+	DBCC CHECKALLOC
+It is used to check page usage and allocation of a database.
+	DBCC CHECKTABLE(tablename)
+It is used to verify data page integrity, page offsets, data page links,
+page pointers, index pointers, index sort order for a specified table.
+	DBCC SQLPERF(logspace)
+Displays T-log size and space used and for all databases.
+	DBCC SHOWFILESTATS
+Display Extent information for a database.
+	DBCC CHECKIDENT(tablename)
+It is used to check identity information or to return current identity 
+value for a particular table.
+	DBCC TRACEOFF
+It is used to disable tracing
+	DBCC TRACEON
+It is used to enable tracing.
+	DBCC SHRINKDATABASE(databasename)
+It is used to shrink data and log files for a particular database. It 
+release the free space to OS.
+	DBCC SHRINKFILE(file_id)
+It is used to shrink individual database files.
+	DBCC FREEPROCCACHE 
+command to clear the procedure cache so new plans can be built using the 
+updated statistics.
+
+
+      HIGH AVAILABILITY
+	Object Level
+*Replication (Publisher and Subcriber (Distributer helps move from P to S)) 
+(snapshot--Transanctional--merge--peer to peer)
+
+	Database level
+*Transanction Log-Shipping (Primary and Secondary) (Monitor) (Full and Bulk-logged) 
+process = (Backup, copy, restore) facilitated by sql agent
+*Mirroring == (full recovery) (Principal and Mirror) optional (Witness== auto switching) 
+(asynchronous--high performance--finishes) & (synchronous--high safety -- in the process)
+(1 to 1) (no system database) (port == 5022) (Real Time) (enterprise or standard)
+
+(mirroring is more stable than logshipping)
+
+	Server level
+*Failover Cluster (Active Nodes==active transaction and Passive Nodes==stanby)                 auto-failover
+(data files in shared storage)(active node and passive node access same storage)
+ (No latency) (up to 16 nodes) (applications interact with cluster)
+(QUORUM == cluster configuration are stored)
+(windows cluster and sql server cluster)
+*Always On Availability Group (Primary Replica, Listerner(optional) and Secondary Replica)         auto-failover
+(Secondary replicas went from 4(2012) to 8(2014)) (needs windows cluster)
+(SYN & ASYN of mirroring) (1 to many) (select databsae stored in aviliability group)
+(seconday replica == read only) 
+
+
+FAILOVER == ROLE SWITCHING
+Latency == delay
+
+	TROBLESHOOTING HA
+replication monitor / view synchronization status
+Database mirroring monitor
+failover cluster manager
+
+				Security
+WHO HAS ACESS AND HOW MUCH ACCESS DO THEY HAVE
+*I assigned server roles
+* Bulkadmin:Administer BCP and Bulk Insert operations 
+• Dbcreator: Create databases 
+• Diskadmin: Manage disk resources 
+• Processadmin: Manage connections and start or pause an instance 
+• Securityadmin: Create, alter, and drop logins, but can’t change passwords 
+• Serveradmin: Perform the same actions as diskadmin and processadmin, plus manage endpoints, 
+change instance settings, and shut down the instance 
+• Setupadmin: Manage linked servers 
+• Sysadmin: Perform any action within the instance. Members cannot be prevented from 
+accessing any object or performing any action. 
+ 
+*i assigned databse roles
+• db_accessadmin Add or remove users in the database 
+• db_backupoperator Back up the database but cannot restore a database or view 
+any information in the database 
+• db_datareader Issue SELECT against all tables, views, and functions within the database 
+• db_datawriter Issue INSERT, UPDATE, DELETE, and MERGE against all tables within the database. 
+Members of this role must also be members of the db_datareader role.  
+• db_ddladmin Execute data definition language (DDL) statements 
+• db_denydatareader Prevent SELECT against all tables, views, and functions within the database 
+• db_denydatawriter Prevent INSERT, UPDATE, DELETE, and MERGE against all tables within the database 
+• db_owner Owner of the database that has full control over the database and all objects contained 
+within the database 
+• db_securityadmin Manage the membership of roles and associated permissions, but cannot manage membership
+ for the db_owner role 
+• public Default group in every database that all users belong to 
+
+				MIGRATION
+*Kinds of upgrades i did
+	Inplace upgrade
+	Backup and Restore
+	Attach and Detach
+	Differential Restore for larger databases
+	Side by side upgrade (without High Availability)
+	Rolling upgrade (with High Availability)
+
+*Before an upgrade
+	Backup all databases
+	Script all sql server replication (if Applicbble)
+	Script all the logins/users (including database users)
+	Script all the linked servers (if applicable)
+	Script database mail profiles
+
+				T-SQL
+			MOST COMPLEX QUERY YOU’VE WRITTEN
+The purpose of this was to see if adding functionality to an existing 
+trigger improves performance or if it's better to create a new SQL Server
+trigger
+So I ran a query to compare performance and resources usage between the 
+two scenarios 
+--First I created 3 tables with the same schema:
+create table Table_1
+(Col_1 int identity (1,1) PRIMARY KEY,
+ Col_2 varchar(10) NOT NULL,
+ Col_3 datetime NOT NULL default getdate())
+go
+select convert(int,Col_1) as Col_1, -- I use the convert to eliminate the 
+                                                      Identity property.
+         Col_2, Col_3 into Table_2 
+from Table_1
+go
+select convert(int,Col_1) as Col_1, Col_2, Col_3 
+into Table_3 
+from Table_1
+go
+
+Then I wrote a test script to run 
+I ran my test script six times for each case -- three times cleaning SQL 
+Server memory and three times without cleaning it
+The averages for CPU, reads, writes and duration were very close for all
+options
+
+-- Truncate 3 tables
+truncate table Table_1
+truncate table Table_2
+truncate table Table_3
+go
+-- Clean SQL SERVER memory:
+dbcc dropcleanbuffers
+go
+-- Run 10000 inserts
+declare @i int
+set @i = 1
+while @i <= 10000
+begin
+ insert into Table_1 (Col_2) values(convert(varchar(10),@i))
+ set @i = @i + 1
+end
+go
+-- Create another table to hold the 10000 rows:
+Select * into Table_4 from Table_1
+go
+-- Truncate and clean memory again:
+truncate table Table_1
+truncate table Table_2
+truncate table Table_3
+go
+dbcc dropcleanbuffers
+go
+-- Run 10000 inserts at once:
+insert into Table_1 (Col_2, Col_3) 
+select Col_2, Col_1
+from Table_4
+order by Col_1
+Go
+Case 1: Create one trigger
+
+-- Create one trigger with two inserts:
+create trigger trg_I_Table_1 
+ON Table_1 
+FOR INSERT
+as
+insert into Table_2 (Col_1, Col_2, Col_3) select Col_1, Col_2, Col_3 
+from inserted
+insert into Table_3 (Col_1, Col_2, Col_3) select Col_1, Col_2, Col_3 
+from inserted
+go
+Case 2: Create two triggers
+
+-- Create two triggers – one with each command:
+create trigger trg1_I_Table_1
+ON Table_1 
+FOR INSERT
+as
+insert into Table_2 (Col_1, Col_2, Col_3) select Col_1, Col_2, Col_3 
+from inserted
+go
+create trigger trg2_I_Table_1
+ON Table_1 
+FOR INSERT
+as
+insert into Table_3 (Col_1, Col_2, Col_3) select Col_1, Col_2, Col_3 
+from inserted
+go
+
+	TSQL JOIN vs UNION
+a join is used to combine columns from different tables, the union is 
+used to combine rows
+
+	MERGE statement used in SQL? 
+To help with performance because it is a combination INSERT UPDATE AND 
+DELETE performing these scripts over and over can slow performance
+Write a query to illustrate the use of MERGE
+MERGE INTO bonuses D
+   USING (SELECT employee_id, salary, department_id FROM employees
+   WHERE department_id = 80) S
+   ON (D.employee_id = S.employee_id)
+   WHEN MATCHED THEN UPDATE SET D.bonus = D.bonus + S.salary*.01
+     DELETE WHERE (S.salary > 8000)
+   WHEN NOT MATCHED THEN INSERT (D.employee_id, D.bonus)
+     VALUES (S.employee_id, S.salary*0.1)
+     WHERE (S.salary <= 8000);
+
+	Index key column 
+This is the column used in the index, and used by the optimizer to 
+decide which  of the index is applicable. It's also used by
+the execution engine to fulfill the WHERE part of the query. This is 
+equivalent to the stuff in the back of a book. It is used for the SELECT
+part of the query if the column is needed.
+
+	Included column 
+This is added to the index, not used by the optimizer or execution engine
+in finding the rows or joining tables. It can only be used by the SELECT
+part of the query to return the data.
+
+There is no point in having a key column included separately. It's 
+already in the index as a key column and if it were INCLUDED, you would 
+be storing it twice. I'm not positive that SQL would do this and I would
+hope the engine would be smart enough to not duplicate it.
+
+	TEMPDB 
+You need more than one tempdb DATA file
+Have just one tempdb TRANSACTION log file
+Put tempdb on a fast disk (for performance)
+Don’t let tempdb and user datafiles share a disk
+Have tempdb files grow the right way
+
+	BACKUP PROBLEMS
+Drive Space
+Transaction Log is full
+Only have Differential Backups available
+Breaking the backup chain
+File backups not showing
+
+
+		find out who dropped a database
+SELECT 
+Operation,
+SUSER_SNAME([Transaction SID]) As UserName,
+[Transaction Name],
+[Begin Time],
+[SPID],
+Description
+FROM fn_dblog (NULL, NULL)
+WHERE [Transaction Name] = 'dbdestroy'

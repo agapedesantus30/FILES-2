@@ -1,0 +1,14 @@
+
+Database Migration
+Moving database from one location (server) to another. likely older box to newer
+older operating system to newer OS, Older version of SQL to new version of SQL
+
+- new server (cluster or standalone) OS build by Windows team 
+- installing SQL (newer version) on new server (cluster or standalone)
+- Determine what approach will I use to move data
+  (backup & restore, transaction-log shipping)
+- Script out your jobs and logins from old server
+- Run scripts to create jobs and logins in new server
+- Application team point application to new database
+
+ 

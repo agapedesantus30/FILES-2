@@ -1,0 +1,297 @@
+The most recent service pack & most recent cummulative update
+New installation is called an INSTANCE
+computer built to serve a purpose is a SERVER
+Analysis and Reporting services
+Installation guide
+what drive are installations done on
+Port Number SQL 1433
+Cordinate with your team (developer, boses) when performing a patch
+msdb.dbo.backupset to see when databases were last backed up
+The 4 system databases have an additional System databases _Distribution _Resource _Report server _Report Server temp
+Filegroup when doing Table Partitioning
+Assigning a certain amount of data to your initial size & auto growth can help with your database performance
+(what are we storing, how is it going to grow, what will it do)
+AUTO SHRINK ALWAYS FALSE IN PRODUCTION
+AUTO STATS TOO DO MANUALLY AT NIGHT
+
+
+
+inplace upgrade and rolling upgrade
+
+The RECOVERY MODEL defines the behaviour of your transaction log files
+
+FULL SIMPLY BULK_LOGGED
+Simply == truncates on after each transanction
+*FULL BACKUP
+*DIFFERENTIAL BACKUP
+
+Full == logged indefinitely (can perform point in time restore)
+*FULL BACKUP
+*DIFFERENTIAL BACKUP
+*TRANSANCTION LOG BACKUP
+
+Bulk_logged == Logs heavy transanctions(index maintenance)
+*FULL BACKUP
+*DIFFERENTIAL BACKUP
+*TRANSANCTION LOG BACKUP
+
+Full backup backs up everything, 
+Diffretial after full backup because they always take from the full backup
+diff reducs no of files you have when backing up, 
+Transanction log backups logs, they can be backed up between full and 
+differential tlogs, a sequencial chain
+
+when there is a lot of indexes running, DELETE UPDATE INSERT become a 
+problem because they are touching every index (affecting performance)
+MERGE end with semi-colons
+disaster recovery
+LSN log sequence number
+
+What stategy do we use for backups
+*How much data loss can we accmodate
+*How much space do we have available
+*Retention 
+
+
+Configure Mail
+*smtp.gmail.com
+*587
+
+READ UP ON INDEXES!!!!
+*Reorganie index >5 and <=30
+*Rebuild index >30
+
+FOR QUERIES WE HAVE DML DDL DCL TCL
+
+			AUTO GROWTH
+* A year worth of initial size so as not hault production transanction when
+going for the auto growth
+
+* don't do percentages use mg
+* go unlimited
+learn to measure transactions
+
+      HIGH AVAILABILITY
+	Object Level
+*Replication (Publisher and Subcriber (Distributer helps move from P to S)) 
+(snapshot--Transanctional--merge--peer to peer)
+
+	Database level
+*Transanction Log-Shipping (Primary and Secondary) (Monitor) (Full and Bulk-logged) 
+process = (Backup, copy, restore) facilitated by sql agent
+*Mirroring == (full recovery) (Principal and Mirror) optional (Witness== auto switching) 
+(asynchronous--high performance--finishes) & (synchronous--high safety -- in the process)
+(1 to 1) (no system database) (port == 5022) (Real Time) (enterprise or standard)
+
+(mirroring is more stable than logshipping)
+
+	Server level
+*Failover Cluster (Active Nodes==active transaction and Passive Nodes==stanby)                 auto-failover
+(data files in shared storage)(active node and passive node access same storage)
+ (No latency) (up to 16 nodes) (applications interact with cluster)
+(QUORUM == cluster configuration are stored)
+(windows cluster and sql server cluster)
+*Always On Availability Group (Primary Replica, Listerner(optional) and Secondary Replica)         auto-failover
+(Secondary replicas went from 4(2012) to 8(2014)) (needs windows cluster)
+(SYN & ASYN of mirroring) (1 to many) (select databsae stored in aviliability group)
+(seconday replica == read only) 
+
+
+FAILOVER == ROLE SWITCHING
+Latency == delay
+
+	TROBLESHOOTING HA
+replication monitor / view synchronization status
+Database mirroring monitor
+
+
+				MIGRATION
+STRATEGY
+*Inplace upgrade(involves Same server, everything backedup incease of rollback)
+*parrellel upgrade (involves Multiple server, everything backedup incease of 
+rollback, system database backup won't work)
+
+*Before an upgrade
+	Backup all databases (user database) 
+	Script all sql server replication (if Applicbble)
+	Script all the logins/users (including database users)
+	Script all the linked servers (if applicable)
+	Script database mail profiles
+
+				MONITORING
+SYSTEM MONITORING
+PERFORMANCE MONITOR (counter)
+TASK MANAGER
+perfmon (counter)
+
+DATABASE MONITORING
+PROFILER (trace)
+Sql server logs
+Activity monitor
+profiller (trace)
+DMV
+DBCC
+sp_who2
+				PERFORMANCE TUNING
+basic system checks and management studio checks
+	 
+- SYSTEM RESOURCES (MEMORY, CPU, STORAGE, NETWORK) 
+  RDP INTO SERVER - CHECK TASK MGR, PERFMON, EVENT VIEWER (WINDOWS LOGS)
+- connect to sql server: db engine 
+  sql server services are on?
+- SP_WHO2: WHATS RUNNING NOW 
+  BLOCKING, HIGH CPU UTILIZATION ETC
+-  IDENTIFY TROUBLESOME PROCESSES CPU TIME, DISK IO, YOU CAN USE CUSTOM REPORTS 
+   DBCC INPUTBUFFER (SPID#)
+
+
+- ANALYZE QUERY 
+  A1. AVOID AGGREGATE FUNCTIONS IN WHERE CLAUSE, WILCARDS ARE PROBLEMATIC 
+  A. CHECK EXECUTION PLAN  (ESTIMATED AND ACTUAL)
+     LOOK FOR BOTTLENECKS WITHIN THE SCRIPT 
+     MISSING INDEXES 
+     EXPENSIVE PORTIONS  OF CODE
+     INDEX SCAN VS INDEX SEEK (INCLUDE MISSING COLUMN)
+
+To get around the locked records
+SELECT * FROM Person.Contact WITH (NOLOCK) WHERE ContactID < 20 
+
+
+ B. ANALYZE USING DATABASE ENGINE TUNING ADVISOR 
+
+ C. TRACE EVENT USING PROFILER - RUN FROM REMOTE SERVER
+
+
+--INFO on running query
+DBCC inputbuffer(spid)
+-- we look for an error
+Dbcc checktable('table name')
+-- retore backup if problem found
+dbcc checkdb
+
+
+USE AdventureWorks2012;   
+GO  
+-- Reorganize the IX_Employee_OrganizationalLevel_OrganizationalNode 
+-- index on the HumanResources.Employee table.   
+
+ALTER INDEX IX_Employee_OrganizationalLevel_OrganizationalNode 
+  ON HumanResources.Employee  
+REORGANIZE ;   
+GO  
+
+--To see built in users
+select * 
+from sys.server_principals
+where name = N'BUILTIN\Administrators'
+
+--kill using spid
+Kill 55
+
+to know the version of sql server
+select @@version
+
+SP_WHO2
+sp_lock
+
+learn profiller
+
+Alter login <loginname> disable   disable a login
+
+Third party tools idera 
+
+
+To see estimated time for previous backups
+	SELECT TOP 100 backup_size, backup_start_date, backup_finish_date
+	FROM msdb.dbo.backupset
+	WHERE type = 'D'
+	ORDER BY backup_set_id
+
+putting a database in emergency mode
+	ALTER DATABASE dbName SET Emergency
+
+find out who dropped a database
+SELECT 
+Operation,
+SUSER_SNAME([Transaction SID]) As UserName,
+[Transaction Name],
+[Begin Time],
+[SPID],
+Description
+FROM fn_dblog (NULL, NULL)
+WHERE [Transaction Name] = 'dbdestroy'
+
+
+*Locks
+-Types
+Rid, key, page, extent(intext page), table, db
+
+-modes
+shared(s), update(u), exclusive(x), intent, schema, bulk updates
+
+types of isolation level
+read uncommited
+read commited
+repeatable read
+snapshot
+serializable
+
+How to execute large sql file
+sqlcmd -S [servername] -d [databasename] -i [scriptfilename]
+
+how to find orphan users
+sp_change_users_login 'Report'
+sp_change_users_login 'update_one', 'update_name','login_name'
+
+info on an instance
+	Select *
+  	from sys.dm_os_sys_info
+
+sp_removedbreplication
+with no parameters removes all replication
+
+snapshot isolation level OR using NOLOCK hint to avoid blocking on 
+lookup table
+
+CAUSES OF BROKEN CHAIN
+*Switching the Recovery modes.
+*Using the Truncate Only option while taking log backups. The Truncate Only option does not work with SQL 
+versions 2008 and above.
+*Using the No_Log option to take log backup.   The No_Log option will not work with SQL versions 2008 and 
+above.
+Using the Database Snapshot for reverting the database. This is not going to be fixed by the differential 
+backup and so requires a full backup Jump of the database.
+
+Create Snapshot
+CREATE DATABASE SalesOrders_dbss ON( NAME = SalesOrders, FILENAME ='C:\Program Files\Microsoft SQL Server\SalesOrdersCurrent.ss' )
+AS SNAPSHOT OF [SalesOrders];
+GO
+
+Restore Snapshot Script
+
+USE MASTER;
+RESTORE DATABASE [SalesOrders] 
+FROM DATABASE_SNAPSHOT = 'SalesOrders_dbss';
+GO
+
+-- info on database
+select name, state_desc from sys.databases
+
+--owner of database
+sp_helpdb
+		
+		TRIGGERS
+CREATE TRIGGER tr_tblEMployee_ForInsert
+ON tblEmployee
+FOR INSERT
+AS
+BEGIN
+ Declare @Id int
+ Select @Id = Id from inserted --or deleted
+ 
+ insert into tblEmployeeAudit 
+ values('New employee with Id  = ' + Cast(@Id as nvarchar(5)) + ' is added at ' + cast(Getdate() as nvarchar(20)))
+END
+
+How to bring a database out of NORECOVERY
+RESTORE DATABASE [earnings] WITH RECOVERY

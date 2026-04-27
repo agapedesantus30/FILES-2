@@ -1,0 +1,490 @@
+
+--SELECT <COLUMNNAME>,  <COLUMNNAME>,  <COLUMNNAME>,,,…
+--FROM <TABLENAME> 
+--WHERE <COLUMNNAME> <SPECIFY CONDITIONS> 
+-- ORDER BY COLUMNNAME <ASC/DESC>
+
+SELECT STUDENT_ID, FIRST_NAME, LAST_NAME, EMAIL
+FROM STUDENT 
+
+SELECT FIRST_NAME, GENDER, PROGRAM 
+FROM STUDENT 
+
+SELECT STUDENT_ID, FIRST_NAME, EMAIL, PROGRAM, GENDER 
+FROM STUDENT 
+WHERE GENDER = 'MALE' 
+
+SELECT STUDENT_ID, FIRST_NAME, EMAIL, PROGRAM, AGE 
+FROM STUDENT 
+WHERE AGE > 30
+
+-- BETWEEN, LIKE 
+
+SELECT STUDENT_ID, FIRST_NAME, EMAIL, PROGRAM, AGE 
+FROM STUDENT 
+WHERE AGE BETWEEN 30 AND 50
+
+SELECT STUDENT_ID, FIRST_NAME, EMAIL, PROGRAM, GENDER 
+FROM STUDENT 
+WHERE GENDER LIKE 'MALE' 
+
+-- AND, OR 
+SELECT STUDENT_ID, FIRST_NAME, EMAIL, PROGRAM, GENDER, AGE  
+FROM STUDENT 
+WHERE GENDER LIKE 'MALE' AND AGE > 30
+
+SELECT STUDENT_ID, FIRST_NAME, EMAIL, PROGRAM, GENDER, AGE  
+FROM STUDENT 
+WHERE GENDER LIKE 'MALE' OR AGE > 30
+
+-- ORDER BY (ASC, DESC)
+SELECT FIRST_NAME, LAST_NAME, PROGRAM, AGE
+FROM STUDENT 
+WHERE GENDER LIKE 'FEMALE' OR AGE BETWEEN 25 AND 45 
+ORDER BY FIRST_NAME ASC 
+
+SELECT FIRST_NAME, LAST_NAME, PROGRAM, AGE, GENDER
+FROM STUDENT 
+WHERE GENDER LIKE 'FEMALE' OR AGE BETWEEN 25 AND 45 
+ORDER BY AGE DESC
+ 
+SELECT FIRST_NAME, LAST_NAME, PROGRAM, AGE, GENDER
+FROM STUDENT 
+WHERE GENDER LIKE 'FEMALE' AND AGE BETWEEN 25 AND 45 
+ORDER BY AGE DESC
+
+SELECT *
+FROM STUDENT 
+WHERE EMAIL LIKE 'apinyon1@guardian.co.uk'
+
+-- INSERT COMMAND
+-- INSERT INTO <tablename>
+-- VALUES (<value1>, <value2>, <value3>, ….)
+
+INSERT INTO TESTSTUDENTS
+VALUES ('EZINNE', 'EZINNE@GMAIL.COM', 15, '', 'SOMEWHERE IN ATL')
+
+SELECT *
+FROM TESTSTUDENTS
+WHERE GENDER LIKE 'MALE'
+
+INSERT INTO TESTSTUDENTS
+VALUES ('SAM JONES', 'SJONES@YAHOO.COM', 25, 'MALE', 'PEACHTREE IND'), 
+       ('JANET JACKSON', 'JJACKSON@GMAIL.COM', 55, 'FEMALE', 'SOMEWHERE IN LA'), 
+	   ('SAMUEL JACKSON', 'SJACKSON@ATL.COM', 70, 'MALE', 'BUCKHEAD ATL') , 
+	   ('OMENEKE MGBEKE', 'OMG@YAHOO.COM', 23, 'FEMALE', 'INTERNATIONAL SOMEBODY') 
+
+INSERT INTO TESTSTUDENTS
+SELECT FIRST_NAME, EMAIL, AGE, GENDER, ADDRESS
+FROM STUDENT 
+WHERE AGE BETWEEN 20 AND 35
+
+-- UPDATE STATEMENT 
+-- UPDATE <TABLENAME>
+-- SET <COLUMN-NAME> = <NEW VALUE> 
+-- WHERE <COLUMN> <SPECIFY CONDITION>
+
+UPDATE TESTSTUDENTS
+SET GENDER = 'FEMALE'
+WHERE ID = 102
+
+ 
+SELECT TOP 5 *
+FROM TESTSTUDENTS
+
+UPDATE TESTSTUDENTS
+SET ADDRESS = '123 COOL LANE BUCKHEAD, GA 30238'
+WHERE ID = 1
+
+-- DELETE 
+--DELETE <tablename>
+-- WHERE COLUMN-NAME <SPECIFY CONDITION> 
+
+DELETE TESTSTUDENTS
+WHERE ID = 510
+
+SELECT *
+FROM TESTSTUDENTS
+
+-- TRUNCATE TABLE <TABLENAME>
+TRUNCATE TABLE TESTSTUDENTS
+
+-- AGGREGATE FUNCTIONS
+-- COUNT, MIN, MAX, AVG, SUM
+
+SELECT COUNT (STUDENT_ID) 
+FROM STUDENT
+
+SELECT MAX (AGE)
+FROM STUDENT 
+
+SELECT MIN (AGE)
+FROM STUDENT 
+
+SELECT AVG (AGE)
+FROM STUDENT 
+
+SELECT SUM (AGE)
+FROM STUDENT 
+
+-- JOINS: RETRIEVE RECORDS FROM MULTIPLE TABLES
+
+--INNER JOIN
+
+--LEFT OUTER JOIN
+
+--RIGHT OUTER JOIN
+--FULL OUTER JOIN
+
+--SELECT table1.column1, table2.column2....
+--FROM table1 < JOIN TYPE> table2 
+--ON table1.commoncolumn1 = table2.commoncolumn2 
+
+SELECT STUDENT.FIRST_NAME, STUDENT.LAST_NAME, STUDENT.PROGRAM AS 'ST_PROGRAM', PROFESSOR.PROGRAM AS 'PROF_PROGRAM', PROFESSOR.FIRST_NAME
+FROM STUDENT INNER JOIN PROFESSOR 
+ON STUDENT.PROGRAM = PROFESSOR.PROGRAM 
+
+SELECT STUDENT.FIRST_NAME, STUDENT.LAST_NAME, STUDENT.PROGRAM AS 'ST_PROGRAM', PROFESSOR.PROGRAM AS 'PROF_PROGRAM', PROFESSOR.FIRST_NAME
+FROM STUDENT LEFT JOIN PROFESSOR 
+ON STUDENT.PROGRAM = PROFESSOR.PROGRAM 
+
+SELECT STUDENT.FIRST_NAME, STUDENT.LAST_NAME, STUDENT.PROGRAM AS 'ST_PROGRAM', PROFESSOR.PROGRAM AS 'PROF_PROGRAM', PROFESSOR.FIRST_NAME
+FROM STUDENT RIGHT JOIN PROFESSOR 
+ON STUDENT.PROGRAM = PROFESSOR.PROGRAM 
+
+
+SELECT STUDENT.FIRST_NAME, STUDENT.LAST_NAME, STUDENT.PROGRAM AS 'ST_PROGRAM', PROFESSOR.PROGRAM AS 'PROF_PROGRAM', PROFESSOR.FIRST_NAME
+FROM STUDENT FULL OUTER JOIN PROFESSOR 
+ON STUDENT.PROGRAM = PROFESSOR.PROGRAM 
+
+-- 1.	TRUNCATE VS DELETE, IS TRUNCATE DDL or DML
+
+--SELECT TOP(3) WITH TIES *
+--FROM [Production].[WorkOrder]
+--ORDER BY OrderQty DESC
+
+
+--SELECT Name, SalesPersonID, ModifiedDate
+--FROM [Sales].[Store]
+--WHERE ModifiedDate > '9/12/2014'
+--ORDER BY SalesPersonID DESC
+
+
+--SELECT *
+--FROM [Sales].[SalesPerson]
+--WHERE SalesLastYear BETWEEN 20000 AND 3000000
+--ORDER BY BONUS DESC
+
+--SELECT *
+--FROM [Person].[ContactType]
+--WHERE NAME NOT IN ('Marketing Manager', 'Sales Manager')
+
+
+--SELECT City, PostalCode, AddressID
+--FROM [Person].[Address]
+--WHERE City LIKE 'La%' AND PostalCode LIKE 'V%'
+--ORDER BY AddressID DESC
+
+--SELECT *
+--FROM [Production].[ProductPhoto]
+--WHERE ThumbnailPhotoFileName LIKE 'racer[^02]%'
+
+
+-- A rollback only works when a TRANSANCTION is open
+  BEGIN TRAN
+delete  omase
+GO
+
+  ROLLBACK
+
+--MAX() MIN AVG SUM COUNT AS BETWEEN AND OR
+--SELECT DISTINCT FROM WHERE ORDER BY ASC DESC
+--INNER JOIN   RIGHT OUTER JOIN
+--LEFT OUTER JOIN   OUTER JOIN ON
+-- % * _ [ _ % -]
+--UPDATE SET 
+-- DELETE TRUNCATE DROP
+
+INSERT INTO ProgramTBA
+VALUES	(16, 'Sound of Music'),
+		(21, 'Physical Education'),
+		(22, 'Micrpbiology'),
+		(23, 'information Technology')
+		
+
+SELECT *
+FROM PROGRAM
+
+
+SELECT *
+FROM Student
+
+SELECT S.Student_Id, S.First_Name, S.Email, S.Program, P.PROGRAM
+FROM Student S 
+RIGHT JOIN ProgramTBA P
+
+ON S.Program = P.PROGRAM
+
+-- Good basic information about OS memory amounts and state (Query 28)
+ SELECT total_physical_memory_kb, available_physical_memory_kb,
+
+
+-- finding duplicate queries
+-- Possible Bad NC Indexes (writes &gt; reads)
+ SELECT OBJECT_NAME(s.[object_id]) AS [Table Name], i.name AS [Index Name], i.index_id,
+ user_updates AS [Total Writes], user_seeks + user_scans + user_lookups AS [Total Reads],
+ user_updates - (user_seeks + user_scans + user_lookups) AS [Difference]
+ FROM sys.dm_db_index_usage_stats AS s WITH (NOLOCK)
+ INNER JOIN sys.indexes AS i WITH (NOLOCK)
+ ON s.[object_id] = i.[object_id]
+ AND i.index_id = s.index_id
+ WHERE OBJECTPROPERTY(s.[object_id],'IsUserTable') = 1
+ AND s.database_id = DB_ID()
+ AND user_updates > (user_seeks + user_scans + user_lookups)
+ AND i.index_id > 1
+ ORDER BY [Difference] DESC, [Total Writes] DESC, [Total Reads] ASC;
+ total_page_file_kb, available_page_file_kb,
+ system_memory_state_desc
+ FROM sys.dm_os_sys_memory WITH (NOLOCK) OPTION (RECOMPILE);
+ 
+ -- You want to see "Available physical memory is high"
+ -- This indicates that you are not under external memory pressure
+
+--SELECT *
+--FROM [Sales].[SalesPerson] S
+--INNER JOIN [Sales].[SalesPersonQuotaHistory] P ON S.[BusinessEntityID] = P.[BusinessEntityID]
+--WHERE S.SalesYTD > 400000
+--ORDER BY P.SalesQuota DESC
+
+SELECT *
+FROM [Sales].[SalesOrderHeader] H FULL OUTER JOIN [Sales].[SalesPerson] P
+ON H.TerritoryID = P.TerritoryID
+ORDER BY P.Bonus
+
+SELECT *
+FROM [Sales].[SalesOrderHeader]
+
+SELECT *
+FROM [Sales].[SalesOrderHeaderSalesReason]
+
+SELECT *
+FROM [Sales].[SalesPerson]
+
+SELECT        H.SalesOrderID, H.RevisionNumber, H.OrderDate, H.DueDate, H.ShipDate, H.Status, H.OnlineOrderFlag, H.SalesOrderNumber, H.PurchaseOrderNumber, H.AccountNumber, H.CustomerID, H.SalesPersonID, H.TerritoryID, 
+                         H.BillToAddressID, H.ShipToAddressID, H.ShipMethodID, H.CreditCardID, H.CreditCardApprovalCode, H.CurrencyRateID, H.SubTotal, H.TaxAmt, H.Freight, H.TotalDue, H.Comment, H.rowguid, H.ModifiedDate, 
+                         R.SalesOrderID AS Expr1, R.SalesReasonID, R.ModifiedDate AS Expr2, P.BusinessEntityID, P.TerritoryID AS Expr3, P.SalesQuota, P.Bonus, P.CommissionPct, P.SalesYTD, P.SalesLastYear, P.rowguid AS Expr4, 
+                         P.ModifiedDate AS Expr5
+FROM            Sales.SalesOrderHeader AS H INNER JOIN
+                         Sales.SalesOrderHeaderSalesReason AS R ON H.SalesOrderID = R.SalesOrderID INNER JOIN
+                         Sales.SalesPerson AS P ON H.TerritoryID = P.TerritoryID
+
+SP_HELPTEXT spEmployeeDetails
+HELP SEE INFORMATION OF STORED PROCEDURE
+
+--INSERT INTO Employee
+--(Employee_Id, first_name, last_name, email, gender, Job_Title, Department, SSN)
+--VALUES
+--('1001','ERIC','BAILEY','ericbailey@gmail.com','Male','Footballer','Defender','238-67-765')  
+
+SELECT *
+FROM Employee
+ORDER BY Employee_Id DESC
+
+--UPDATE Employee
+--SET Employee_Id = 1002
+--WHERE first_name = 'ERIC'
+
+DELETE FROM Employee
+WHERE Employee_Id IN (1002)
+
+Create table StudentSource
+(
+     ID int primary key not null,
+     Name nvarchar(20) null
+)
+GO
+
+Insert into StudentSource values (1, 'Mike')
+Insert into StudentSource values (2, 'Sara')
+GO
+
+Create table StudentTarget
+(
+     ID int primary key,
+     Name nvarchar(20)
+)
+GO
+
+Insert into StudentTarget values (1, 'Mike M')
+Insert into StudentTarget values (3, 'John')
+GO
+
+select *
+from StudentSource
+
+Select *
+from StudentTarget
+
+MERGE StudentTarget T
+USING StudentSource S
+ON T.ID = S.ID
+WHEN MATCHED THEN
+     UPDATE SET T.NAME = S.NAME
+WHEN NOT MATCHED BY TARGET THEN
+     INSERT (ID, NAME) 
+	 VALUES(S.ID, S.NAME)
+WHEN NOT MATCHED BY SOURCE THEN
+     DELETE;
+
+
+Truncate table StudentSource
+Truncate table StudentTarget
+GO
+
+Insert into StudentSource values (1, 'Mike')
+Insert into StudentSource values (2, 'Sara')
+GO
+
+Insert into StudentTarget values (1, 'Mike M')
+Insert into StudentTarget values (3, 'John')
+GO
+
+MERGE StudentTarget T
+USING StudentSource S
+ON T.ID = S.ID
+WHEN MATCHED THEN
+     UPDATE SET T.NAME = S.NAME
+WHEN NOT MATCHED BY TARGET THEN
+     INSERT (ID, NAME)
+	 VALUES(S.ID, S.NAME);
+
+
+--STORED PROCEDURE
+CREATE PROCEDURE spEmployeeDetails
+AS
+BEGIN
+	SELECT [Employee_Id], [first_name], [gender]
+	FROM Employee
+	WHERE GENDER LIKE 'FEMALE'
+END
+
+-- Other
+SELECT S.[First_Name]
+FROM STUDENT AS S
+UNION ALL
+SELECT P.[PROGRAM]
+FROM PROGRAMTBA AS P
+
+*FINDING OPEN TRANSACNTIONS
+USE MASTER
+GO
+SELECT spid,
+       PROGRAM_NAME,
+       nt_userName,
+       loginame,
+       DB_NAME(s.dbid) AS DatabaseName,
+       CR.TEXT AS Query
+FROM   sysprocesses s
+       CROSS apply sys.Dm_exec_sql_text(sql_handle) CR
+WHERE  open_tran = 1
+
+*BACKUPS
+1-     How to retrieve backup information
+
+select * from msdb.dbo.backupset
+
+ Above statement will provide you all the databases backup history, this is going to be our master table to retrieve various type of information about database backups. 
+
+2-     How to retrieve backup dates of all the databases including system databases?
+
+                select database_name, backup_start_date,backup_finish_date from msdb.dbo.backupset
+
+3-      How to find out how many times backup was taken of a particular database?
+
+                select count(1) from msdb.dbo.backupset where database_name='Your_db_name'
+
+4-     How to find out latest backup of a particular user database?
+
+select database_name, Max(backup_finish_date) as LatestBackup_Time from msdb.dbo.backupset
+       where database_name='Your_database_name'
+       group by database_name
+
+5-      How to find out type (Full, Diff and Tran) of database backup?
+
+select database_name, case type
+      when 'D'
+           then 'FULL'
+
+       when 'I'
+                        then 'Diff'
+
+              when 'L'
+                                    then 'tran'
+
+end as [Type of Backup]
+       from msdb.dbo.backupset
+
+
+Note: You can add columns as you wish from our master table dbo.backupset
+   6-    How to find out if database backup compression is ON or OFF?
+    use [master]
+    SELECT name, case value when 0 then 'Compression not enabled' when 1 then 'compression Enabled'
+    end
+      FROM sys.configurations
+    WHERE name = 'backup compression default' ;
+    GO
+
+
+turning trace on
+dbcc traceon (1204, -1) info on nodes
+dbcc traceon (1222, -1) info on xml
+dbcc traceoff
+
+Kill a process
+kill spid()
+
+Kill all processes on a database
+	USE MASTER
+	GO
+	DECLARE @DatabaseName AS VARCHAR(500)
+	-->Provide the DataBaseName for which want to Kill all processes.
+	SET @DatabaseName='YourDataBaseName'
+	DECLARE @Spid INT
+	DECLARE KillProcessCur CURSOR FOR
+  	SELECT spid
+  	FROM   sys.sysprocesses
+  	WHERE  DB_NAME(dbid) = @DatabaseName
+	OPEN KillProcessCur
+	FETCH Next FROM KillProcessCur INTO @Spid
+	WHILE @@FETCH_STATUS = 0
+  	BEGIN
+      	DECLARE @SQL VARCHAR(500)=NULL
+      	SET @SQL='Kill ' + CAST(@Spid AS VARCHAR(5))
+      	EXEC (@SQL)
+      	PRINT 'ProcessID =' + CAST(@Spid AS VARCHAR(5))
+            + ' killed successfull'
+      	FETCH Next FROM KillProcessCur INTO @Spid
+  	END
+	CLOSE KillProcessCur
+	DEALLOCATE KillProcessCur
+-- union
+
+(SELECT client_first, client_last,
+FROM t1 
+WHERE a=10 AND B=1 
+ORDER BY a 
+LIMIT 10)
+
+UNION
+
+(SELECT a FROM t2 WHERE a=11 AND B=2 ORDER BY a LIMIT 10);
+
+-- insert into
+   insert into table_3
+    select t.*, 'table_1'
+    from table_1
+
+-- select into
+select *
+into Male_student
+from students;

@@ -1,0 +1,222 @@
+Here are TSQL Interview Questions and Database Interview questions. I am going to do my best to provide a good list of real time questions.  I am not going to categories the questions depending upon topics but rather have them one after one as you never know what interviewer is going to ask you next ;). All the best with Database developer interview!
+
+1.What is Heap?
+2. What are DMVs in SQL Server and name two of them that will you use to find out long running queries or stored procedures?
+3. If you need to find out the last time the job was run, which database will help you to find that information?
+4.  If I want you to provide me the list of all SQL Server Agent jobs with schedules which database and tables will you use?   (Demo Video)
+5. What are 2 differences between Delete and Truncate?
+6. Let me know at least five differences between a Stored Procedure and a Function?
+7. What is parameter sniffing in Stored Procedure? How you will overcome that?
+8. Can you create a function and have dynamic SQL in it?
+9. What are CROSS APPLY and OUTER APPLY in SQL Server and why do we need to use it?
+10. What are Window functions in TSQL? In SQL 2012. new window functions are added such as FIRST_VALUE, LAST_VALUE, LEAD, LAG, Explain the definition with scenario where will you use these?
+11. There is duplicate data in a table, write two different queries tofind out those duplicate records?
+12. What is the difference between ISNULL ( ) AND COALESCE ( )? Which one do you prefer and why? (Video Demo)
+13.  I heard indexes are good, can I create cluster index on multiple columns or cluster index can be created only on one column?
+14.  I need to create non-cluster index on 20 columns, data type of each column is Char (7000), can I include all of the columns in non-cluster index? What is max number of columns that I can include in non-cluster index, what other options I have if there is limit on number of columns?
+15. One of our developer has created 5 functions. Whenever newdatabase is created these functions should be created in it without runningcreate statements for these functions every time after create database. Whatare my options?  ( Video Demo)
+16.     I have two tables with same columns, if I want to find out allrecords those are in Table A and not in Table B ,  Let me know atleast two queries to do that?
+17.  I want the list of all tables with column names with data type name, which system table can I use to get that information?  (Video Demo)
+18.  In one of our database, we have 100 Stored Procedures, each Stored Procedure has comments. I want to find if comment are something like this‘Creator Name=Aamir’ , What options do I have?  (Video Demo)
+19. If you need to script a table with data, how will you do that?
+20.  A big update is happening on one of the table, you are still interested to read the data even update is running, what will be your Select query?   (Video Demo)
+21. How will you find blocking processes?
+22. You have ten tables in database and all have cluster indexes on them, If I ask you to give me the total row number in each table without using count(*) from table, which table can help you to find count without using count(*)?  (Video Demo)
+23. If we want to log table names and total record count for each table to Audit Table, How would you do that?   (Video Demo)
+24. I have 100 SQL Server agent jobs, each job has different TSQLStatements , how can you find a job that is having this statement ‘ Selectcount(*) from dbo.test’ ?     (Video Demo)
+25.  I want to audit information such as who created table, who has dropped table, what are my options?
+26.  I have a Audit Table that has couple of columns, If I want to sendemail evey morning with all these records in email, how will you be able to dothat in SQL Server?
+27. We have an application that is running on SQL Server 2005. Our company has decided to have no more SQL server 2005 but only SQL Server 2012. We have migrated the Database to SQL Server 2012. How would I set the compatibility to SQL Server 2005 so application can run without any issues?  (Video Demo)
+28. When I run this query, I receive no records ( Select * Fromdbo.TEST) but when I run (Select * from dbo.test) , I get 10 records. In bothqueries table name is Test. Which database property is playing role here andhow can we address that to return records in any case?  (Video Demo)
+29. If I run Select 100/11 what output will I get?   (Video Demo)
+30.  How do you handle exceptions in TSQL?
+31. List at least 5 system functions those you have used or will use to Retrieve Error information?
+32. What is uncommittable state?
+33. Let’s say you have found bunch of duplicate records in table, we want to keep only one record for each of duplicate set, How will you do that?
+34. What are the things will you look into when you do performance tuning of TSQL query?
+35. What is the difference between Rollup and Cube, What are alternative of these in SQL Server 2012?
+36.     I have sale column in one of the table, Explain two different queries those you can use to have running total in your final output?
+37. I have two tables with same columns and data types. If I need toget distinct records from both of tables how can I do that?
+38.     Have you heard Wait for, Break, Continue key words in TSQL , explain about each of them.
+39.     If you have created a table with identity (1, 1), is that possible that sequence can break and if yes then in which situation that happen?
+40.     What are common table expressions (CTE)? what is Recursive CTE? In which situation have you used it? If you want to limit recursion how can you do that in CTE?
+41.     What type of parameters you can provide to Stored Procedure? Explain where did you used them and why?
+42.  What string functions have you used, if you need to find the starting position of character or string which function will you use?
+43. What is the difference between LEN() AND DATALENGTH( ) Function?
+44. What is the difference between ISNULL () AND NULLIF() Function?
+45.     Can you insert ordered data into a SQL Server table and will SQL Server store data in ordered you have inserted? And if you will write Select Query to extract that data, will you retrieve in order the way you have inserted or not?
+46.     Explain a scenario where do you need to write Correlated Subquery?
+47.     When do you like to create filter index, do they take less or more space than cluster index on Disk? What are advantages of using Filter index?
+48.     Sometime when you run your query you receive this warning with result sets as well “Warning: Null value is eliminated by an aggregate or other SET operation”. How can you avoid this?
+49.     If you need to find the difference in days between two dates which function will you use?
+50.     Can you use having clause without group by?
+51.     Let’s say you have tableA on SERVERA and ServerB. If you want to see all the records from TableA on both servers, how will you be able to do that?
+52.     There is an Excel file siting on your Desktop. You want to write a query to read that file and see the records in SSMS. How will you do that in TSQL?
+53.     You have few word documents those you want to save in SQL Table, What data type will you use to save the word document in SQL Table?
+54.     Let’s say you have used dynamic SQL, you have created a temp table inside Dynamic SQL , Will you be able to read data from that temp table after execution of dynamic SQL?
+55. What keyword will you use to retrieve unique rows from table?
+56.  Can I execute Stored Procedure inside Function?
+57.  What is for xml, in which scenario have you used?
+58.  Can you use Case Statement in Order by Clause?
+59.  Which data type will you use that is time zone aware?
+60.  What is Sparse Column?
+61.  What are different ways to run dynamic SQL? If I need to pass parameter(s) to dynamic SQL, how can I do that?
+62.  Cross join gives you Cartesian product, where have you used Cross Join?
+63.  If I need to add “Total” Line at the end of result set, what option do I have?
+64.  Can we send emails in HTML Format from SQL Server, How will you do that?
+65. You have built a big dynamic SQL query. The total length of this built query is more than 20,000 characters, now you want to see if your built query looks good, how will you print that query?
+66.     How will you transpose column into row by using TSQL?
+67.  Can you execute Stored Procedure in View?
+68.  Can you declare variable in Create View Statement if not then what object you prefer to create so you can use Select statement like view?
+69.  What is Self-Join; explain a scenario where you need to use that?
+70. What are the steps to create partitioned table? what are the benefits of creating it?
+71.  What is Switch Operator in TSQL?
+72.  If you need to get month name, which TSQL Function will you use?
+73.  If you need to get Year which function will you use?
+74.  If you need to extract data from Oracle table and join with SQL table, what steps are required? Explain sample query as well?
+75. What new features are available in SSMS those were not in previous versions? Any third party tools those can be added in to SSMS and are helpful for daily use?
+76.  Can you save query results to flat file from SSMS? (Video Demo)
+77.  What are partitioned views and where we need to create these views?
+78.  To connect to SQL Azure, do you need any different tool or can you use SSMS?
+79. What is Key Lookup operator (bookmark lookup) and how can you remove that?
+80. What is estimated Execution plan?  How can we display execution plan in text?
+81. What is plan cache and how does it relate to Execution plan?
+82. Which is better Index Scan or Index Seek? In which scenario Scan is better than Seek?
+83.     What type of Trigger(s) can be created on Views?
+84. What are the different ways available to set the value of a Variable in TSQL?
+85. What is @@RowCount?
+86.     What is Computed column and have you used it? Are there any disadvantages of using computed column?
+87.  Is ORDER BY clause valid in views, Inline functions, Derived tables, Sub queries and common table expressions?
+88.     I want to create view with order by clause by any means, how can I do that?
+89. Which function(s) we can use to concatenate strings in SQL Server2012?  (Demo Video)
+90.  How many different values can be stored in bit type data type?  (Demo Video)
+91.     When should you run UPDATE STATISTICS?
+92.     To see the total space taken by database which query will you run?
+93.     What is data compression? What level of compression is available?  Should we enable on OLTP tables or DWH Tables to get benefit of this feature?
+94. What is CDC, in which version was it introduced? To Enable CDC ontable, do you have to enable on Database?
+95. Can you enable CDC on single column or you have to enable on allthe columns in table?
+96. If you drop Column from Source on which CDC was enabled, will itbe dropped from CDC table as well?
+97.     If you add a new column in CDC enabled table, Will it be automatically included in CDC?
+98.     If you need to find out, CDC is enabled on Database, how will you do that?
+99.  What is the difference between Left Join and Inner Join?
+100. What are SQL Constraints and which one have you used often? Explain with scenarios where do you need them?
+101. Can we create trigger(s) on temp table and system tables?  (Video Demo)
+102. If you need to save more than two 2 GB file in SQL Server Table, which data type will you use?
+103. What is the lowest level of transaction lock Table, Row or Field?
+104. Can we create Unique Constraint on more than one columns?
+105. Can we create more than one Unique Constraint on a table?
+106. Can you use these functions in SQL Server and what will they return {fn NOW()},{fn CURRENT_TIMESTAMP()}. In TSQL they are equivalent to which functions?
+107. What is the difference between Convert () and format () function?
+108. Can you create Primary key Constraint on a column that has one Null value?
+109. Can you create Unique Constraint on a column that has one Null value?
+110. We can create only one cluster index per table, Is this statement true?
+111. What is the difference between a trigger and Stored Procedure?
+112. What are Deleted and Inserted tables in SQL Server? Can youupdate these tables?
+113. I want to create only a table with one column and thatshould be identity (1,1) . After creating this table, I want to populate thistable from 1 to 100000, what will be my script?  (Demo Video)
+114. There are some missing values in our identity column, if I want to fill those gaps which strategy should I use?
+115. I have created a table with Identity (1, 1) and it has no record at the moment. If I want to insert a record with Id=100, How can I do that?
+116. I have a table that has 300 million records, I need todelete 100 million records from this table, Explain different approaches thosecan be used?  ( Video Demo)
+117. What are different types of cursors available in SQL Server? Which one do you use often? (Video Demo: Playlist contains Types of Cursors)
+118. If you do not want to write your code by using cursor, what alternatives do you have in TSQL?
+119. Define the steps for SQL Server cursor?  (Video Demo)
+120. What is Columnstore Index? Should we consider using Columnstore indexes in Data Warehousing or in OLTP database?
+121. To generate manual checkpoint, which TSQL statement will you use?
+122. You are doing performance tuning on your query, can you display  Estimated Execution plan and Actual Execution plan together?
+123. Can estimated execution plan be different from Actual execution plan?  And if yes what is the reason behind that?
+124. What is the difference between DMV and DMF?
+125. Which system table or DMV can you use to find out all the tables those do not have cluster index?
+126. What are the benefits of using sp_executesql over EXEC?
+127. What is Federated database?
+128. Can I update the column on which I have created column store index?
+129. What is Sql Variant data type?
+
+130.  Can you use ranking functions without using Order by clause?
+131. What is In-Memory OLTP?
+132. Where will indexes exist in In-Memory OLTP?
+133. Where will data exists in In-Memory OLTP?
+134.  What is multi-version optimistic concurrency control in In-Memory OLTP?
+135.  Do we have to have all tables of database in in memory for In-Memory OLTP or we can choose few out of all tables?
+136. What is Memory Optimization Data FileGroup?
+137. Can we write a query to extract records from In-Memory Table and Table which is stored on Disk?
+138. What is Non-Durable Table? Do Non-durable tables use transaction log? Are they recoverable or not?
+139. Can you create cluster index on memory optimized table (In-Memory OLTP Table)?
+
+140. Does In-Memory OLTP remove lock and latch contention?
+141. Which System view can you use to find out if a column exists in a database? (Video Demo)
+142. If you need to find out that when an object was modified last time, which system table will you use? (Video Demo)
+143.You need to add multiple columns to already existing table, Can you do in one statement or you have to write multiple statement?  (Video Demo)
+144. A developer has written all the Stored procedure by using Full qualified name. You have requested to restored the database to DEV machine with different name from production. You start getting errors when tried to execute Stored procedures and you have figured out that you have to remove database name from each of Stored Procedure definition. How would to perform this task? 
+145. You need to add a column such as ModifiedBy to all the tables in a database, How would you do that? (Video Demo)
+146. Explain a scenario, Where do you have used Merge Statement? 
+147. Explain a situation, Where have you used dynamic SQL? 
+148. What is the difference between Rank() and Dense Rank()
+149. What is the difference between Raiserror and Throw?
+150. What is Choose() function in SQL Server 2012? (Video Demo)
+151. What type of commands are available in TSQL?
+152. What is Logical Query Processing Order in SQL Server? 
+153. What are Static Type of Cursors in SQL Server? ( Video Demo)
+154. What is Dynamic Type of Cursor in SQL Server?  ( Video Demo)
+155. What is Forward Only Static Cursor in SQL Server?  ( Video Demo)
+156. What is Forward Only Dynamic Cursor in SQL Server? (Video Demo)
+157- What is KEYSET Cursor in SQL Server?   (Video Demo)
+158- What is the difference between LOCAL AND GLOBAL Cursor in SQL Server?  (Video Demo)
+
+How to Questions:
+How would you switch the database inside the Stored Procedure?
+How would you reseed identity column in SQL Server Table?
+How would you determine if the expression is Numeric?
+How does IN Clause affect performance?
+How would you find top record from a SQL Server table?
+How would you get the last record from a SQL Server table?
+How would you optimize a query or Stored Procedure?
+How would you concatenate string and integer value in TSQL?  (Video Demo)
+How would you import Image from file system to SQL Server Table by using TSQL?
+How would you select some random records from a SQL Server Table?
+How would you store query results to a file automatically? (Video Demo)
+How would you get the list of all local and global temp tables in SQL Server?
+How would you get the size of a SQL Server Table?
+How would you find out if the table is used by a Stored Procedure? (Video Demo)
+How would you get the list of all SQL Server Agent Jobs?  (Video Demo)
+How would you find the version of SQL Server?  (Video Demo)
+How would you get Month Name from Date in SQL Server?
+How would you remove special characters such as $,#,@ from a SQL Server Table Column?
+How would you find running queries on SQL Server?
+How would you find open Transactions on SQL Server?
+How would you find if process is blocked by another process?
+How would you disable a trigger in SQL Server? (Video Demo)
+How would you import data to a SQL Server table from file?
+How would you refresh view to update the metadata?   (Video Demo)
+How would you debug Stored Procedure in SQL Server Management Studio?
+How would you get time from datetime column values?
+How would you get list of all user databases in SQL Server? (Video Demo)
+How would you prevent SQL Injection?
+How would you replace Null values with 'Unknow'? (Video Demo)
+How would you transpose columns to rows in TSQL?
+How would you split comma delimited string (e.g value1,value2,value3....) into a table?
+How would you transpose rows into columns in TSQL?
+How would you prevent Parameter Sniffing?
+How would you read uncommitted data in SQL Server?  (Video Demo)
+How would you do Fuzzy matching using TSQL?
+How would you generate new GUID (unique-identifier) in SQL Server?
+How would you set Transaction Isolation Level for a session in SQL Server?
+How would you send an email from SQL Server?  (Video Demo)
+How would you truncate all the tables in a Database in SQL Server? (Video Demo)
+How would you drop identity property of a column? (Video Demo)
+How would you execute .sql file form command line?
+How would you check if column exists for a table or view in Database? 
+How would you get the list of tables with triggers created on them?  (Demo Video)
+How to Drop/Delete all the triggers in a SQL Server Database in SQL Server?   (Demo Video)
+How to get list of all disabled/enabled triggers in SQL Server Database?  (Video Demo)
+How to disable all the triggers in a SQL Server Database in SQL Server?  (Video Demo)
+How to Enable all disabled Triggers in a SQL Server Database?   (Video Demo)
+How would you add a new column to existing SQL Server table and populate with Default Values?   (Video Demo)
+How to search object such as Table/View/Stored Procedure/function etc. in all the database in SQL Server Instance?   (Video Demo)
+How to check if value is Numeric by using ISNUMERIC and Try_Convert Function in SQL Server?  (Video Demo)
+How to change Database Name inside the Stored procedure in SQL Server?  (Video Demo)
+What is Concat Function in TSQL and How it is different from using + for concatenation. (Video Demo)
+No comments: 
+Email This
+BlogThis!
+Share to Twitter
+Share to Facebook
+Share to Pinterest

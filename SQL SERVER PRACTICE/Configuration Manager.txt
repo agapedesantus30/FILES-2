@@ -1,0 +1,9 @@
+SQLServerManager14.msc for [SQL Server 2017] or
+
+SQLServerManager13.msc for [SQL Server 2016] or
+
+SQLServerManager12.msc for [SQL Server 2014] or
+
+SQLServerManager11.msc for [SQL Server 2012] or
+
+SQLServerManager10.msc for [SQL Server 2008], and then press 

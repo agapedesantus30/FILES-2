@@ -1,0 +1,40 @@
+enterprise - This is the top-end edition with a full feature set.
+
+Standard - This has less features than Enterprise, when there is no requirement of advanced features.
+
+Workgroup - This is suitable for remote offices of a larger company.
+
+Web - This is designed for web applications.
+
+Developer - This is similar to Enterprise, but licensed to only one user for development, testing and demo. 
+It can be easily upgraded to Enterprise without reinstallation.
+
+Express - This is free entry level database. It can utilize only 1 CPU and 1 GB memory, the maximum size of 
+the database is 10 GB.
+
+Compact - This is free embedded database for mobile application development. The maximum size of the database 
+is 4 GB.
+
+Datacenter - The major change in new SQL Server 2008 R2 is Datacenter Edition. The Datacenter edition has no 
+memory limitation and offers support for more than 25 instances.
+
+Business Intelligence - Business Intelligence Edition is a new introduction in SQL Server 2012. This edition 
+includes all the features in the Standard edition and support for advanced BI features such as Power View and 
+PowerPivot, but it lacks support for advanced availability features like AlwaysOn Availability Groups and other 
+online operations.
+
+Enterprise Evaluation - The SQL Server Evaluation Edition is a great way to get a fully functional and free 
+instance of SQL Server for learning and developing solutions. This edition has a built-in expiry of 6 months 
+from the time that you install it.
+
+2005				2008	2008 R2	2012	2014
+Enterprise			Yes	Yes	Yes	Yes
+Standard			Yes	Yes	Yes	Yes
+Developer			Yes	Yes	Yes	Yes
+Workgroup			Yes	Yes	No	No
+Win Compact Edition - Mobile	Yes	Yes	Yes	Yes
+Enterprise Evaluation		Yes	Yes	Yes	Yes
+Express				Yes	Yes	Yes	Yes
+Web				Yes	Yes	Yes	
+Datacenter			No	No		
+Business Intelligence		Yes	

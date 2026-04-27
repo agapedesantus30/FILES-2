@@ -1,0 +1,62 @@
+			
+			SSIS deployment
+package by package
+Or we can do the project in one shot
+
+before doing a deployment its best practice to build after then deploy
+
+
+			SSIS Development
+as we know SSIS IS MICROSOFT ETL TOOL
+i used SSIS package used alot in data loading
+
+When loading th data the control flow tab acts as a container for data flow
+
+•Extensively worked with SSIS tool suite, designed and created mappings using
+ various SSIS transformations like OLEDB Command, Conditional Split, Lookup, 
+Aggregator, Multicast and Derived Column
+•i Executed data validation, stored procedures in SSIS packages in Business 
+Intelligence Development Studio (BIDS).
+•Involved in Deployment and Administration on SSIS packages with Business 
+Intelligence development studio.
+•Developed, monitored and deployed SSIS packages
+•Developed and maintained complex SSIS packages.
+
+ETL TOOLS (TWO COMPANIES WANT TO COMBINE large scale DATA(EXPLAIN))
+
+they were using DTS 2000
+Vertions of SSIS (SSIS = 2012)
+check jobs to make sure data is loaded
+
+			SSIS package
+*Operational Data
+*ETL (capture, scrub, transform, load & Index)
+*DataWarehouse
+
+Suppose you gotta load a flat file into your database or the migration of database objects from one server to another server
+,you can create SSIS package for that operation.
+
+If you have to perform any ETL operation on the daily basis then we can schedule a job for SSIS package so that we 
+don't have to perform that operation manually
+
+			2012 features
+*undo change
+*The Tasks and Transformations can be grouped together
+*Now without having to delete a variable you can change the scope of the variable
+*There are now decimal data type variable
+*A larger expression character limit previous versions was 4000
+*Parameters can now be on project level or package level
+*CDC Source is added to read the change data from CDC tables.
+*CDC Splitter Transformation is added in SSIS 2012 to split the data into multiple
+flows for Insert, Update and Delete Operation.
+*The CDC Control Task is added to SSIS 2012 to perform initial load for CDC enable
+ table
+
+
+			FROM RESUME
+•Created tabular and matrix reports in SSRS. Wrote stored procedures and functions
+ to create SSRS reports
+•Support Reporting and Data warehouse team for producing daily, weekly and monthly
+ reports using SSRS, Dundas Dashboards, SSAS
+
+

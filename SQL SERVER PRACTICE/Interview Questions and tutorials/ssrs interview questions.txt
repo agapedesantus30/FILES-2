@@ -1,0 +1,70 @@
+General
+What is SSRS ?
+When SSRS was introduced in Market and What Versions are available?
+What is Shared Data Source in SSRS (SQL Server Reporting Services) ? 
+What is Shared Dataset in SSRS (SQL Server Reporting Services) ? 
+What is Embedded data source and how is it different from Shared Data Source? 
+What is difference between Data Source and DataSet in SSRS? 
+What type of SSRS Reports Can and Can't be created by using Report Wizard?
+Can you create parameter reports by using SSRS Report Wizard?
+What are the steps/stages of SSRS report processing? 
+How would you Edit already deployed SSRS Report?  
+What is Report Manager? Explain the function of Report Manager.
+Which tool can be used by the Business Users to create their own reports? 
+Which delivery/export options are allowed in SSRS?
+How to display all the records on one page in SSRS?  
+What are the different ways to sort your reportdata? What is interactive sort?
+How to display data on single tablix from two datasets in ssrs report by joining on single column? What is Lookup Function in SSRS Report?
+How to display data on single tablix from two datasets in ssrs report by joining on Multiple Columns? What is Lookup Function?
+If you want to display header on each of newpage, how would you do that?
+What are seven rendering extensions available inSSRS? 
+What is page break in SSRS Report?
+If you want to display only X rows per page inSSRS, how will you achieve that?
+You have report that has multiple pages withdifferent group data, you want to render to excel but each group data should goto separate sheet, how would you accomplish that?
+What is running total? and what function will you use to include running total in new column in SSRS?
+If you want to display data for each group onnew page, how would you do that?
+Which language rdl files made of in SSRS?
+What is the difference between Drill down and Drill Through Report in SSRS?
+What are different types of Data Sources available in SSRS
+How to Add Custom Code in SSRS Report 
+What type of parameters are available in SSRS?
+What is Single Value parameter in SQL Server Reporting Services(SSRS) report? 
+What is Multi value parameter in SSRS Report?
+How would you write TSQL Query or Stored Procedure with Single Value Parameter? 
+How would you write your TSQL Query or Stored Procedure for Multi Value Parameter Report in SSRS?
+How would you display a Calendar for date or datetime parameter  in SQL Server Reporting Services (SSRS) Report? 
+Is there a way to provide default value/s to your parameter/s in SSRS Report?
+You have created a report, the report has month name as parameter, What is best way to provide values for month name parameter? 
+What is Cascading parameter in SSRS?
+What are range parameters in SSRS Report? 
+Can you show Radio buttons as your parameter in SSRS, if yes which data type these parameters work for?
+How do you set parameter on a Drill through report? 
+How do you set parameter on a Sub report?
+How would you generate SSRS report with DateTime in a shared folder on schedule?
+What does SSRS Deployment or Publishing means?
+How would you deploy your SSRS report using BIDS/SSDT?
+What are the steps to deploy your report using Report Manager? 
+What is Bookmark in SSRS report?
+How to hide empty rows in SSRS Report?
+How to replace Null values in SSRS Report Cells with some values?
+How to use CSV file as Data Source in SSRS Report?
+How to use Excel file as Data Source in SSRS Report?
+What is difference between IIF and Switch Function?
+Which function would you use to add a new column that will generate sequence number for your all of your records?
+What type of Report Items are available in SSRS Report?
+We can insert image in report , what image sources are available for us to use in SSRS Report?
+What type of reports you can create in SSRS?
+What is Reporting Services Configuration Manager in SSRS?
+What is Subscription in SSRS?
+What is difference between Standard and Data Driven Subscription?
+What is the difference between Tabular and Matrix Report?
+What are Data Alerts in SSRS? and how does it work?
+Where can you find Report Server Service Trace Log? and what type of information does it provide?
+What is List Data Region in SSRS?
+What is Sub report in SSRS?
+What is snapshot report?
+What is cached report?
+What is shared schedule in SSRS?
+What is RS Utility and why do we use it?
+What are different types of Roles available in SSRS?
+What is the name of Reporting Services Configuration file and where it exists?

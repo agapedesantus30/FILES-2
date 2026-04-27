@@ -1,0 +1,78 @@
+2nd Interview
+
+ABOUT COMPANY
+
+It says that Capgemini is A global leader in consulting, technology services
+and digital transformation, and also that Capgemini is at the forefront of 
+innovation to address the entire breadth of clients’opportunities in the 
+evolving world of cloud, digital and platforms.
+
+*Experience with service now
+ServiceNow is a SaaS tool and it's hosted in the Cloud*
+flow (Request, incident, problem, change, resolution)
+ITSM process in restoring business processes to minimize buisness impact
+How to report an issue (call, request help, or email)
+
+Service now core apllications
+(Incident, problem, change, service catalog, configuration)
+
+*Experience with spotlight
+End to end monitoring
+With it you get to manage large-scale monitoring deployments
+You get to customizze your environment
+
+		Randoms questions for me
+*Tell me about youeself
+I've worked as a DBA for the past 5 years started as a junior dba at 
+InComm (InComm is a provider of cutting edge prepaid products, services 
+and transaction technologies to retailers, brands and consumers)there 
+i wasn't in full control of my environment just as with my second 
+gig which was at Slalom (Slalom is a business and technology consulting 
+firm) then i moved to knight and associates where am a bit more in control
+of my environmen
+
+*what do you know abou the position
+I know this is a 13 month contract position based in North carolina
+
+
+*what are you looking for in a job
+Channce to grow like i see you the company will be moving to the cloud
+i find as an oppurtunity to grow
+
+* what is your technical background and what kinds of projects have 
+you worked on
+installation, upgrades, patching, database migration
+
+*what are some of your most significant accomplishments
+Becoming a dba even though i went into school to become an electrical
+electronics engineer
+
+*In what areas do you need to improve technically?
+Are you asking about technology or personality
+
+*What did you like most and least about your last job?
+Liked = remote
+dislike = no benefits
+
+*How do you handle pressure?
+I break the problem into smaller problems then i go from there
+
+*Do you prefer to work alone or on a team?
+Team
+
+*How would you describe youridealjob?
+A job where we're constantly using new technology and Remote
+
+*If you were to hire someone to replace you in your last job,
+what kind of person would that be?
+I'd hire someone with patinnce and good at handling pressure
+
+*Where do you see yourself in five years?
+In a senior position
+
+*What kind of compensation are you looking for?
+$95000
+
+*What do you do when priorities change quickly?
+I quickly put my attension into that new obejctive as to accomplish
+that new objective in time

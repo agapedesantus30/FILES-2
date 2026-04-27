@@ -1,0 +1,267 @@
+What are the Editions of SQL Server available?
+What is SQL Server Instance?
+What is the difference between default and Named Instance? (Video Answer)
+How many SQL Server Instances can be installed on one Server? (Video Answer)
+What is Collation? What Collation will you pick while installing SQL Server?
+Can you have different Collation on different Databases in SQL Server Instance? (Video Answer)
+Can Instance Level Collation be different from Database Collation? (Video Answer)
+What are the best practices to place data files, log files and tempdb on Storage?
+What are file groups? How would you relate File groups with Partitioned Table?
+Is it best practice to have Auto Shrink enable on Database? (Video Answer)
+While installing SQL Server instance , you have used default accounts. Later you want to change to Service account, how would you do that? (Video Answer)
+What is TDE and why do we use it?
+If TDE is enabled on Database, Do we have to write some special code on application side to access data?
+What are the steps to enable TDE on database?
+Is there any performance overhead because of TDE enabled on Database?
+If you need to restore TDE Enabled database to different server, what steps are involved?
+What are different types of data compression available in SQL Server?
+How would you allocate minimum and maximum memory to SQL Server Instance?
+What is the difference between Offline and Emergency state of a Database?
+Can you set Database into ReadOnly state?
+What is CPU Affinity?
+What is IO Affinity? (Video Answer)
+What is MAXDOP , How do you change it?
+How would you find out who has dropped database?
+If you have to find out that how many times the backup of a database is taken, Where will you look for that information?
+How would you find open transactions in SQL Server?
+How would you find blocked processes in SQL Server?
+What is locking in SQL Server? (Video Answer)
+How would you trace deadlock in SQL Server? ( Video Answer)
+Let's say you have lost the password for sa, How would you recover that? (Video Answer)
+What is TUF(Transaction Undo File) file and in which process it is created? (Video Answer)
+What is link Server? Can link server be created for Oracle from SQL Server? (Video Answer)
+What is sparse column? What are the advantages and disadvantages?
+Which DBCC Commands have you used often as SQL Server DBA?
+How would you script all SQL Server Agent Jobs? (Video Answer)
+How would you script entire database (Tables, SPs,Views etc.) with data?
+How would you migrate a database from SQL Server Instance to Another SQL Server Instance?  (Video Answer)
+You have taken a backup of a database from SQL Server 2008R2, Can you restore this to SQL Server 2005 Instance?
+What will be your strategy when you need to migrate SQL Server 2008 to SQL Server 2012? (Video Answer)
+What is difference between Backup/Restore and Detach/Attach Database? (Video Answer)
+When should we update Statistics on SQL Server Database and why? (Video Answer)
+How would you find out how much space is allocated to Database Log file and how much is used? (Video Answer)
+What is Database Engine Tuning Advisor and where do you have used it? (Video Answer)
+If you need to Kill all processes related to a Database , how would you do that?
+Explain the steps to perform Table Partitioning and best practices? (Video Answer)
+How would you determine the version and Edition of SQL Server Instance you are working on? (Video Answer)
+What are the steps to Restore a SQL Server Database to a Point in Time? (Video Answer)
+How would you shrink the tempdb database in SQL Server? (Video Answer)
+Which built in tool you have used to Monitor SQL Server activity? (Video Answer)
+How would you identify table level locks in SQL Server? (Video Answer)
+What is isolation level and what are four types of them? (Video Answer)
+If you need to query Oracle database from SQL Server, how would you do that? (Video Answer)
+What are the differences between DMV's and DMF's? (Video Answer)
+The tran log of a database has grown huge, How would you shrink the log file? (Video Answer)
+What are the important points you consider before coming up with Backup strategy? (Video Answer)
+You have installed SQL Server Instance on Window 2008 Server. Total Memory of Server is 64 GB but you need to assign only 12 GB to SQL Server Instance, how would you do that? (Video Answer)
+What is the difference Between Index Rebuild and Index Reorganize? (Video Answer)
+How would you create a SQL Server Agent job that only should run on 5th business day of each month? (Video Answer)
+You have provided some permission on a Database to a users, but user is not able to connect to that Database. Where will you see the error details in SQL Server? (Video Answer)
+You have a big database, Before taking the full backup you want to estimate the total time for backup. How would you do that? 
+You have received a large( 2 GB in size) .sql file, How would you execute that .sql file on SQL Server?
+You need to find out the Job execution history for last ten days, Where will you search for that? (Video Answer)
+You are planning to move database from one server to another server. But there are changes the stored procedures are using some cross database queries. How would you find out if any of the Stored Procedure is using DatabaseTest in definition?
+Your company has found out that the account SQL Services are running is not what it should be. They want you to change to Service account, How would you do that? (Video Answer)
+What is the differences between differential database backup and Transaction log backup? (Video Answer)
+What permissions will you grant to a users in SQL Server database, so He/She can truncate table?
+What are DDL Triggers? Where and why have you created them? (Video Answer)
+How would you perform Schema comparison between two databases? (Video Answer)
+You need to perform Data Comparison between two tables,How would you do that? (Video Answer)
+You need to backup all the logins and Jobs, How would you do that? (Video Answer)
+You have installed Name Instance of SQL Server, After installation you realized that you misspelled the instance name. Can you correct the name of SQL Server Instance without re- installation?
+You have installed SQL Server instance on Windows 2008 (MyServerName\MySQLInstance). If your want to change the computer name to only ServerName, Will SQL Server Instance will or You have to re-install SQL Server Instance?
+What is DAC (Dedicated Administrator Connection) ? Is it enabled or disabled by default? Why and where we use this feature?
+You need to create full backup of all the databases from one of the SQL Server Instance every night. If any new database is created that should also become the part of backup process. What would be your approach to perform this? (Video Answer)
+All the sudden, users start complaining that the SQL Server is running slow. What steps you would take to analysis the problem? (Video Answer)
+What is by default SQL Server Agent Job history Retention? If you need to keep two week of history for each of the job what steps will you take when some of the jobs run every five minutes and some run one time a day? (Video Answer)
+If you need to find all the processes running by specific login, How would you do that? (Video Answer)
+How would you find out how many transactions/second SQL Server Instance is performing? (Video Answer)
+How would you find currently running queries on SQL Server Instance? (Video Answer)
+How would you find orphan users and fix them? (Video Answer)
+How would you script user with permission from a SQL Server Database?
+Your company has a Database for which the Tran Log grows very fast. What strategies you should adopt to keep the Tran log reasonable? (Video Answer)
+What is the difference between Actual Execution plan and Estimated Execution plan? (Video Answer)
+What is the difference between Differential Backup and Full Backup? (Video Answer)
+What are two Server Authentication modes available in SQL Server? (Video Answer)
+If you have installed SQL Server Instance with Windows Authentication Mode and later you want to change to Mix Mode (SQL Server and Windows Authentication Mode), How would you do that and does it require service restart? (Video Answer)
+What is the difference to Restore database "Restore With NoRecovery" and "Restore With StandBy"? (Video Answer)
+What are major differences between SQL Server 2005 and SQL Server 2008 version?
+What are the major difference between SQL Server 2008/R2 and SQL Server 2012 version?
+What is the difference between Full Backup and Copy option in Full Backup? (Video Answer)
+How would you find out that How long SQL Server Instance is running? (Video Answer)
+What is index fragmentation? (Video Answer)
+What is the difference between Physical and Logical Reads? (Video Answer)
+Does SQL Server allow duplicate indexes ( indexes with different name but same definition)? If yes, How would you find them and keep only one of them? (Video Answer)
+What is the difference between shrinking and truncating database log file? (Video Answer)
+What are the best practice to configure TempDB? (Video Answer)
+What is Latch? What is the difference between Latch and Lock? (Video Answer)
+What is the difference between Schema and Database?
+What is the Statistics in SQL Server? (Video Answer)
+What are Trace Flags in SQL Server? (Video Answer)
+What is SQL Server hash operator?
+What is the difference between 64-Bit and 32-Bit releases of SQL Server? (Video Answer)
+What are the best practices to shrink a database? 
+What is Service Account in SQL Server? (Video Answer)
+What is SQL Server Column Encryption? What are the steps to create Column Encryption?
+What is the difference between Service Master Key and DataBase Master Key?
+To See encrypted data by Column Encryption, What permissions are required by user to access data?
+If you need to Backup and Restore Column Encrypted Database, What steps has to be performed?
+If we enable Column Level Encryption in SQL Server, Will there any impact on performance?
+What is Encryption Hierarchy in SQL Server?
+What is Replication in SQL Server? (Video Answer)
+Why do we use Replication, Provide couple scenarios? (Video Answer)
+What are the types of Replication? (Video Answer)
+When do we use snapshot replication? (Video Answer)
+What exactly merge replication is? (Video Answer)
+Can you schedule replication? And under what circumstances do we schedule replication? (Video Answer)
+Your team needs to know if replication breaks/fails, what exactly would you do to accomplish that? ( Video Answer)
+What is re-initializing means in replication? (Video Answer)
+Under what circumstances will you re-initialize replication? (Video Answer)
+How would you add new tables in existing replication? (Video Answer)
+Can you explain what would be the replication overhead on production server? (Video Answer)
+Transactional replication is set on production source, article schema changed on source but target is not showing that change, what exactly is the issue? (Video Answer)
+How will you truncate the replicated table? (Video Answer)
+How would delete replicated database? (Video Answer)
+Can you bring replicated database offline? (Video Answer)
+What is orphan replication? And how would you cleanup replication? (Video Answer)
+What is the difference between log shipping and replication? (Video Answer)
+Under what scenarios would you use log shipping? (Video Answer)
+What is new in SQL server 2012 that's not available in previous versions of SQL servers? (Video Answer)
+What is AlwaysOn in sql server 2012? (Video Answer)
+What are prerequisites of AlwaysOn? (Video Answer)
+What is Availability Group? (Video Answer)
+How many databases can be in One Availability Group? (Video Answer)
+What is Listener in AG? (Video Answer)
+Why do we use Listener in Availability Group? (Video Answer)
+Under what circumstances Availability Group fails over? (Video Answer)
+What is primary replica in AG? (Video Answer)
+What is secondary replica in AG? (Video Answer)
+How many secondary replica can be configured? (Video Answer)
+What are some advantages of using AlwaysOn feature? (Video Answer)
+Can you rename Availability Group? (Video Answer)
+You have setup AlwaysOn and send application team to connect with SQL server using Listener, application can't connect with Listener name, what could be the issue?
+Can you configure Listener using static port? (Video Answer)
+Listener port is set to 1533, can you connect to SQL server using Listener name? (Video Answer)
+Availability Group is in resolving state, what does it mean? (Video Answer)
+What are SQL server Browsing services? (Video Answer)
+Why do we use SQL server Browsing services? (Video Answer)
+What is recommended configuration of SQL server browsing services? (Video Answer)
+Can you setup replication with AlwaysOn? (Video Answer)
+Can you use primary or secondary replica as a distributor? (Video Answer)
+What are the issues using primary or secondary replica as your main distributor? (Video Answer)
+What is Auto failover of primary replica? (Video Answer)
+What does read intention mean in AG? (Video Answer)
+What does in-memory Store procedure mean? (Video Answer)
+What are tempdb recommended settings in sql server 2012?
+SQL server connection is timing out, what would you do to resolve it?
+Tempdb log is full, how would you shrink tempdb? (Video Answer)
+Can you move tempdb files location without restarting sql server services?
+What is SQL Server Clustering? (Video Answer)
+Why do we use clustering? (Video Answer)
+What are the prerequisites of sql server clustering?
+How to add a resource in existing cluster? (Video Answer)
+What is failover? 
+What is shared storage in SQL server cluster?
+How would you find out if SQL server failover happened? (Video Answer)
+Applications can't connect to SQL Server after failover, what could be the issue? (Video Answer)
+SQL Server Agent resource is not coming online, what could be the issue?
+What is the difference between cluster mode and standard mode sql server installation? (Video Answer)
+SQL server cluster installation failed, where would you look the cause of failure? (Video Answer)
+How many SQL server instances can you add in a cluster? (Video Answer)
+Can you find out using SSMS current node for SQL Server Services? (Video Answer)
+What is alias in sql server?
+How can you find out sql server IP address?
+How can you find out SQL server Port? 
+What is active-active cluster? (Video Answer)
+What is active-passive cluster? (Video Answer)
+What is cluster aware? (Video Answer)
+Is SSRS cluster aware? (Video Answer)
+Is SSIS cluster aware? (Video Answer)
+Is it recommended to install SSRS and SSIS during cluster mode SQL Server Installation? (Video Answer)
+What is scale out deployment in SSRS? (Video Answer)
+Can you configure SSIS as cluster aware?
+Some of your external vendors can not connect to SQL server in intranet, what could be the cause? (Video Answer)
+You can't connect SQL server from client machine with in intranet, what could be the cause? (Video Answer)
+Client can connect to SQL server using IP address but can't connect using SQL server instance name, what could be the cause? (Video Answer)
+How to configure SSIS to store packages in MSDB? (Video Answer)
+How to configure SSIS to store package in central location?
+What is backward compatibility means in SSIS?
+How to configure SQL server's memory? (Video Answer)
+What are best practices to configure SQL server's memory?
+If SQL server's memory is not configured, what can happen to the system? (Video Answer)
+System Admin sends you an email that SQL Server services are taking almost all the memory, what steps would you take to resolve it? (Video Answer)
+SQL server lost connection with AD, what will happen to SQL Server?  (Video Answer)
+SQL services are not starting, where would you look for the cause? (Video Answer)
+Can you restore master database? (Video Answer)
+You want to know if SQL services restarted or stopped via email, how would you accomplish that? (Video Answer)
+How do you keep up with SQL server updates?
+Have you ever installed SQL server patches?
+What is the latest service pack available in sql server 2012? (Video Answer)
+You are restoring the databases by using SQL Server agent job,How would you find that how much percentage of restoration is completed?
+What is deployment ? Have you been involved in deployment process?
+If you have to deploy 20 SSIS Package to SQL Server Integration Services, How would you do that?
+If you have to deploy SSIS Packages to File system, What steps would you follow?
+What is Version Control? Which software you have used for version controlling?
+What is Team Foundation Server? Why did you use it?
+What is Check-In and Check-Out in TFS?
+What are the best practices when you need to deploy DDL and DML scripts to Database?
+How would you deploy SSRS report to Report Server? If you have to deploy 100 reports to Report Server how would you do that?
+Can Data Sources, Data Sets deployed from SSRS Project to Report Server? or You have to create them manually?
+How would you deploy SSAS Cube to SQL Server Analysis Services Server?
+Can we deploy more than one Cube in SSAS Database?
+What are the best practices for SQL Server Change Management?
+A users has left the organization, How would you drop his login and user name from all databases from SQL Server?
+You need to set Recovery mode =Simple for all the databases on development machine. How would you do that quickly? 
+How would you rename logical files of SQL Server Database? 
+How would you move data or log file of a Database from one drive to another? 
+What are the types of Database files? How would you get the information about them?
+What is Contained Database? In which version of SQL Server they were introduced?  (Video Answer)
+What is Policy- Based Management in SQL Server? (Video Answer)
+How would you identify the isolation level used by the query when dead lock occurs? (Video Answer)
+What is FileTable Feature in SQL Server, How does it works? (Video Answer)
+You need to import large amount of data to tables in a database, you want to keep the transaction log size small while import the data, How would you do that? (Video Answer)
+You need to save passwords in SQL Server Table, What type of encryption would you use?
+For what purpose do you use Dynamic management views?
+You have 35  Databases on one of the SQL Server instance, You need to create process to take full backup nightly and transaction log backup every hour, how would you do that? (Video Answer)
+You need to store and manager unstructured data in SQL Server, Which approach you would use it? (Video Answer)
+What is FileStream in SQL Server? (Video Answer)
+What are advantages of FileStream?
+What is the difference between FileStream and FileTable?
+You have a Server that has 24 processors, You need to install multiple SQL Server instances on it.What method you will use to allocate processors to each instance depending upon the requirement? (Video Answer)
+Suppose you have a big table with million of rows. You need to provide a solution in which the most recent data should be stored on fastest storage and old data on slow storage, What solution would you provide for this scenario? (Video Answer)
+Why do you use Resource Governor? (Video Answer)
+Can you use Resource Governor for SSAS,SSIS and SSRS services? (Video Answer)
+How would you find out when SQL Server was restarted last time?
+You have CDC enabled on a database, If you take a backup of CDC enabled Database and restore to another instance, Will CDC Tables available?
+How would you restore CDC enable Database to different instance in a way that CDC tables should be available?
+If You have to include new article ( table, view, Stored Procedure or function) in Replication, how would you do that?
+What are different type of indexes available in SQL Server? (Video Answer)
+What are filtered Index in SQL Server? (Video Answer)
+You need to save credit card information in SQL Sever, What would be your suggestion for encryption?
+You need to save some image file for your application, What would you suggest? You are using SQL Server 2014.
+Can you create two tables with different collation in a database? (Video Answer)
+You get the request to create ER( Entity Relationship Diagram) for the tables in a database, Which tool/s would you use to create that? (Video Answer)
+What is Full Text Search in SQL Server? Where do you need to use this feature? (Video Answer)
+Do you recommend auto growth for Database files? If not why? (Video Answer)
+ANSI explain 4 types of isolation, SQL Server has  one more type in SQL Server , What is the name of that? (Video Answer)
+What is default Isolation level set for SQL Server Instance? (Video Answer)
+Can you have In memory Table without Index or without Primary key? If not then Why? (Video Answer)
+What's your experience with Backup Compression, It does compress the backup file, Does it take long to restore compressed backup?
+How Database Backup Encryption in SQL Server 2014 is different from TDE ( Transparent Data Encryption).
+Is it recommended to Run DBCC CheckDB on Production servers? If not then what solution you suggest? (Video Answer)
+What is mount point? Why do we need to use it? (Video Answer)
+What are data pages in SQL Server? (Video Answer)
+What are Extends in SQL Server? (Video Answer)
+How many files do you need for Tempdb? (Video Answer)
+Can SQL Server Instance be up without TempDB? (Video Answer)
+Is TempDB created based on Model database properties?
+How would you find out if CDC ( Change Data Capture ) is enable or disable on a database?
+How would you enable CDC on a Database?
+How would you disable CDC on a Database?
+How would you configure CPU Affinity?
+How would you track changes of a particular period by using Change Data Capture function?
+How would you disable CDC ( Change Data Capture ) on a table?
+How to Configure existing standalone sql server named instance if Machine names changes? (Video Answer)
+Replication Error, can't connect to actual server, @@servername returns Null (Video Answer) 
+How to give read permission to non administrative accounts to Event Viewer in Windows 2008R2/2012 ? (Video Answer)
+How to resolve Availability Group Listener Errors?

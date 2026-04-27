@@ -1,0 +1,27 @@
+	Database Development Process
+*Requirement Gathering
+Talk to the customers(database user) to understand whats the purpose
+of this database. and come to a legal agreement on how to implement this
+Idea.
+
+*Analysis
+This is process is to obtain a description of data that will fit users
+requirement In layman terms this is us asking the question "what is 
+required" and "Not how is it achieved"
+
+*Logical Design
+Here in this process is where the designer will ask the question 
+which table is best suitable for the data in the database
+
+*Implementation
+This is the construction of the database according to the specification
+of a logical schema
+
+*Realizing the Design
+After the logical design has been created, we need our database to be 
+created according to the definitions we have produced. 
+
+*populating the database
+After a database has been created, there are two ways of populating the 
+tables – either from existing data or through the use of the user 
+applications developed for the database.

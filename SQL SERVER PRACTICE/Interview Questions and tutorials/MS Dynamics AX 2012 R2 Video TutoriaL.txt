@@ -1,0 +1,58 @@
+Installation
+ How to install windows components as prerequisites of installing Microsoft Dynamics AX 2012 R2
+How to install Microsoft Dynamics AX AOS Server and Client
+Compile Application in Microsoft Dynamics AX 2012 R2
+How to compile into Net Framework CIL in Microsoft Dynamics AX 2012 R2
+How to install Enterprise Portal in Microsoft Dynamics AX 2012 R2
+How to install SharePoint 2010 as prerequisites of installing Microsoft Dynamics AX 2012 R2
+How to upload License in Microsoft Dynamics AX 2012 R2
+How to install and Configure Contoso sample data in Microsoft Dynamics AX 2012 R2
+How to install Microsoft Analysis services SSAS extension in MS Dynamics AX 2012 R2
+How to install Reporting Extension in Microsoft Dynamics AX 2012 R2
+How to enable breakpoints and view different settings of Microsoft Dynamics AX 
+
+User Security Administration 
+How to manually create user in Microsoft Dynamics AX
+How to Import Active Directory user in Microsoft Dynamics AX 
+How to create Active Directory Group in Microsoft Dynamics AX
+How to create a role, duties and privileges in Microsoft Dynamics AX 
+How to assign usersgroup to a particular role in Microsoft Dynamics AX
+Port Configuration 
+What are the differences between basic and enhanced Ports in Microsoft Dynamics AX
+ What is the difference between Inbound Ports and Outbound Ports in Microsoft Dynamics AX
+ How to create setup enhanced Port in Microsoft Dynamics AX 2012 
+ Client Configuration
+How to change company type in client configuration of Microsoft Dynamics AX 
+ How to change start up time for Dynamics AX Services
+ How to create a Group Policy Logon Script for Dynamics AX client installation
+ How to create a Legal Entity in Microsoft Dynamics AX
+Services Configuration
+Services Overview in Microsoft Dynamics AX 2012
+What are adapters and how many adopters are used in Microsoft Dynamics AX 2012
+How to Configure application Pool IIS 7.0 associated with Microsoft Dynamics AX 2012 Web Services
+How to Configure security of AIFWebServices in Microsoft Dynamics AX 2012
+How to install Web Services on IIS in Microsoft Dynamics AX 2012
+How to troubleshoot and Monitor Different Services in Microsoft Dynamics AX 2012 R2
+Work Flow
+Overview of Workflows in Microsoft Dynamics AX 2012 
+Microsoft Dynamics AX 2012 - How to create a workflow in Microsoft Dynamics AX 2012 
+
+Batch Server Configuration 
+
+How to configure an AOS server as batch server in Microsoft Dynamics AX 2012
+How to configure an AOS server as Load balancer server in Microsoft Dynamics AX 2012
+Models in MS Dynamics
+How to create model in Microsoft Dynamics AX 2012
+How to delete a model in Microsoft Dynamics AX 2012
+How to edit model version in Microsoft Dynamics AX 2012
+How to export a model in Microsoft Dynamics AX 2012
+How to Import a model in Microsoft Dynamics AX 2012
+What are models and model concepts in Microsoft Dynamics AX 2012
+Report Configuration
+How to configure Report security in Microsoft Dynamics AX
+How to add report to the Role Center in Microsoft Dynamics AX
+How to create report in Microsoft Dynamics AX 2012
+How to create Analysis Services Cube in Microsoft Dynamics AX 2012
+How to setup Source Control / Version Control in Microsoft Dynamics AX 2012 R2 
+How to create SSRS report from SQL Server Analysis Services Cube in Microsoft Dynamics AX 2012 R2 
+How to Display a SSRS Report in Menu in Microsoft Dynamics AX 2012 R2

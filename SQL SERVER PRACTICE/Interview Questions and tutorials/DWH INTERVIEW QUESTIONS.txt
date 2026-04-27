@@ -1,0 +1,46 @@
+DWH INTERVIEW QUESTIONS
+1.       What is Data Normalization and Denormalization?
+2.       Why would you like to Denormalize your design?
+3.       What is Data Warehouse?
+4.       Why do we need Data Warehouse?
+5.       What is data Mart?
+6.       What is the difference between Bill Inmon  and  Ralph Kimball approaches of Data Warehouse architecture?
+7.       What is Dimensional Model?
+8.       What is the difference between Dimensional Model and Entity-Relationship model?
+9.       What is Fact table and what are different types of Fact Table?
+10.   What is FactLess Fact Table and where do we need to create this table?
+11.   What are the steps involved in Designing a Fact Table?
+12.   What is Measure and what are types of Measures?
+13.   What is Dimension table?
+14.   What are different types of Dimension Table?
+15.   What is Slowly Changing Dimension table?
+16.   How different is SCD1 from SCD2?
+17.   What are two columns available in SCD2 those help to track changes?
+18.   Which Type of Dimension would you like to use and why? Have you used SCD3. If not then why?
+19.   What is Slowly change dimension type0,type4,type6?
+20.   What is Junk Dimension?
+21.   What is Conformed Dimension?
+22.   What is Date Dimension  and how will you load Date dimension?
+23.   What is Star Schema?
+24.   What is Snowflake Schema?
+25.   What are the advantages/disadvantages of Start Schema?
+26.   What are the advantages/Disadvantages of snowflake schema?
+27.   What are the steps to load Data Warehouse/Data Mart by using any ETL Tool?
+28.   Which tables do you load first while loading DWH ( Dimensions or Fact)?
+29.   What is Early Arriving Fact or Late Arriving Dimension , Explain how would you handle those records?
+30.   What is Natural Key?
+31.   What is Surrogate Key?
+32.   What is Primary key?
+33.   What is Foreign Key?
+34.   In your Data Warehouse , Do you like to use Natural Keys or Surrogate Keys and why?
+35.   You have this big fact table and have indexes created on it, you have to load 300 Million records, what will be your approach to load this big fact table?
+36.   What are the best practice for big fact table? Do you advise to implement partitioning? What are the factors you consider before deciding about partitioning?
+37.   What is the best practice to create cluster or non-cluster index on Surrogate Key for each dimension table?
+38.   What type of indexes would you suggest to create on frequently searched dimension columns beside surrogate key column?
+39.   Do you suggest to partition dimension tables or only fact tables?
+40.   How will you ensure data integrity in DWH?
+41.   After designing, you have to load data in DWH, What recovery mode will you choose for initial Data load in case when you have 700 million records for your fact table?
+42.   After your daily load, you figured out that wrong data is loaded in your fact table, you ran some queries and found out that you have to delete 100 million records from fact table, what steps will you take to perform that?
+43.   How often do you suggest to update statistics on fact table? What factors will you consider to support your suggestion?
+
+44.   What is Merge Statement in SQL Server?

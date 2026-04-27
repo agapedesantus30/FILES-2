@@ -1,0 +1,129 @@
+Chapter 1 :  Database
+
+How to create / drop database/Schema in MySQL or MairaDB 
+How to get size of MySQL Databases or MariaDB Databases
+How to check if MySQL database exists
+How to get list of all MySQL Databases
+Chapter 2 : Tables / Columns
+How to create table by using Create table statement in MySQL/MariaDB
+How to Create Table by using MySQL Workbench GUI
+How to Rename Table or Column in MySQL Database
+How AUTO INCREMENT property works in MySQL or MariaDB 
+What is Primary Key in MySQL and How to create Primary Key in MySQL
+Comments in MySQL or MariaDB
+How to use "Create Table AS" in MySQL or Mairadb
+What is Unique Constraint and How to create Unique Constraint in MySQL
+How to drop Unique Constraint in MySQL / MariaDB
+What is Check Constraint in MySQL, How to create Check Constraint in MariaDB
+What is Foreign Key and How to create Foreign Key in MySQL / MariaDB
+What is the difference between Unique Constraint and Primary Key
+NOT NULL Constraint in MySQL / MariaDB
+How to Alter table ( Add Column, Drop Column, Modify Data type) in MySQL
+How to create and drop Temporary Table in MySQL or MairaDB
+Get the new record primary key ID from MySQL insert query
+How to get the next Auto Increment id in MySQL
+How to  start auto increment from a specific point in MySQL
+How to insert data into MySQL Table
+Inserting multiple rows in MySQL Table in Single Statement
+How to get the sizes of the tables of a MySQL database
+How to get record counts for all tables in MySQL database
+How to Add Auto_Increment column to existing Table
+How to Reset Auto_Increment Column in MySQL Table
+How to drop or disable Auto_Increment Property of column in MySQL Table
+How to add Computed Column in MySQL Table
+How to add column to all tables in MySQL Database
+How to Rename Column in all tables in MySQL Database
+
+
+Chapter 3 : Retrieve Data
+How to Select data from Table in MySQL or MariaDB
+How to Select Distinct Data from Table in MySQL or MariaDB
+How to use Limit in MySQL Query
+How to use Count in MySQL Query
+FOUND_ROWS() Function for Total Number of Rows Affected in MySQL
+How to get Random Rows from MySQL Table
+Using Union and order by clause in MySQL
+How to use Sorting ( Order By ) in MySQL or MairaDB
+How to use Group by to group data in MySQL or MariaDB
+How to use Min and Max Functions in MySQL or MairaDB
+How to use Union Operator in MySQL
+How to use Union ALL Operator in MySQL
+How to use Minus in MySQL or MairaDB
+How to use INTERSECT in MySQL or MariaDB
+MySQL Rollup
+Null and Blank values in MySQL
+How to check if a column is empty or null in MySQL
+How to find Duplicate Records in MySQL Table
+
+Chapter 4 :  Operators and Comparison Functions 
+How to use OR Operator in MySQL
+How to use AND operator in MySQL
+How to use Comparison Operators in MySQL
+How to use Like Operator in MySQL or MariaDB
+How to use BETWEEN and NOT BETWEEN operator in MySQL
+
+
+Chapter 3: MySQL Loops
+
+How to use CASE statement in MySQL or MariaDB
+How to use IF THEN ELSE in MySQL
+How to use 1TERATE in MySQL
+How to use LEAVE in MySQL
+How to use Loop in MySQL or MariaDB
+How to use Repeate loop in MySQL
+How to use Return in MySQL
+How to use While Loop in MySQL or MairaDB
+
+Chapter 4 - JOINS
+
+Inner join in MySQL 
+Outer Join in MySQL 
+Left Outer Join in MySQL 
+Right Outer Join in MySQL
+Full Outer Join in MySQL or MariaDB
+How to use Subquery in MySQL or MariaDB
+
+Chapter 5: Update / Delete Rows
+
+How to delete data from single Table
+CasCade Delete in MySQL 
+How to Update data in MySQL or MariaDB
+MySQL Replace
+MySQL Delete Join
+How to Truncate a table in MySQL | How to Truncate all Tables in MySQL
+How to delete a certain row from MySQL table with same column values
+
+
+
+Chapter 7 ( Functions and Stored Procedures)
+Variables in MySQL
+How to create function in MySQL
+Build in Functions in MySQL
+How to find existing functions
+how to drop function in MySQL or MariaDB
+What is Stored Procedure, what are paramters types
+how to create procedure and execute in MySQL
+How to drop Stored Procedure in MySQL and MariaDB
+
+Chapter 8 (Cursor)
+What is Cursor in MySQL
+What are differnet types of Cursors in MySQL or MariaDB
+How to create cursor in MySQL or MairaDB
+
+Chapter 10 - MySQL Triggers
+
+What is After Delete Trigger in MySQL
+What is After Insert Trigger in MySQL
+Method 1- What is After Update Trigger in MySQL 
+Method 2- What is After Update Trigger in MySQL
+What is Before Delete Trigger in MySQL
+What is Before Update Trigger in MySQL
+What is Drop Trigger in MySQL
+
+
+Chapter 11-  String Functions 
+
+CONCAT Function - How to Concatenate multiple rows into single filed in MySQL
+How to convert string into date in MySQL
+How to concatenate two columns into single in MySQL
+How to concatenate multiple Rows into single field in MySQL

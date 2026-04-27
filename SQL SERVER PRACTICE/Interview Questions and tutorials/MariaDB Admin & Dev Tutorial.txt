@@ -1,0 +1,80 @@
+Chapter 1 : Installation
+
+
+How to Install MariaDB on Windows 10
+How to Change MariaDB Data Directory on Windows
+How to Uninstall MariaDB from Windows 10
+How to Install MariaDB on Windows 2012 Server
+How to Install MariaDB on Linux Stand Alone
+How To Move a MariaDB Data Directory to a New Location on Linux
+How to Uninstall MariaDB from Linux CentOS
+How To Create a Galera Cluster with MariaDB 10.2 on CentOS Servers
+Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock
+How to Upgrade MariaDB 10.1 to MariaDB 102. on CentOS
+How to migrate from MySQL to MariaDB on Linux
+
+
+Chapter 2 : Permissions
+
+How to create/Drop User in MariaDB
+How to Grant all the permissions to User in MariaDB
+How to Grant Full Permission on a Database to a User in MariaDB
+How to Grant Select Permission on Table/s  to User in MariaDB
+How to Grant Update Permission on Table/s to a User in MariaDB
+How to Grant INSERT Permission on Table/s to a User in MariaDB
+How to Grant Drop/Create Table Permission to a User in MariaDB
+How to Grant Delete Permission on Table/s to a User in MariaDB
+How to Grant Permission on Table Columns in MairaDB
+What is GRANT OPTION in MariaDB
+How to RENAME USER in MariaDB
+How to use REVOKE statement in MariaDB
+How to Change Password in MariaDB by using SET Password
+How to create ROLE in MariaDB
+How to DROP ROLE in MairaDB
+How to see Permissions of a user in MariaDB
+How to change Root Password for MariaDB
+
+
+Chapter 3 :  Backup / Restore
+How to perform backup of a database in MairaDB/MySQL by using mysqldump
+Take backup of each DB in newly created timestamp directory by using mysqldump for MairaDB /MySQL
+How to take backup of specific databases in MySQL or MariaDB
+Create Zip Backup files for each Database by using mysqldump in MySQL or MairaDB
+How to take a backup of single table in MySQL or MairaDB by using mysqldump
+How to backup every table from a database to separate file by using mysqldump in mysql or Mairadb
+How to backup all Databases to single file in MySQL or MairaDB by using mysqldump
+How to monitor the progress of backup in MySQL or MariaDB
+How to Restore a database in MySQL or MariaDB
+How to create zipped Backup and Restored zipped Backup in MySQL or MariaDB
+Restore single MySQL table from a full mysqldump backup file
+How to monitor the Restore progress in MySQL or MariaDB
+Restoring a single database from a complete MySQL database dump
+
+Chapter 4: Databases
+How to drop multiple databases in MySQL or MariaDB
+
+Chapter 5 : Logging
+What is Error Log and How to setup in MariaDB
+What is General Query Log in MariaDB and How to Enable Query Logging in MariaDB
+What is Slow Query Logging in MairaDB or MySQL and How to Enable Slow Query Log in MySQL or MairaDB
+What is Binary Logging and How to enable in MariaDB
+Graphical Tools - Heidi SQL 
+How to download and Install Heidi SQL for MySQL or MariaDB
+How to connect to MySQL or MariaDB from Heidi SQL
+How to create a Database in MySQL or MariaDB by using Heidi SQL
+How to create a table in MySQL or MariaDB by using Heidi SQL
+How to use SQL Help , Code Examples , Snippets , Templates in Heidi SQL
+How to search for text in a table or databases or entire MySQL or MariaDB
+How to Import CSV file into MySQL or MairaDB Table by using Heidi SQL
+Export Results to CSV file from MySQL or MairaDB by using Heidi SQL
+How to Export Results To JSON from MySQL or MariaDB by using Heidi SQL
+Create User and Provide Permission by using User Manager in MySQL or MariaDB by using Heidi SQL
+How to Synchronize two database in MySQL or MariaDB by using Heidi SQL
+How to load large size sql file into MySQL or MariaDB without opening it by using Heidi SQL
+How to generate script for entire database with Data for MySQL or MariaDB by using Heidi SQL
+How to Script all database objects for MySQL or MariaDB by using Heidi SQL
+How to make a copy of a table in MySQL or MariaDB by using Heidi SQL
+How to mark different objects such as tables views as Favorite in Heidi SQL for MySQL or MariaDB
+How to get Query History in Heidi SQL for MySQL or MairaDB
+How to Check Currently Running Queries / Processes on MySQL or MariaDB by using Heidi SQL
+How to Check and Change Server Level Setting for MySQL or MariaDB by using Heidi SQL

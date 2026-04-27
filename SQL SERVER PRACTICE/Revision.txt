@@ -1,0 +1,36 @@
+
+critical vs non-critical 
+how much data loss can we afford to lose - 
+DB size
+Available storage 
+Backup Retention (RPO, RTO) 
+Recovery model
+
+
+Daly Full Backup - midnight daily
+Hourly Diff 
+15 min - tlog 
+
+Failure ocurs 9:40pm 
+recover with minimal data los 
+
+Restore most recent full backup - Midnight 
+Restore most recent diff - 9pm 
+Restore all transaction logs after diff - 9:15, 9:30
+
+Restore with tail log backup 
+
+
+
+What level of HA (object/Database/Server)
+What are the requirements 
+What are the roles
+What is the process\how is data kept in sync 
+
+
+GWINNETT TECHNICAL COLLEGE 
+
+
+
+
+

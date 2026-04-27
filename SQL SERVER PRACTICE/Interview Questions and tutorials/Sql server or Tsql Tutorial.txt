@@ -1,0 +1,180 @@
+Chapter 1 (Introduction to SQL Server Management Studio (SSMS)
+
+How to Install SQL Server Management Studio Step by Step
+How to Connect to SQL Server Default Instance and Named SQL Server Instances from SSMS
+Connect to SQL Server Instance by using Windows Authentication or SQL Server Authentication
+How to create shortcut for SSMS and Connect to Default SQL Server Automatically
+How to Connect to Several SQL Servers in One Click (Registered Servers Group)
+How to Set Status Bar Color in SSMS for Different SQL Server Instances
+Configure Start-Up Environment in SQL Server Management Studio (SSMS) 
+Cycle Through Clipboard Ring in SQL Server Management Studio (SSMS)
+Select and Edit Vertical Blocks in SQL Server Management Studio ( SSMS)
+How to create Custom Shortcuts in SQL Server Management Studio ( SSMS)
+How to add Line Numbers in SQL Server Management Studio ( SSMS)
+How to Change Color and Fonts in SQL Server Management Studio ( SSMS)
+How to Split Query Window in SQL Server Management Studio (SSMS)
+How to View Multiple Queries and Results Side by Side in (SSMS)
+How to Display Query and Results in Separate Tab in (SSMS)
+How to use Templates in SQL Server Management Studio (SSMS)
+How to Generate DDL Scripts(create) from SQL Server Management Studio (SSMS)
+Edit Table Rows / Records  in SQL Server Management Studio ( SSMS)
+How to Filter Objects in SQL Server Management Studio (SSMS)
+How to Change Values for Edit Top X and Select Top X Rows in SSMS
+How to Dock / UnDock Query Windows and Other Tabs in SSMS
+How to Handle Multiple Objects by using Object Explorer Detail Windows in SSMS
+How to Export query result to .csv or Tab Delimited File in SSMS
+How to Uninstall SQL Server Management Studio(SSMS)
+
+Chapter 2: Databases
+How to Create Database in SQL Server By using TSQL or GUI
+How to Drop Database by using TSQL and GUI
+How to Rename Database in SQL Server by GUI and TSQL
+Chapter 3: Schemas
+What is Schema in SQL Server and How to Create/Drop Schema in SQL Server Database
+How to Change Schema of an Object(Table,View,Stored Procedure) in SQL Server Database
+Cannot drop the schema '', because it does not exist or you do not have permission
+Chapter 4: Data Types
+What are data types and What data types are available in SQL Server
+What is the different between Char and VARCHAR
+What is difference  between VARCHAR and NVARCHAR
+What is the difference between Float and Decimal/Numeric
+Chapter 5: Tables / Columns
+Use Create Statement to Create Table in SQL Server
+How to Alter Table in SQL Server by using Alter Statement
+How to rename Column or Table in SQL Server 
+How to create Table by using GUI In SQL Server
+How to Alter Columns or Generate Alter Scripts by using GUI in SQL Server
+How to Add or Drop Column by using GUI in SQL Server
+How to Add identity Column to Table by T-SQL and GUI in SQL Server
+How To Insert Value In Identity Column Manually in SQL Server Table
+How to create Number Table by using Identity Column in SQL Server
+How To Reset Identity Column Value in SQL Server Table
+How to Drop Identity Property of a Column in SQL Server Table
+How to Find all the Tables in a Database which have Identity Column
+How to Get Identity Column Values without mentioning Identity Column Name in Select 
+How to Add Computed Column in SQL Server Table
+How to Generate Drop Table Statement for all the tables in a database
+How to Generate Add Column Statement for all the tables in a Database in SQL Server
+
+Chapter 6: Constraints
+What are different Types of Constraints Available in SQL Server
+6.1 : Not Null Constraint
+How to create Not Null Constraint on Column in SQL Server Table
+How to Alter Column from Null to Not Null in SQL Server Table
+Get List of All Null and Not Null Columns in SQL Server Database
+6.2 : Primary Key Constraint
+What is Primary Key Constraint in SQL Server Database
+How to Get all the Tables which has Primary Key Constraint Created in SQL Server Database
+How to get list of Tables without Primary Key Constraint in SQL Server Database 
+How to get all the Tables with or without Primary Key Constraint in Sql Server Database
+How to get list of Primary Key Constraint from all the databases on SQL Server Instance
+Get List of Tables with or without Primary Key Constraint in all Database from SQL Server Instance
+How to get list of Tables without Primary Key Constraint in all Databases of SQL Server Instance
+How to add Primary Key Constraint to Identity Columns to all the tables in SQL Server Database
+How to Rename Primary Key Constraint for Multiple Tables in SQL Server Database
+How to drop all Primary Keys from all the tables in SQL Server Database
+6.3 : Foreign Key Constraint
+How to Create Table with Foreign Key Constraint in SQL Server
+How to create Foreign Key Constraint on Multiple Columns in SQL Server Table
+How to add Foreign key Constraint to existing table in SQL Server
+The ALTER TABLE statement conflicted with the FOREIGN KEY constraint in SQL Server
+Cannot truncate table because it is being referenced by a FOREIGN KEY constraint 
+Truncate all the tables in a Database in SQL Server ( Drop Foreign Key- Truncate tables-Recreate Foreign Keys)
+How to get Parent Table, Reference Table, Foreign Key Constraint Name and Columns in SQL Server
+How to drop Foreign Key Constraints in SQL Server Database for all the tables
+How to generate scripts to Re-Generate Foreign Key Constraints in SQL Server Database
+Could not drop object because it is referenced by a FOREIGN KEY constraint
+How to Drop Foreign Key Constraint in SQL Server Database
+The UPDATE statement conflicted with the REFERENCE constraint
+How to disable all Foreign Key Constraint in SQL Server Database
+How to Generate Script To Enable All Foreign Key Constraints in SQL Server Database
+How to create Foreign Key Constraint With ON UPDATE CASCADE in SQL Server
+How to create Foreign Key Constraint with ON DELETE CASCADE in SQL Server
+How to Create Foreign Key Constraint with ON DELETE SET NULL Option in SQL Server 
+6.4 : Check Constraint
+What is Check Constraint in SQL Server
+How to Create Check Constraint on Single Column in SQL Server
+How to Create Check Constraint on Multiple Columns in SQL Server
+How to get list of all Check Constraints in SQL Server Database
+How to get List Enabled / Disabled Check Constraint in SQL Server Database
+How to disable all Check Constraints in SQL Server Database
+How to Enable all Check Constraints in SQL Server Database
+The ALTER TABLE statement conflicted with the CHECK constraint in SQL Server 
+6.5 : Default Constraint
+What is Default Constraint in SQL Server
+How to add Default Constraint to existing Columns in SQL Server Table
+How to List all Default Constraints with Columns in SQL Server Database
+How to rename all Default Constraints according to Naming Standards or naming Convention in SQL Server
+How to drop all Default Constraints in SQL Server Database
+How to generate Scripts to Add Default Constraints to Column in Multiple Tables in SQL Server Database
+6.6 : Unique Constraint
+What is Unique Constraint in SQL Server 
+How to create Unique Constraint on Multiple Columns in SQL Server
+How to create Unique Constraint on Column for already existing Table
+How to get list of columns with Unique Constraints in SQL Server Database
+How to generate drop Unique Constraint scripts in SQL Server Database
+Chapter 7 : Insert Row/s in SQL Server Table
+What are the different ways to insert data into SQL Server Table
+How to insert rows in SQL Server Table by Edit Table Rows GUI
+How to insert Excel or CSV data into Table by using Graphical User Interface in SQL Server
+How to generate Insert Statements from Excel Data and Load into SQL Server Table
+How To Use Import/Export Wizard In SQL Server 
+How to backup or create new table from Existing SQL Server Table in SQL Server
+How to generate Insert Statements from Text Files for SQL Server Table in SQL Server
+Chapter 8: Select Statement for Single Table
+How to quickly write Select Query in SQL Server
+How to use Sorting ( Order By) in Select Statement in SQL Server 
+How to use Where clause in Select Statement in SQL Server
+How to filter Rows with Null Values in Select Statement in SQL Server 
+How to Replace Null values with "Unknown" in Select Statement in SQL Server
+How to get Distinct Records from a table in SQL Server
+ How to use Top with Ties in SQL Server
+Understand Column Alias in Select Query in SQL Server
+How to use Case Statement for Conditional Formatting in Select Query
+How to get random rows from SQL Server Table
+Filtering by OFFSET-FETCH Options in Select query
+Chapter 9 : Operators
+9.1 Logical Operators
+What is Logical OR Operator in SQL Server
+What is Logical AND Operator in SQL Server
+What is NOT Logical Operator in SQL Server
+What is IN Logical Operator in SQL Server
+What is LIKE Logical Operator in SQL Server
+What is BETWEEN Logical Operator in SQL Server
+How to use EXISTS Logical Operator in SQL Server
+How to use ALL Logical Operator in SQL Server
+How to use ANY / SOME Logical Operator in SQL Server
+Aggregate Functions
+How to use Sum, Avg and Count in Select Statement
+How to Get Max and Mix values from a Table by using Aggregate Function
+Understand Group by Clause in SQL Server
+How to apply Having Clause with Group by in Select Query
+How to find duplicate records by using Group by and Having clause in SQL Server
+Difference between Where and Having Clause in Select Query
+
+
+Cursors
+Define the Steps for SQL Server Cursor
+Add Column To All Tables in a Database ( Cursor Example)
+How To Kill All Database Processes in SQL Server ( Cursor Example)
+Truncate all the tables in a Database in SQL Server ( Cursor Example)
+How to Drop or Delete all Triggers from a Database in SQL Server ( Cursor Example)
+How to Disable All the Triggers in SQL Server Database ( Cursor Example)
+SQL Server Cursor Types - Forward Only Static Cursor
+SQL Server Cursor Types - Dynamic Cursor 
+SQL Server Cursor Types - What are Static Cursors in SQL Server
+SQL Server Cursor Types - Forward Only Dynamic Cursor
+SQL Server Cursor Types - KEYSET Cursor
+SQL Server Cursor Types - What is the Difference between LOCAL AND GLOBAL Cursor
+
+Change Data Capture
+How to Enable Change Data Capture(CDC) on Database in SQL Server
+How to Disable Change Data Capture(CDC) on Database in SQL Server
+How to Enable CDC on Set of Tables OR Enable on All Tables in Database
+How to Disable CDC on Set of Tables OR Enable on All Tables in Database
+How to Modify Change Data Capture (CDC) Retention Period
+How to Enable CDC On Entire Table OR Enable CDC On Table With List Of Columns
+How to Create History OR Audit Views from Change Data Capture ( CDC) Tables
+How to Add OR Drop Column From CDC Enabled Table Without Losing Data
+
+

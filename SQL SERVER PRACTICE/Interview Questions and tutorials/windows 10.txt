@@ -1,0 +1,37 @@
+Installation
+How to Install Windows 10 from Scratch
+How to Upgrade your Win 7 to Windows 10
+How to Upgrade your wind 8.1 to Windows 10
+
+Features
+Windows 10 Features - How to use Start Menu in Windows 10
+Windows 10 Features - How to use Cortana for Search and Control
+Windows 10 Features - How to use Task switcher or Task View
+Windows 10 Features - What's New in TaskBar
+Windows 10 Features - How to use Snap Assist
+Windows 10 Features - Action Center
+Windows 10 Features - Command Prompt Improvements
+Windows 10 Features - Improvements to Windows Explorer
+Windows 10 Features - How to use Edge Browser
+Windows 10 Features - How to Open IE in Windows 10
+Windows 10 Features - How to Setup Multiple desktops in Windows 10
+Windows 10 Features - How to Schedule restarts in Windows 10
+Windows 10 Features - Universal Apps
+Windows 10 Features - Continuum
+Windows 10 Features - Settings and Control Panel
+Windows 10 Features - Face Scanning  Or Fingerprints to login to Computer
+Windows 10 Features - DirectX 12
+Windows 10 Features - Phone Companion App
+Windows 10 Features - Contact Support app
+
+Windows 10 Tips and Tricks 
+Snapping current Window using Mouse and Keyboard Shortcuts - Windows 10 Tips & Tricks
+Switching Between Virtual Desktops using mouse and keyboard shortcuts - Windows 10 Tips & Tricks 
+Command Line Controls using Mouse and keyboard in Win 10 - Windows 10 Tips & Tricks
+Command Line Text Editing Tips for Win 10 - Windows 10 Tips and Tricks
+How to Switch Running Applications in Windows 10 - Windows 10 Tips & Tricks
+Keyboard Shortcut for Switching between Virtual Desktops in Win 10 - Windows 10 Tips & Tricks
+How to Enabling Cortana in MS Edge Browser - Windows 10 Tips and Tricks
+How to use Cortana in MS Edge Browser - Windows 10 Tips and Tricks
+How to Find Address Bar in MS Edge in Win 10 - Windows 10 Tips and Tricks
+Open Find Dialog for Searching in Command Prompt in Win 10 - Windows 10 Tips and Tricks

@@ -1,0 +1,20 @@
+TFS 2015 Tutorial - 01: What's New in Team Foundation Server (TFS) 2015
+TFS 2015 Tutorial -02 :How to Upgrade TFS 2013 to TFS 2015 Step by Step
+TFS 2015 Application Server Installation and Full Server Configuration
+TFS 2015 Reporting Configuration
+TFS 2015 - SharePoint Integration
+How to install Visual Studio 2015 and connect with TFS 2015
+How to create Team project collection in TFS 2015
+How to create Team Project in TFS 2015
+How to create Branch in TFS 2015
+How to create Relational Branch in TFS 2015
+How to configure work space in TFS 2015
+How to Checkin and Checkout Projects in TFS 2015
+How to add New File or Project into TFS 2015 Source Control
+How to get latest version in TFS 2015
+How to Compare Source Code in TFS 2015
+How to Configure Site Collection for the Team Project Collection in TFS 2015
+How to Configure a SharePoint Website to use as Team Project Portal in TFS 2015
+How to configure Team Project Collection Report Folder in TFS 2015
+Work Items Overview in TFS 2015
+How to Apply and Search Labels in TFS 2015

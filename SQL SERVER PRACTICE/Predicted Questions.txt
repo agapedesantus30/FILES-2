@@ -1,0 +1,88 @@
+		1st Interview
+Name of Interviewer
+Bob LaPierre, IT Site Manager
+
+About Company
+I know your companies a fortune 500 comapny with over 6000 employees and 
+you help your clients plan, invest and protect their savings.
+I also found out that the company has approximately $205 billion in 
+assets across Fixed Income, Senior Loans, Equities, Multi-Asset 
+Strategies & Solutions, Private Equity, and Real Assets.
+And that the company has over 40 years of experience doing this
+
+Awards
+I also found out the company been awarded with some wonderful accolades
+like being named as one of the best places to work for LGBT equality for
+13 consecutive years and also named as a Member of Bloomberg Gender-Equality
+Index for 2nd consecutive year and this is to name a few
+
+When i read some reviews online i saw one say its a great place to work
+
+But i have a couple of questions about the company
+
+
+*Questions about the company
+Who are your competitors?
+What is the size of the IT organization?
+
+
+		Randoms questions for me
+*Tell me about youeself
+I've worked as a DBA for the past 5 years started as a junior dba at 
+InComm (InComm is a provider of cutting edge prepaid products, services 
+and transaction technologies to retailers, brands and consumers)there 
+i wasn't in full control of my environment just as with my second 
+gig which was at Slalom (Slalom is a business and technology consulting 
+firm) then i moved to knight and associates where am a bit more in control
+of my environmen
+
+*what do you know abou the position
+I know this position is open because the previous dba didnt want to move
+when the company went from connecticut to atlanta
+
+*what are you looking for in a job
+Channce to grow like i see you the company will be moving to the cloud
+i find as an oppurtunity to grow
+
+* 
+
+Data architecture is a set of rules, policies, standards and models that
+govern and define the type of data collected and how it is used, stored,
+managed and integrated within an organization and its database systems
+
+		Powershell
+its a shell not a scriping language
+so i'll say ive worked with th gui version
+I dont know if you heard of vm ware workstation, so this was the interface
+i used to interract with powershell so as i was adding roles and features
+behind the scenes powershell was being generated
+
+		AZURE
+Azure is a cloud computing platform and an online portal to access and
+manage resources and services provided by microsoft
+resourse and services being (store data and transform data)
+feb 1st 2010
+free to start and pay as you use
+need for a huge datacenter
+datacenters are in 42 regions qround the world
+Azure services divided into 18 categories and contains more than 200 
+services. Services divied into three (network,Storage,compute)
+(virtualmachine, cloud service, Disk storage,functions)
+*use 
+Aplication dev, testing , application hosting, create virtual machine, 
+integrating and syncing features, collectio and storing metrics
+
+
+		2nd Interview
+
+*Experience with service now
+ServiceNow is a SaaS and it's hosted in the Cloud*
+ITSM process in restoring business processes to minimize buisness impact
+How to report an issue (call, request help, or email)
+
+Service now core apllications
+(Incident, problem, change, service catalog, configuration)
+
+(Request, incident, problem, change, resolution)
+
+*Experience with spotlight

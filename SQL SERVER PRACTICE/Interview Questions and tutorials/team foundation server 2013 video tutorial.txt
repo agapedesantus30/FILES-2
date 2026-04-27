@@ -1,0 +1,55 @@
+Team Foundation Server 2013 Installation and Configuration
+How to install Team Foundation Server TFS 2013 update 4
+ How to install Visual Studio 2013 Professional with update 4
+How to install & configure Reporting, Data Warehouse and Analysis services in Team Foundation server
+How to install and configure Extension for Sharepoint Products in Team Foundation server 2013 update
+How to install and configure Build Services in Team Foundation Server 2013
+ How to create a new Team project collection in TFS 2013 - Team Foundation Server Tutorial
+ Team Foundation Server 2013 Administration
+How to connect to Team Foundation Server using Visual Studio
+How to create Team Project in Team Foundation Server using Visual Studio
+How to map a Team Project to local server in Team Foundation Server 2013
+How to create a Folder under Team project in Team Foundation Server 2013 
+How to create a Branch under Team project in Team Foundation Server 2013
+How to create a relational Branch in Team Foundation Server 2013
+How to get latest version in Team Foundation Server 2013
+How to add new file or project to Source Control in Team Foundation Server 2013
+ How to check in and check out code in Team Foundation server
+How to Merge code between branches in Team Foundation server
+How to Compare source code in Team Foundation server
+Team Foundation Server 2013 Work Items Management
+Work Items Overview in Team Foundation Server
+How to create a Work Item in Team Foundation Server 2013 using Visual Studio
+How to create a Work Item in Team Foundation Server 2013 using Web Access
+How to update work Item using Team Foundation Server 2013 Web Access
+How to Find Particular Work Items in Team Foundation Server 2013
+How to undo pending changes and get latest version Team Foundation Server
+How to Apply Labels in Team Foundation Server  using visual Studio
+Team Foundation Server 2013 Test Case Management
+Test case management Overview in Team Foundation Server 2013
+How to install Microsoft Visual Studio Test Manager 2013 Professional
+How to create a Test case plan in Microsoft Test manager 2013 Professional 
+How to create a bug based on the Test Case Execution Results in Microsoft Test Manager 2013 
+How to run a Test Case in Microsoft Test Manager 2013 Professional
+How to Run Exploratory Test in Microsoft Test Manager 2013
+How to Analyse Test Case Runs in Microsoft Test Manager 2013
+Team Foundation Server 2013 Test Case Management using Web Access
+How to create Test Cases using Test Grid in TFS 2013 Web Access
+How to email or Print Test Plan Artifacts using TFS 2013 Web Access
+How to open a Test Case in Microsoft Test Manager using TFS 2013 Web Access
+How to pin a Test Case Charts on your home page using TFS 2013 Web Access
+How to look at Graphical Presentation Charts of Test Cases using TFS 2013 Web Access
+How to assign a Test Case to a Tester using TFS 2013 Web Access
+How to create a bug when you run Test Case using TFS 2013 Web Access
+How to Run a Test Case using TFS 2013 Web Access
+How to create Test Case Plan using TFS 2013 Web Access
+How to create a Test Case using TFS 2013 Web Access
+How to create a requirement work item using TFS 2013 Web Access
+How to give Access to TEST Case Management Feature to a user in TFS 2013 Web Access
+Team Foundation Server 2013 Build & Deployment
+How to Auto Build and Auto Publish Database project in TFS 2013
+How to Build Database project in TFS 2013
+How to Compare database objects schema in Visual Studio 2013
+How to create Database project in Visual Studio 2013 and add to TFS 2013 
+How to manually Publish Database project in TFS 2013
+How to deploy SSRS using Visual Studio 2013

@@ -1,0 +1,30 @@
+Introduction  
+What's New in SQL Server 2016
+SQL Server 2016 Enhancements from SQL Server 2014
+How to install SQL Server 2016 CTP
+What is Data Stretch in SQL Server 2016 and how to Enable It
+What is Query Store In SQL Server 2016 and How to Enable It
+What are new options in SQL Server 2016 Databases
+How to use Query Store Feature in SQL Server 2016
+Installation:
+How to install SQL Server 2016 Enterprise Engine Services step by step
+How to install SQL Server 2016 in Cluster Mode Step by Step
+How to install and Configure SQL Server 2016 Enterprise Reporting Services 
+How to Install and Configure SQL Server 2016 Analysis Services
+How to Install SQL Server 2016 Management Studio
+How to Install and Configure SQL Server 2016 Master Data Services
+AlwaysOn Availability Group
+How to Configure Availability Group in SQL Server 2016
+How to Add Contained Databases in SQL Server 2016 Availability Group
+How to Create Availability Group with Automatic Seeding in SQL Server 2016
+How to setup Distributed Availability Group in SQL Server 2016 Step by Step
+
+Replication 
+Understanding Replication in SQL Server 2016
+How to Create Snapshot Replication in SQL Server 2016
+How to setup Transactional Replication in SQL Server 2016
+How to create Merge Replication in SQL Server 2016
+How to create Peer to Peer Replication in SQL server 2016
+Mirroring
+How to setup / create Database Mirroring in SQL Server 2016
+How to remove Database Mirroring in SQL Server 2016
